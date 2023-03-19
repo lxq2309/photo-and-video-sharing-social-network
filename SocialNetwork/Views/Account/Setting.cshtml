@@ -1,0 +1,555 @@
+﻿@{
+    ViewData["Title"] = "Setting page";
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link href="/assets/images/favicon.png" rel="icon" type="image/png">
+
+    <!-- Basic Page Needs
+    ================================================== -->
+    <title>Instello Sharing Photos</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Instello - Sharing Photos platform HTML Template">
+
+    <!-- icons
+    ================================================== -->
+    <link rel="stylesheet" href="/assets/css/icons.css">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="/assets/css/uikit.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/tailwind.css">
+
+    <!-- Bootstrap
+    ================================================== -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+
+    <div id="wrapper">
+
+        @await Html.PartialAsync("_PartialSidebar")
+
+        <div class="main_content">
+
+            <header>
+                <div class="header_inner">
+                    <div class="left-side">
+                        <!-- Logo -->
+                        <div id="logo" class=" uk-hidden@s">
+                            <a href="home.html">
+                                <img src="/assets/images/logo-mobile.png" alt="">
+                                <img src="/assets/images/logo-mobile-light.png" class="logo_inverse">
+                            </a>
+                        </div>
+
+                        <div class="triger" uk-toggle="target: #wrapper ; cls: sidebar-active">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+
+                        <div class="header_search">
+                            <input type="text" placeholder="Search..">
+                            <div class="icon-search">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                     stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                                </svg>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="right-side lg:pr-4">
+                        
+                        <!-- Notification -->
+
+                        <a href="#" class="header-links-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                 stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                      d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+                            </svg>
+                        </a>
+                        <div uk-drop="mode: click;offset: 4" class="header_dropdown">
+                            <h4 class="-mt-5 -mx-5 bg-gradient-to-t from-gray-100 to-gray-50 border-b font-bold px-6 py-3">
+                                Notification
+                            </h4>
+                            <ul class="dropdown_scrollbar" data-simplebar>
+                                <li>
+                                    <a href="#">
+                                        <div class="drop_avatar">
+                                            <img src="/assets/images/avatars/avatar-1.jpg" alt="">
+                                        </div>
+                                        <div class="drop_content">
+                                            <p>
+                                                <strong>Adrian Mohani</strong>  Lorem ipsum dolor cursus
+                                                <span class="text-link"> Adipiscing massa convallis  </span>
+                                            </p>
+                                            <span class="time-ago"> 2 hours ago </span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="drop_avatar">
+                                            <img src="/assets/images/avatars/avatar-2.jpg" alt="">
+                                        </div>
+                                        <div class="drop_content">
+                                            <p>
+                                                <strong>Stella Johnson</strong> Nonummy nibh euismod
+                                                <span class="text-link"> Imperdiet doming </span>
+                                            </p>
+                                            <span class="time-ago"> 9 hours ago </span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="drop_avatar">
+                                            <img src="/assets/images/avatars/avatar-3.jpg" alt="">
+                                        </div>
+                                        <div class="drop_content">
+                                            <p>
+                                                <strong>Alex Dolgove</strong>  Lorem ipsum dolor cursus
+                                                <span class="text-link"> Adipiscing massa convallis  </span>
+                                            </p>
+                                            <span class="time-ago"> 12 hours ago </span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="drop_avatar">
+                                            <img src="/assets/images/avatars/avatar-1.jpg" alt="">
+                                        </div>
+                                        <div class="drop_content">
+                                            <p>
+                                                <strong>Stella Johnson</strong> Nonummy nibh euismod
+                                                <span class="text-link"> Imperdiet doming </span>
+                                            </p>
+                                            <span class="time-ago"> Yesterday </span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="drop_avatar">
+                                            <img src="/assets/images/avatars/avatar-3.jpg" alt="">
+                                        </div>
+                                        <div class="drop_content">
+                                            <p>
+                                                <strong>Alex Dolgove</strong>  Lorem ipsum dolor cursus
+                                                <span class="text-link"> Adipiscing massa convallis  </span>
+                                            </p>
+                                            <span class="time-ago"> 12 hours ago </span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <a href="#" class="see-all">See all</a>
+                        </div>
+
+                        <!-- Messages -->
+
+                        <a href="#" class="header-links-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                 stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                      d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
+                            </svg>
+                        </a>
+                        <div uk-drop="mode: click;offset: 4" class="header_dropdown">
+                            <h4 class="-mt-5 -mx-5 bg-gradient-to-t from-gray-100 to-gray-50 border-b font-bold px-6 py-3">
+                                Messages
+                            </h4>
+                            <ul class="dropdown_scrollbar" data-simplebar>
+                                <li>
+                                    <a href="#">
+                                        <div class="drop_avatar">
+                                            <img src="/assets/images/avatars/avatar-1.jpg" alt="">
+                                        </div>
+                                        <div class="drop_content">
+                                            <strong> John menathon </strong> <time> 6:43 PM</time>
+                                            <p> Lorem ipsum dolor sit amet, consectetur </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="drop_avatar">
+                                            <img src="/assets/images/avatars/avatar-2.jpg" alt="">
+                                        </div>
+                                        <div class="drop_content">
+                                            <strong> Zara Ali </strong> <time>12:43 PM</time>
+                                            <p>  Sediam nonummy nibh euismod tincidunt laoreet dolore  </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="drop_avatar">
+                                            <img src="/assets/images/avatars/avatar-3.jpg" alt="">
+                                        </div>
+                                        <div class="drop_content">
+                                            <strong> Mohamed Ali </strong> <time> Wed </time>
+                                            <p> Lorem ipsum dolor sit amet, consectetur </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="drop_avatar">
+                                            <img src="/assets/images/avatars/avatar-1.jpg" alt="">
+                                        </div>
+                                        <div class="drop_content">
+                                            <strong> John menathon </strong> <time> Sun</time>
+                                            <p> Namliber tempor cumsoluta nobis eleifend option adipiscing </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="drop_avatar">
+                                            <img src="/assets/images/avatars/avatar-2.jpg" alt="">
+                                        </div>
+                                        <div class="drop_content">
+                                            <strong> Zara Ali </strong> <time> Fri</time>
+                                            <p> Lorem ipsum dolor sit amet, consectetur </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="drop_avatar">
+                                            <img src="/assets/images/avatars/avatar-3.jpg" alt="">
+                                        </div>
+                                        <div class="drop_content">
+                                            <strong> Mohamed Ali </strong> <time>1 Week ago</time>
+                                            <p>  Sediam nonummy nibh euismod tincidunt laoreet dolore  </p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <a href="#" class="see-all">See all</a>
+                        </div>
+
+                        <!-- profile -->
+
+                        <a href="#">
+                            <img src="/assets/images/avatars/avatar-2.jpg" class="header-avatar" alt="">
+                        </a>
+                        <div uk-drop="mode: click;offset:9" class="header_dropdown profile_dropdown border-t">
+                            <ul>
+                                <li><a href="#"> Account setting </a> </li>
+                                <li><a href="#"> Payments </a> </li>
+                                <li><a href="#"> Help </a> </li>
+                                <li><a href="form-login.html"> Log Out</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </header>
+
+            <div class="container m-auto">
+
+                <h1 class="text-2xl leading-none text-gray-900 tracking-tight mt-3"> Account Setting </h1>
+
+                <div class="grid mt-12 gap-8">
+                    <div class="bg-white rounded-md lg:shadow-lg shadow col-span-2 row">
+                        <div class="col-12 col-md-3 border-end" id="Tablist">
+                            <ul class="nav nav-pills row py-4" id="Tab" role="tablist">
+                                <li class="nav-item py-2" role="presentation" id="tabLi">
+                                    <button class="nav-link active" id="profileTab" data-bs-toggle="pill" href="#tab1">Profile setting</button>
+                                </li>
+                                <li class="nav-item py-2" role="presentation" id="tabLi">
+                                    <button class="nav-link" id="privacyTab" data-bs-toggle="pill" href="#tab2">Privacy and security</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-9 border-start tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="tab1" aria-labelledby="profileTab">
+                                <div class="grid grid-cols-2 gap-3 lg:p-6 p-4">
+                                    <div>
+                                        <label for=""> First name</label>
+                                        <input type="text" placeholder="Your name.." class="shadow-none bg-gray-100">
+                                    </div>
+                                    <div>
+                                        <label for=""> Last name</label>
+                                        <input type="text" placeholder="Your name.." class="shadow-none bg-gray-100">
+                                    </div>
+                                    <div class="col-span-2">
+                                        <label for="about">About me</label>
+                                        <textarea id="about" name="about" rows="3" class="p-3 shadow-none bg-gray-100"></textarea>
+                                    </div>
+                                    <div class="col-span-2">
+                                        <label for=""> Location</label>
+                                        <input type="text" placeholder="" class="shadow-none bg-gray-100">
+                                    </div>
+                                    <div>
+                                        <label for=""> Working at</label>
+                                        <input type="text" placeholder="" class="shadow-none bg-gray-100">
+                                    </div>
+                                    <div>
+                                        <label for=""> Relationship </label>
+                                        <select id="relationship" name="relationship" class="shadow-none bg-gray-100">
+                                            <option value="0">None</option>
+                                            <option value="1">Single</option>
+                                            <option value="2">In a relationship</option>
+                                            <option value="3">Married</option>
+                                            <option value="4">Engaged</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="bg-gray-10 p-6 pt-0 flex justify-end space-x-3">
+                                    <button class="p-2 px-4 rounded bg-gray-50 text-red-500" id="cancel-button"> Cancel </button>
+                                    <button type="button" class="button bg-blue-700" id="save-button"> Save </button>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade p-3" id="tab2" aria-labelledby="privacyTab">
+                                <div>
+                                    <div class="flex justify-between items-center">
+                                        <div>
+                                            <div class="fs-4 text fw-bold"> Who follow me ?</div>
+                                            <div class="follow">Only your followers can see who follows you.</div>
+                                        </div>
+                                        <div class="switches-list -mt-8 is-large switch-1">
+                                            <div class="switch-container">
+                                                <label class="switch"><input type="checkbox"><span class="switch-button"></span> </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="flex justify-between items-center">
+                                        <div>
+                                            <div class="fs-4 text fw-bold"> Show my activities ?</div>
+                                            <div class="activities"> Only your followers can see your activities.</div>
+                                        </div>
+                                        <div class="switches-list -mt-8 is-large switch-2">
+                                            <div class="switch-container">
+                                                <label class="switch"><input type="checkbox"><span class="switch-button"></span> </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="flex justify-between items-center">
+                                        <div>
+                                            <div class="fs-4 text fw-bold"> Search engines?</div>
+                                            <div class="search"> Only your followers can see your search history.</div>
+                                        </div>
+                                        <div class="switches-list -mt-8 is-large switch-3">
+                                            <div class="switch-container">
+                                                <label class="switch"><input type="checkbox"><span class="switch-button"></span> </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="flex justify-between items-center">
+                                        <div>
+                                            <div class="fs-4 text fw-bold"> Allow Commenting?</div>
+                                            <div class="comment"> Only your followers can comment on your post.</div>
+                                        </div>
+                                        <div class="switches-list -mt-8 is-large switch-4">
+                                            <div class="switch-container">
+                                                <label class="switch"><input type="checkbox"><span class="switch-button"></span> </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="modal" id="myModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header justify-content-center">
+                            <p class="modal-title fs-5 fw-bold">Confirm</p>
+                        </div>
+                        <div class="modal-body">
+                            <div class="text-center">
+                                <p>Are you sure want to save?</p>
+                                <button type="button" class="btn btn-primary btn-success yes-button mx-4">YES</button>
+                                <button type="button" class="btn btn-primary btn-danger no-button mx-4">NO</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script>
+        //Dark mode
+        (function (window, document, undefined) {
+            'use strict';
+            if (!('localStorage' in window)) return;
+            var nightMode = localStorage.getItem('gmtNightMode');
+            if (nightMode) {
+                document.documentElement.className += ' dark';
+            }
+        })(window, document);
+
+
+        (function (window, document, undefined) {
+
+            'use strict';
+
+            // Feature test
+            if (!('localStorage' in window)) return;
+
+            // Get our newly insert toggle
+            var nightMode = document.querySelector('#night-mode');
+            if (!nightMode) return;
+
+            // When clicked, toggle night mode on or off
+            nightMode.addEventListener('click', function (event) {
+                event.preventDefault();
+                document.documentElement.classList.toggle('dark');
+                if (document.documentElement.classList.contains('dark')) {
+                    localStorage.setItem('gmtNightMode', true);
+                    return;
+                }
+                localStorage.removeItem('gmtNightMode');
+            }, false);
+
+        })(window, document);
+
+
+        //responsive
+        var myDiv = document.getElementById('myTabContent');
+        var listdiv = document.getElementById('Tablist');
+        var tab = document.getElementById('Tab');
+        var tablist = document.getElementById('tabLi');
+        window.addEventListener('resize', function () {
+            if (window.innerWidth <= 768) { // 768 is the width of the md breakpoint
+                myDiv.classList.remove('border-start');
+                myDiv.classList.add('border-top');
+                listdiv.classList.remove('border-end');
+                listdiv.classList.add('border-bottom');
+                tab.classList.remove('row');
+                tablist.classList.add('px-3')
+            } else {
+                myDiv.classList.remove('border-top');
+                myDiv.classList.add('border-start');
+                listdiv.classList.remove('border-bottom');
+                listdiv.classList.add('border-end');
+                tab.classList.add('row');
+                tablist.classList.remove('px-3')
+            }
+        });
+
+        //switch element
+        // Get the switch element
+        var switch1 = document.querySelector('.switch-1 input[type="checkbox"]');
+        var switch2 = document.querySelector('.switch-2 input[type="checkbox"]');
+        var switch3 = document.querySelector('.switch-3 input[type="checkbox"]');
+        var switch4 = document.querySelector('.switch-4 input[type="checkbox"]');
+
+        // Get the text elements that need to be changed
+        var follow = document.querySelector('.flex .follow');
+        var activities = document.querySelector('.flex .activities');
+        var search = document.querySelector('.flex .search');
+        var comment = document.querySelector('.flex .comment');
+
+        // Add an event listener to the switch element
+        switch1.addEventListener('change', function (event) {
+            if (event.target.checked) {
+                follow.textContent = "Everyone can see who follow you.";
+            } else {
+                follow.textContent = "Only your followers can see who follows you.";
+            }
+        });
+        switch2.addEventListener('change', function (event) {
+            if (event.target.checked) {
+                activities.textContent = "Everyone can see your activities.";
+            } else {
+                activities.textContent = "Only your followers can see your activities.";
+            }
+        });
+        switch3.addEventListener('change', function (event) {
+            if (event.target.checked) {
+                search.textContent = "Everyone can see your search history.";
+            } else {
+                search.textContent = "Only your followers can see your search history.";
+            }
+        });
+        switch4.addEventListener('change', function (event) {
+            if (event.target.checked) {
+                comment.textContent = "Everyone can comment on your post.";
+            } else {
+                comment.textContent = "Only your followers can comment on your post.";
+            }
+        });
+
+        //create dialog
+        var myBtn = document.getElementById("save-button");
+        var myModal = document.getElementById("myModal");
+
+
+        myBtn.addEventListener("click", function () {
+            var modal = new bootstrap.Modal(myModal);
+            modal.show();
+
+            var noBtn = myModal.querySelector(".no-button");
+            noBtn.addEventListener("click", function () {
+                modal.hide();
+                console.log("test ok");
+            });
+        });
+
+
+    </script>
+
+    <!-- Scripts
+       ================================================== -->
+    <script src="/assets/js/tippy.all.min.js"></script>
+    <script src="/assets/js/jquery-3.3.1.min.js"></script>
+    <script src="/assets/js/uikit.js"></script>
+    <script src="/assets/js/simplebar.js"></script>
+    <script src="/assets/js/custom.js"></script>
+
+
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+    <script src="https://kit.fontawesome.com/bda3bb47f4.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
+
+<style>
+    .nav-link {
+        color: black;
+    }
+
+    /* @@media (max-width: 470px) {
+      .border-md-top {
+        border-top: 1px solid #dee2e6;
+        border-left: none;
+      }
+    } */
+</style>
