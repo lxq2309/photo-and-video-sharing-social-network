@@ -201,6 +201,9 @@
                     <!-- Tab content -->
                     <div class="tab-content">
                         <div class="tab-pane active">
+                            <p class="alert-danger">
+                                @TempData["Message"]
+                            </p>
                             <table class="table table-striped table-hover table-responsive">
                                 <thead>
                                     <tr>
@@ -264,17 +267,17 @@
                                                 <button type="button" class="btn btn-@cls btn-sm">@role</button>
                                             </td>
                                             @{
-                                                string accType = "ban";
+                                                string accStatus = "ban";
                                                 string clss = "dark";
                                                 
-                                                if (item.AccountType == "Banned")
+                                                if (item.IsBanned == true)
                                                 {
-                                                    accType = "banned";
+                                                    accStatus = "banned";
                                                     clss = "danger";
                                                 }
                                             }
                                             <td class="font-medium">
-                                                <button type="button" class="btn btn-outline-@clss btn-sm">@accType</button>
+                                                <a href="/admin/BanAccount?accountId=@item.AccountId" class="btn btn-outline-@clss btn-sm" role="button">@accStatus</a>
                                             </td>
                                             <td class="border-right font-medium">
                                                 <a href="#" style="border-color: #c23564; background-color: #c23564;" class="btn btn-info btn-sm" role="button">view detail</a>
