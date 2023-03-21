@@ -1,9 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using SocialNetwork.Models;
 
 namespace SocialNetwork.Controllers
 {
     public class AccountController : Controller
     {
+        SocialNetworkDbContext db = new SocialNetworkDbContext();
         public IActionResult Index()
         {
             return View();
@@ -18,8 +20,22 @@ namespace SocialNetwork.Controllers
             // xử lý action logout sau đó chuyển về view login 
             return RedirectToAction("Login", "Account");
         }
+
         public IActionResult Register()
         {
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Register(Account account)
+        {
+            if (ModelState.IsValid)
+            {
+                db.Accounts.Add(account);
+                db.SaveChanges();
+                return RedirectToAction("", "");
+            }
             return View();
         }
 

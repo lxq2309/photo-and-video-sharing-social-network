@@ -1,4 +1,7 @@
-﻿@{
+﻿@model SocialNetwork.Models.Account
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
     ViewData["Title"] = "Register ";
     Layout = null;
 }
@@ -67,26 +70,21 @@
             <div class="lg:p-12 max-w-md max-w-xl lg:my-0 my-12 mx-auto p-6 space-y-">
                 <h1 class="lg:text-3xl text-xl font-semibold mb-6"> Sign in</h1>
                 <p class="mb-2 text-black text-lg"> Register to manage your account </p>
-                <form action="" class="needs-validation" novalidate>
-                    <div class="flex lg:flex-row flex-col lg:space-x-2 justify-content-between">
-                        <div class="w-100">
-                            <input type="text" placeholder="First Name" class="form-control mb-2 shadow-none" required style="border: 1px solid #d3d5d8 !important;">
-                            <div class="invalid-feedback">
-                                Please provide your First Name
-                            </div>
-                        </div>
-                        <div class="w-100">
-                            <input type="text" placeholder="Last Name" class="form-control mb-2 shadow-none" required style="border: 1px solid #d3d5d8 !important;">
-                            <div class="invalid-feedback">
-                                Please provide your Last Name
-                            </div>
-                        </div>
+                <form asp-action="Register" class="needs-validation" novalidate>
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <input asp-for="FullName" type="text" placeholder="Full Name" class="form-control mb-2 shadow-none" required style="border: 1px solid #d3d5d8 !important;">
+                    <div class="invalid-feedback">
+                        Please provide your full name.
                     </div>
-                    <input type="email" placeholder="Email" class="form-control mb-2 shadow-none" required style="border: 1px solid #d3d5d8 !important;">
+                    <input asp-for="DisplayName" type="text" placeholder="Display Name" class="form-control mb-2 shadow-none" required style="border: 1px solid #d3d5d8 !important;">
+                    <div class="invalid-feedback">
+                        Please provide a display name.
+                    </div>
+                    <input asp-for="Email" type="email" placeholder="Email" class="form-control mb-2 shadow-none" required style="border: 1px solid #d3d5d8 !important;">
                     <div class="invalid-feedback">
                         Please provide a valid email address.
                     </div>
-                    <input type="password" placeholder="Password" id="password" class="form-control mb-2 shadow-none" required style="border: 1px solid #d3d5d8 !important;">
+                    <input asp-for="Password" type="password" placeholder="Password" id="password" class="form-control mb-2 shadow-none" required style="border: 1px solid #d3d5d8 !important;">
                     <div class="invalid-feedback">
                         Please choose a Password
                     </div>
@@ -94,21 +92,21 @@
                     <div class="invalid-feedback">
                         Please make sure your password is correct
                     </div>
-                    <label for="datepicker" class="text-lg fw-normal">Date of Birth</label>
-                    <input type="date" id="datepicker" class="bg-gray-200 mb-2 shadow-none" required style="border: 1px solid #d3d5d8 !important; padding: 1.2rem; color: #a5abb6;">
+                    <label asp-for="DayOfBirth" for="datepicker" class="text-lg fw-normal">Date of Birth</label>
+                    <input asp-for="DayOfBirth" type="date" id="datepicker" class="bg-gray-200 mb-2 shadow-none" required style="border: 1px solid #d3d5d8 !important; padding: 1.2rem; color: #a5abb6;">
                     <div class="invalid-feedback">
                         Please choose your birth date
                     </div>
                     <div class="col-auto">
-                        <label class="text-lg fw-normal">Your gender:</label>
+                        <label asp-for="Gender" class="text-lg fw-normal">Your gender:</label>
                     </div>
                     <div class="flex lg:flex-row flex-col lg:space-x-2 justify-content-between">
                         <div class="w-100 form-check d-flex justify-content-between bg-gray-200 align-items-center px-3" required style="border: 1px solid #d3d5d8 !important; color: #a5abb6; border-radius: 4px; height: 48px;">
-                            <input class="form-check-input pl-3 ms-0" type="radio" name="gender" id="male" required>
+                            <input asp-for="Gender" value="false" class="form-check-input pl-3 ms-0" type="radio" name="gender" id="male" required>
                             <label class="form-check-label" for="male" style="margin-bottom: 0px;">Male</label>
                         </div>
                         <div class="w-100 form-check d-flex justify-content-between bg-gray-200 align-items-center px-3" style="border: 1px solid #d3d5d8 !important; color: #a5abb6; border-radius: 4px; height: 48px;">
-                            <input class="form-check-input pl-3 ms-0" type="radio" name="gender" id="female" required>
+                            <input asp-for="Gender" value="true" class="form-check-input pl-3 ms-0" type="radio" name="gender" id="female" required>
                             <label class="form-check-label" for="female" style="margin-bottom: 0px;">Female</label>
                         </div>
                     </div>
