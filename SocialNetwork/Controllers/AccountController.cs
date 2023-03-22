@@ -10,17 +10,38 @@ namespace SocialNetwork.Controllers
         {
             return View();
         }
+
+        // =================== Login ===================
         public IActionResult Login()
         {
             return View();
         }
 
+        [HttpGet]
+        public IActionResult Login(string email, string password)
+        {
+            var account = db.Accounts.SingleOrDefault(x => x.Email == email && x.Password == password);
+            if (account == null)
+            {
+                ModelState.AddModelError("Email", "Invalid email or password");
+                return View();
+            }
+
+            CurrentAccount.initSession(account.AccountId);
+
+            Console.WriteLine(CurrentAccount.account);
+
+            return RedirectToAction("", "");
+        }
+
+        // =================== Logout ===================
         public IActionResult Logout()
         {
             // xử lý action logout sau đó chuyển về view login 
             return RedirectToAction("Login", "Account");
         }
 
+        // =================== Register ===================
         public IActionResult Register()
         {
             return View();
@@ -30,6 +51,11 @@ namespace SocialNetwork.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Register(Account account)
         {
+            if (db.Accounts.FirstOrDefault(x => x.Email == account.Email) != null)
+            {
+                ModelState.AddModelError("Email", "Email has already been taken.");
+                return View(account);
+            }
             if (ModelState.IsValid)
             {
                 db.Accounts.Add(account);
