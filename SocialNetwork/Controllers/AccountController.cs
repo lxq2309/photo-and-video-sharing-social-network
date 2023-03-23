@@ -29,9 +29,7 @@ namespace SocialNetwork.Controllers
 
             CurrentAccount.initSession(account.AccountId);
 
-            Console.WriteLine(CurrentAccount.account);
-
-            return RedirectToAction("", "");
+            return RedirectToAction("Index", "Home");
         }
 
         // =================== Logout ===================
@@ -65,17 +63,32 @@ namespace SocialNetwork.Controllers
             return View();
         }
 
+        // =================== Profile ===================
         public IActionResult Profile()
         {
             // chắc là sẽ thêm tham số mã tài khoản nhận vào ở đây
 
             return View();
         }
+
+        // =================== Setting ===================
         public IActionResult Setting()
         {
+            var account = db.Accounts.SingleOrDefault(x => x.Email == CurrentAccount.account.Email);
 
-            return View();
+            return View(account);
         }
+
+        //[HttpPost]
+        //public IActionResult setting(Account account)
+        //{
+        //    if (ModelState.IsValid)
+        //    {
+        //        db.Entry(account).State = EntityState.Modified;
+        //        db.SaveChanges();
+        //    }
+        //    return View();
+        //}
 
     }
 }

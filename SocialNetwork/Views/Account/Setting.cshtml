@@ -1,4 +1,7 @@
-﻿@{
+﻿@model SocialNetwork.Models.Account
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
     ViewData["Title"] = "Setting page";
     Layout = null;
 }
@@ -282,36 +285,34 @@
                         <div class="col-12 col-md-9 border-start tab-content" id="myTabContent">
                             <div class="tab-pane fade show active" id="tab1" aria-labelledby="profileTab">
                                 <div class="grid grid-cols-2 gap-3 lg:p-6 p-4">
-                                    <div>
-                                        <label for=""> First name</label>
-                                        <input type="text" placeholder="Your name.." class="shadow-none bg-gray-100">
-                                    </div>
-                                    <div>
-                                        <label for=""> Last name</label>
-                                        <input type="text" placeholder="Your name.." class="shadow-none bg-gray-100">
-                                    </div>
-                                    <div class="col-span-2">
-                                        <label for="about">About me</label>
-                                        <textarea id="about" name="about" rows="3" class="p-3 shadow-none bg-gray-100"></textarea>
-                                    </div>
-                                    <div class="col-span-2">
-                                        <label for=""> Location</label>
-                                        <input type="text" placeholder="" class="shadow-none bg-gray-100">
-                                    </div>
-                                    <div>
-                                        <label for=""> Working at</label>
-                                        <input type="text" placeholder="" class="shadow-none bg-gray-100">
-                                    </div>
-                                    <div>
-                                        <label for=""> Relationship </label>
-                                        <select id="relationship" name="relationship" class="shadow-none bg-gray-100">
-                                            <option value="0">None</option>
-                                            <option value="1">Single</option>
-                                            <option value="2">In a relationship</option>
-                                            <option value="3">Married</option>
-                                            <option value="4">Engaged</option>
-                                        </select>
-                                    </div>
+                                    <form asp-action="setting">
+                                        <div class="col-span-2">
+                                            <label for=""> Full Name</label>
+                                            <input asp-for="FullName" type="text" placeholder="Your full name ..." class="shadow-none bg-gray-100" value="@Model.FullName">
+                                        </div>
+                                        <div class="col-span-2">
+                                            <label for="about">About me</label>
+                                            <textarea asp-for="AboutMe" id="about" placeholder="About you ..." name="about" rows="3" class="p-3 shadow-none bg-gray-100">@Model.AboutMe</textarea>
+                                        </div>
+                                        <div class="col-span-2">
+                                            <label for=""> Location</label>
+                                            <input asp-for="Location" type="text" placeholder="Your location ..." class="shadow-none bg-gray-100" value="@Model.Location">
+                                        </div>
+                                        <div>
+                                            <label for=""> Phone Number</label>
+                                            <input asp-for="Phone" type="text" placeholder="Your phone number ..." class="shadow-none bg-gray-100" value="@Model.Phone">
+                                        </div>
+                                        <div>
+                                            <label for=""> Relationship </label>
+                                            <select id="relationship" name="relationship" class="shadow-none bg-gray-100">
+                                                <option value="0">None</option>
+                                                <option value="1">Single</option>
+                                                <option value="2">In a relationship</option>
+                                                <option value="3">Married</option>
+                                                <option value="4">Engaged</option>
+                                            </select>
+                                        </div>
+                                    </form>
                                 </div>
 
                                 <div class="bg-gray-10 p-6 pt-0 flex justify-end space-x-3">
