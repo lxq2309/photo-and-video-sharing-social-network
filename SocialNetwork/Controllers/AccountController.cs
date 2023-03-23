@@ -1,25 +1,67 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using SocialNetwork.Models;
 
 namespace SocialNetwork.Controllers
 {
     public class AccountController : Controller
     {
+        SocialNetworkDbContext db = new SocialNetworkDbContext();
         public IActionResult Index()
         {
             return View();
         }
+
+        // =================== Login ===================
         public IActionResult Login()
         {
             return View();
         }
 
+        [HttpGet]
+        public IActionResult Login(string email, string password)
+        {
+            var account = db.Accounts.SingleOrDefault(x => x.Email == email && x.Password == password);
+            if (account == null)
+            {
+                ModelState.AddModelError("Email", "Invalid email or password");
+                return View();
+            }
+
+            CurrentAccount.initSession(account.AccountId);
+
+            Console.WriteLine(CurrentAccount.account);
+
+            return RedirectToAction("", "");
+        }
+
+        // =================== Logout ===================
         public IActionResult Logout()
         {
             // xử lý action logout sau đó chuyển về view login 
             return RedirectToAction("Login", "Account");
         }
+
+        // =================== Register ===================
         public IActionResult Register()
         {
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Register(Account account)
+        {
+            if (db.Accounts.FirstOrDefault(x => x.Email == account.Email) != null)
+            {
+                ModelState.AddModelError("Email", "Email has already been taken.");
+                return View(account);
+            }
+            if (ModelState.IsValid)
+            {
+                db.Accounts.Add(account);
+                db.SaveChanges();
+                return RedirectToAction("", "");
+            }
             return View();
         }
 
