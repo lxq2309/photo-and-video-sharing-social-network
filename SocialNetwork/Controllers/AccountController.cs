@@ -49,6 +49,7 @@ namespace SocialNetwork.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Register(Account account)
         {
+            ModelState.AddModelError("Email", "");
             if (db.Accounts.FirstOrDefault(x => x.Email == account.Email) != null)
             {
                 ModelState.AddModelError("Email", "Email has already been taken.");
@@ -67,28 +68,30 @@ namespace SocialNetwork.Controllers
         public IActionResult Profile()
         {
             // chắc là sẽ thêm tham số mã tài khoản nhận vào ở đây
-
-            return View();
+            var account = db.Accounts.SingleOrDefault(x => x.Email == CurrentAccount.account.Email);
+            int postCount = db.Posts.Count(x => x.AccountId == CurrentAccount.account.AccountId);
+            ViewBag.PostCount = postCount;
+            return View(account);
         }
 
         // =================== Setting ===================
         public IActionResult Setting()
         {
             var account = db.Accounts.SingleOrDefault(x => x.Email == CurrentAccount.account.Email);
-
             return View(account);
         }
 
-        //[HttpPost]
-        //public IActionResult setting(Account account)
-        //{
-        //    if (ModelState.IsValid)
-        //    {
-        //        db.Entry(account).State = EntityState.Modified;
-        //        db.SaveChanges();
-        //    }
-        //    return View();
-        //}
+        [HttpPost]
+        public IActionResult setting(Account model)
+        {
+            var account = db.Accounts.SingleOrDefault(x => x.Email == CurrentAccount.account.Email);
+            account.FullName = model.FullName;
+            account.AboutMe = model.AboutMe;
+            account.Location = model.Location;
+            account.Phone = model.Phone;
+            db.SaveChanges();
+            return View(account);
+        }
 
     }
 }
