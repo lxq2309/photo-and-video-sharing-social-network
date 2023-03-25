@@ -16,36 +16,38 @@
     <div class="sidebar_inner" data-simplebar>
         <div class="flex flex-col items-center my-6 uk-visible@s">
             <div class="bg-gradient-to-tr from-yellow-600 to-pink-600 p-1 rounded-full transition m-0.5 mr-2  w-24 h-24">
-                <img src="/assets/images/avatars/avatar-2.jpg"
+                <img src="/assets/images/avatars/@CurrentAccount.account.Avatar"
                      class="bg-gray-200 border-4 border-white rounded-full w-full h-full">
             </div>
             <a href="/account/profile" class="text-xl font-medium capitalize mt-4 uk-link-reset">
-                Stella Johnson
+                @CurrentAccount.account.FullName
             </a>
             <div class="flex justify-around w-full items-center text-center uk-link-reset text-gray-800 mt-6">
                 <div>
                     <a href="#">
                         <strong>Post</strong>
-                        <div> 130</div>
+                        <div> @CurrentAccount.Data.getPostCount()</div>
                     </a>
                 </div>
                 <div>
                     <a href="#">
                         <strong>Following</strong>
-                        <div> 1,230</div>
+                        
+
+                        <div> @CurrentAccount.account.Following</div>
                     </a>
                 </div>
                 <div>
                     <a href="#">
                         <strong>Followers</strong>
-                        <div> 2,430</div>
+                        <div> @CurrentAccount.account.Follower</div>
                     </a>
                 </div>
             </div>
         </div>
         <hr class="-mx-4 -mt-1 uk-visible@s">
         <ul>
-            <li class="active">
+            <li>
                 <a href="/home">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                          stroke="currentColor">
@@ -109,3 +111,4 @@
         </ul>
     </div>
 </div>
+

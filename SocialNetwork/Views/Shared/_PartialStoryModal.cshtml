@@ -1,0 +1,119 @@
+﻿@using SocialNetwork.ViewModels
+@model PostDetailViewModel
+
+<div id="story-modal-@Model.Post.PostId" class="uk-modal-container" uk-modal>
+    <div class="uk-modal-dialog story-modal">
+        <button class="uk-modal-close-default lg:-mt-9 lg:-mr-9 -mt-5 -mr-5 shadow-lg bg-white rounded-full p-4 transition dark:bg-gray-600 dark:text-white" type="button" uk-close></button>
+        @if (Model.GetListMedia().Count < 2)
+        {
+            <div class="story-modal-media">
+                <img src="/assets/images/post/img4.jpg" alt="" class="post-image inset-0 h-full w-full">
+            </div>
+        }
+        else
+        {
+            <div class="story-modal-slider">
+                <div class="content">
+                    <div class="images">
+                        <img src="/assets/images/post/img9.jpg" alt="" class="story-img">
+                        <img src="/assets/images/post/img10.jpg" alt="" class="story-img">
+                        <img src="/assets/images/post/img11.jpg" alt="" class="story-img">
+                    </div>
+                    <div onclick="side_slide(-1)" class="slide left">
+                        <span class="fas fa-angle-left"></span>
+                    </div>
+                    <div onclick="side_slide(1)" class="slide right">
+                        <span class="fas fa-angle-right"></span>
+                    </div>
+                    <div class="btn-sliders">
+                        <span onclick="btm_slide(0)"></span>
+                        <span onclick="btm_slide(1)"></span>
+                        <span onclick="btm_slide(2)"></span>
+                    </div>
+                </div>
+            </div>
+        }
+        <div class="flex-1 bg-white dark:bg-gray-900 dark:text-gray-100">
+
+            <!-- post header-->
+            <div class="border-b flex items-center justify-between px-5 py-3 dark:border-gray-600">
+                <div class="flex flex-1 items-center space-x-4">
+                    <a href="#">
+                        <div class="bg-gradient-to-tr from-yellow-600 to-pink-600 p-0.5 rounded-full">
+                            <img src="/assets/images/avatars/avatar-2.jpg"
+                                 class="bg-gray-200 border border-white rounded-full w-8 h-8">
+                        </div>
+                    </a>
+                    <span class="block text-lg font-semibold"> @Model.GetPostOwnerAccount().FullName </span>
+                </div>
+                <a href="#">
+                    <i class="icon-feather-more-horizontal text-2xl rounded-full p-2 transition -mr-1"></i>
+                </a>
+            </div>
+            <div class="story-content p-4" data-simplebar>
+
+                <p> @Model.Post.Content </p>
+
+                <div class="py-4 ">
+                    <div class="flex justify-around">
+                        <a href="#" class="flex items-center space-x-3">
+                            <div class="flex font-bold items-baseline"> <i style="font-size: 16px; margin-right: 5px;" class="fa-solid fa-thumbs-up"></i> </i> Like</div>
+                        </a>
+                        <a href="#" class="flex items-center space-x-3">
+                            <div class="flex font-bold items-baseline"> <i style="font-size: 16px; margin-right: 5px;" class="fa-solid fa-comment"></i> Comment</div>
+                        </a>
+                        <a href="#" class="flex items-center space-x-3">
+                            <div class="flex font-bold items-baseline"> <i style="font-size: 16px; margin-right: 5px;" class="fa-solid fa-share-nodes"></i> Share</div>
+                        </a>
+                    </div>
+                    <hr class="-mx-4 my-3">
+                    <div class="flex items-center space-x-3">
+                        <div class="flex items-center">
+                            <img src="/assets/images/avatars/avatar-1.jpg" alt="" class="w-6 h-6 rounded-full border-2 border-white">
+                            <img src="/assets/images/avatars/avatar-4.jpg" alt="" class="w-6 h-6 rounded-full border-2 border-white -ml-2">
+                            <img src="/assets/images/avatars/avatar-2.jpg" alt="" class="w-6 h-6 rounded-full border-2 border-white -ml-2">
+                        </div>
+                        <div>
+                            Liked by <strong> @Model.Post.LikeCount persons </strong>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="-mt-1 space-y-1">
+                    @foreach (var comment in Model.GetListComment())
+                    {
+                        <div class="flex flex-1 items-center space-x-2">
+
+                            <img src="/assets/images/avatars/avatar-2.jpg" class="rounded-full w-8 h-8">
+                            <span class="block capitalize font-semibold dark:text-gray-100">@Model.GetCommentAccount(comment).FullName</span>
+                            <div class="flex-1 p-2">
+                                @comment.Content
+                            </div>
+                        </div>
+                    }
+
+                </div>
+
+
+            </div>
+            <div class="p-3 border-t dark:border-gray-600">
+                <div class="comment-item flex">
+                    <div class="input-item bg-gray-100 bg-gray-100 rounded-full rounded-md relative dark:bg-gray-800">
+                        <input type="text" placeholder="Add your Comment.." class="bg-transparent max-h-10 shadow-none">
+                        <div class="absolute bottom-0 flex h-full items-center right-0 right-3 text-xl space-x-2">
+                            <a href="#"> <i class="uil-image"></i></a>
+                            <a href="#"> <i class="uil-video"></i></a>
+                            <i class="emoji-icon fa-solid fa-face-laugh"></i>
+                        </div>
+                    </div>
+                    <div class="icon-item icon-modal">
+                        <i class="send-icon fa-solid fa-paper-plane"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>

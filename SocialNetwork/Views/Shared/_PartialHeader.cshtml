@@ -1,8 +1,9 @@
-﻿<div class="header_inner">
+﻿@using SocialNetwork.Models
+<div class="header_inner">
     <div class="left-side">
         <!-- Logo -->
         <div id="logo" class=" uk-hidden@s">
-            <a href="home.html">
+            <a href="/">
                 <img src="/assets/images/logo-mobile.png" alt="">
                 <img src="/assets/images/logo-mobile-light.png" class="logo_inverse">
             </a>
@@ -49,76 +50,23 @@
                 Notification
             </h4>
             <ul class="dropdown_scrollbar" data-simplebar>
-                <li>
-                    <a href="#">
-                        <div class="drop_avatar">
-                            <img src="/assets/images/avatars/avatar-1.jpg" alt="">
-                        </div>
-                        <div class="drop_content">
-                            <p>
-                                <strong>Adrian Mohani</strong>  Lorem ipsum dolor cursus
-                                <span class="text-link"> Adipiscing massa convallis  </span>
-                            </p>
-                            <span class="time-ago"> 2 hours ago </span>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <div class="drop_avatar">
-                            <img src="/assets/images/avatars/avatar-2.jpg" alt="">
-                        </div>
-                        <div class="drop_content">
-                            <p>
-                                <strong>Stella Johnson</strong> Nonummy nibh euismod
-                                <span class="text-link"> Imperdiet doming </span>
-                            </p>
-                            <span class="time-ago"> 9 hours ago </span>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <div class="drop_avatar">
-                            <img src="/assets/images/avatars/avatar-3.jpg" alt="">
-                        </div>
-                        <div class="drop_content">
-                            <p>
-                                <strong>Alex Dolgove</strong>  Lorem ipsum dolor cursus
-                                <span class="text-link"> Adipiscing massa convallis  </span>
-                            </p>
-                            <span class="time-ago"> 12 hours ago </span>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <div class="drop_avatar">
-                            <img src="/assets/images/avatars/avatar-1.jpg" alt="">
-                        </div>
-                        <div class="drop_content">
-                            <p>
-                                <strong>Stella Johnson</strong> Nonummy nibh euismod
-                                <span class="text-link"> Imperdiet doming </span>
-                            </p>
-                            <span class="time-ago"> Yesterday </span>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <div class="drop_avatar">
-                            <img src="/assets/images/avatars/avatar-3.jpg" alt="">
-                        </div>
-                        <div class="drop_content">
-                            <p>
-                                <strong>Alex Dolgove</strong>  Lorem ipsum dolor cursus
-                                <span class="text-link"> Adipiscing massa convallis  </span>
-                            </p>
-                            <span class="time-ago"> 12 hours ago </span>
-                        </div>
-                    </a>
-                </li>
+                @foreach (var item in CurrentAccount.Data.getListNotification())
+                {
+                    <li>
+                        <a href="#">
+                            <div class="drop_avatar">
+                                <img src="/assets/images/avatars/avatar-1.jpg" alt="">
+                            </div>
+                            <div class="drop_content">
+                                <p>
+                                    <strong>Quynh Le</strong>  @item.Content
+                                    <span class="text-link"> tên bài viết  </span>
+                                </p>
+                                <span class="time-ago"> @item.CreateAt </span>
+                            </div>
+                        </a>
+                    </li>
+                }
             </ul>
             <a href="#" class="see-all">See all</a>
         </div>
@@ -137,72 +85,24 @@
                 Messages
             </h4>
             <ul class="dropdown_scrollbar" data-simplebar>
-                <li>
-                    <a href="#">
-                        <div class="drop_avatar">
-                            <img src="/assets/images/avatars/avatar-1.jpg" alt="">
-                        </div>
-                        <div class="drop_content">
-                            <strong> John menathon </strong> <time> 6:43 PM</time>
-                            <p> Lorem ipsum dolor sit amet, consectetur </p>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <div class="drop_avatar">
-                            <img src="/assets/images/avatars/avatar-2.jpg" alt="">
-                        </div>
-                        <div class="drop_content">
-                            <strong> Zara Ali </strong> <time>12:43 PM</time>
-                            <p>  Sediam nonummy nibh euismod tincidunt laoreet dolore  </p>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <div class="drop_avatar">
-                            <img src="/assets/images/avatars/avatar-3.jpg" alt="">
-                        </div>
-                        <div class="drop_content">
-                            <strong> Mohamed Ali </strong> <time> Wed </time>
-                            <p> Lorem ipsum dolor sit amet, consectetur </p>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <div class="drop_avatar">
-                            <img src="/assets/images/avatars/avatar-1.jpg" alt="">
-                        </div>
-                        <div class="drop_content">
-                            <strong> John menathon </strong> <time> Sun</time>
-                            <p> Namliber tempor cumsoluta nobis eleifend option adipiscing </p>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <div class="drop_avatar">
-                            <img src="/assets/images/avatars/avatar-2.jpg" alt="">
-                        </div>
-                        <div class="drop_content">
-                            <strong> Zara Ali </strong> <time> Fri</time>
-                            <p> Lorem ipsum dolor sit amet, consectetur </p>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <div class="drop_avatar">
-                            <img src="/assets/images/avatars/avatar-3.jpg" alt="">
-                        </div>
-                        <div class="drop_content">
-                            <strong> Mohamed Ali </strong> <time>1 Week ago</time>
-                            <p>  Sediam nonummy nibh euismod tincidunt laoreet dolore  </p>
-                        </div>
-                    </a>
-                </li>
+                @foreach (var item in CurrentAccount.Data.getListChatSession())
+                {  
+                    <li>
+                        @{
+                            Message newestMessage = CurrentAccount.Data.getNewestMessage(item);
+                        }
+                        <a href="/Messages/ChatSession/">
+                            <div class="drop_avatar">
+                                <img src="/assets/images/avatars/avatar-1.jpg" alt="">
+                            </div>
+                            <div class="drop_content">
+
+                                <strong> @item.Name </strong> <time> @newestMessage.CreateAt </time>
+                                <p> @newestMessage.MessageContent </p>
+                            </div>
+                        </a>
+                    </li>
+                }
             </ul>
             <a href="#" class="see-all">See all</a>
         </div>

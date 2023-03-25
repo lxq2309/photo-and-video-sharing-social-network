@@ -7,7 +7,7 @@ namespace SocialNetwork.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-
+        SocialNetworkDbContext context = new SocialNetworkDbContext();
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
@@ -15,7 +15,8 @@ namespace SocialNetwork.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            var lst = context.Posts.ToList();
+            return View(lst);
         }
 
         public IActionResult Privacy()

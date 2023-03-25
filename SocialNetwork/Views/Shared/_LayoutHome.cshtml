@@ -11,7 +11,7 @@
 
     <!-- Basic Page Needs
         ================================================== -->
-    <title>Instello Sharing Photos</title>
+    <title>@ViewData["Title"]</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Instello - Sharing Photos platform HTML Template">
@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="/assets/css/tailwind.css">
     <link rel="stylesheet" href="/assets/css/chat.css">
-    
+
     @*Quynh lam*@
     <style>
         @@media (min-width: 1024px) {
@@ -63,208 +63,8 @@
 
     <!-- Chi tiết 1 bài đăng (like, comment here) -->
     <!-- Story modal -->
-    <div id="story-modal" class="uk-modal-container" uk-modal>
-        <div class="uk-modal-dialog story-modal">
-            <button class="uk-modal-close-default lg:-mt-9 lg:-mr-9 -mt-5 -mr-5 shadow-lg bg-white rounded-full p-4 transition dark:bg-gray-600 dark:text-white" type="button" uk-close></button>
+    
 
-            <div class="story-modal-media">
-                <img src="/assets/images/post/img4.jpg" alt="" class="post-image inset-0 h-full w-full">
-            </div>
-            <div class="flex-1 bg-white dark:bg-gray-900 dark:text-gray-100">
-
-                <!-- post header-->
-                <div class="border-b flex items-center justify-between px-5 py-3 dark:border-gray-600">
-                    <div class="flex flex-1 items-center space-x-4">
-                        <a href="#">
-                            <div class="bg-gradient-to-tr from-yellow-600 to-pink-600 p-0.5 rounded-full">
-                                <img src="/assets/images/avatars/avatar-2.jpg"
-                                     class="bg-gray-200 border border-white rounded-full w-8 h-8">
-                            </div>
-                        </a>
-                        <span class="block text-lg font-semibold"> Johnson smith </span>
-                    </div>
-                    <a href="#">
-                        <i class="icon-feather-more-horizontal text-2xl rounded-full p-2 transition -mr-1"></i>
-                    </a>
-                </div>
-                <div class="story-content p-4" data-simplebar>
-
-                    <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
-
-                    <div class="py-4 ">
-                        <div class="flex justify-around">
-                            <a href="#" class="flex items-center space-x-3">
-                                <div class="flex font-bold items-baseline"> <i style="font-size: 16px; margin-right: 5px;" class="fa-solid fa-thumbs-up"></i> </i> Like</div>
-                            </a>
-                            <a href="#" class="flex items-center space-x-3">
-                                <div class="flex font-bold items-baseline"> <i style="font-size: 16px; margin-right: 5px;" class="fa-solid fa-comment"></i> Comment</div>
-                            </a>
-                            <a href="#" class="flex items-center space-x-3">
-                                <div class="flex font-bold items-baseline"> <i style="font-size: 16px; margin-right: 5px;" class="fa-solid fa-share-nodes"></i> Share</div>
-                            </a>
-                        </div>
-                        <hr class="-mx-4 my-3">
-                        <div class="flex items-center space-x-3">
-                            <div class="flex items-center">
-                                <img src="/assets/images/avatars/avatar-1.jpg" alt="" class="w-6 h-6 rounded-full border-2 border-white">
-                                <img src="/assets/images/avatars/avatar-4.jpg" alt="" class="w-6 h-6 rounded-full border-2 border-white -ml-2">
-                                <img src="/assets/images/avatars/avatar-2.jpg" alt="" class="w-6 h-6 rounded-full border-2 border-white -ml-2">
-                            </div>
-                            <div>
-                                Liked <strong> Johnson</strong> and <strong> 209 Others </strong>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="-mt-1 space-y-1">
-                        <div class="flex flex-1 items-center space-x-2">
-                            <img src="/assets/images/avatars/avatar-2.jpg" class="rounded-full w-8 h-8">
-                            <div class="flex-1 p-2">
-                                consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                            </div>
-                        </div>
-
-                        <div class="flex flex-1 items-center space-x-2">
-                            <img src="/assets/images/avatars/avatar-4.jpg" class="rounded-full w-8 h-8">
-                            <div class="flex-1 p-2">
-                                consectetuer adipiscing elit
-                            </div>
-                        </div>
-
-                    </div>
-
-
-                </div>
-                <div class="p-3 border-t dark:border-gray-600">
-                    <div class="comment-item flex">
-                        <div class="input-item bg-gray-100 bg-gray-100 rounded-full rounded-md relative dark:bg-gray-800">
-                            <input type="text" placeholder="Add your Comment.." class="bg-transparent max-h-10 shadow-none">
-                            <div class="absolute bottom-0 flex h-full items-center right-0 right-3 text-xl space-x-2">
-                                <a href="#"> <i class="uil-image"></i></a>
-                                <a href="#"> <i class="uil-video"></i></a>
-                                <i class="emoji-icon fa-solid fa-face-laugh"></i>
-                            </div>
-                        </div>
-                        <div class="icon-item icon-modal">
-                            <i class="send-icon fa-solid fa-paper-plane"></i>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-    </div>
-
-    <div id="story-modal__multi-imgs" class="uk-modal-container" uk-modal>
-        <div class="uk-modal-dialog story-modal">
-            <button class="uk-modal-close-default lg:-mt-9 lg:-mr-9 -mt-5 -mr-5 shadow-lg bg-white rounded-full p-4 transition dark:bg-gray-600 dark:text-white" type="button" uk-close></button>
-
-            <div class="story-modal-slider">
-                <div class="content">
-                    <div class="images">
-                        <img src="/assets/images/post/img9.jpg" alt="" class="story-img">
-                        <img src="/assets/images/post/img10.jpg" alt="" class="story-img">
-                        <img src="/assets/images/post/img11.jpg" alt="" class="story-img">
-                    </div>
-                    <div onclick="side_slide(-1)" class="slide left">
-                        <span class="fas fa-angle-left"></span>
-                    </div>
-                    <div onclick="side_slide(1)" class="slide right">
-                        <span class="fas fa-angle-right"></span>
-                    </div>
-                    <div class="btn-sliders">
-                        <span onclick="btm_slide(1)"></span>
-                        <span onclick="btm_slide(2)"></span>
-                        <span onclick="btm_slide(3)"></span>
-                    </div>
-                </div>
-            </div>
-            <div class="flex-2 bg-white dark:bg-gray-900 dark:text-gray-100">
-
-                <!-- post header-->
-                <div class="border-b flex items-center justify-between px-5 py-3 dark:border-gray-600">
-                    <div class="flex flex-1 items-center space-x-4">
-                        <a href="#">
-                            <div class="bg-gradient-to-tr from-yellow-600 to-pink-600 p-0.5 rounded-full">
-                                <img src="/assets/images/avatars/avatar-2.jpg"
-                                     class="bg-gray-200 border border-white rounded-full w-8 h-8">
-                            </div>
-                        </a>
-                        <span class="block text-lg font-semibold"> Johnson smith </span>
-                    </div>
-                    <a href="#">
-                        <i class="icon-feather-more-horizontal text-2xl rounded-full p-2 transition -mr-1"></i>
-                    </a>
-                </div>
-                <div class="story-content p-4" data-simplebar>
-
-                    <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
-
-                    <div class="py-4 ">
-                        <div class="flex justify-around">
-                            <a href="#" class="flex items-center space-x-3">
-                                <div class="flex font-bold items-baseline"> <i style="font-size: 16px; margin-right: 5px;" class="fa-solid fa-thumbs-up"></i> </i> Like</div>
-                            </a>
-                            <a href="#" class="flex items-center space-x-3">
-                                <div class="flex font-bold items-baseline"> <i style="font-size: 16px; margin-right: 5px;" class="fa-solid fa-comment"></i> Comment</div>
-                            </a>
-                            <a href="#" class="flex items-center space-x-3">
-                                <div class="flex font-bold items-baseline"> <i style="font-size: 16px; margin-right: 5px;" class="fa-solid fa-share-nodes"></i> Share</div>
-                            </a>
-                        </div>
-                        <hr class="-mx-4 my-3">
-                        <div class="flex items-center space-x-3">
-                            <div class="flex items-center">
-                                <img src="/assets/images/avatars/avatar-1.jpg" alt="" class="w-6 h-6 rounded-full border-2 border-white">
-                                <img src="/assets/images/avatars/avatar-4.jpg" alt="" class="w-6 h-6 rounded-full border-2 border-white -ml-2">
-                                <img src="/assets/images/avatars/avatar-2.jpg" alt="" class="w-6 h-6 rounded-full border-2 border-white -ml-2">
-                            </div>
-                            <div>
-                                Liked <strong> Johnson</strong> and <strong> 209 Others </strong>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="-mt-1 space-y-1">
-                        <div class="flex flex-1 items-center space-x-2">
-                            <img src="/assets/images/avatars/avatar-2.jpg" class="rounded-full w-8 h-8">
-                            <div class="flex-1 p-2">
-                                consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                            </div>
-                        </div>
-
-                        <div class="flex flex-1 items-center space-x-2">
-                            <img src="/assets/images/avatars/avatar-4.jpg" class="rounded-full w-8 h-8">
-                            <div class="flex-1 p-2">
-                                consectetuer adipiscing elit
-                            </div>
-                        </div>
-
-                    </div>
-
-
-                </div>
-                <div class="p-3 border-t dark:border-gray-600">
-                    <div class="comment-item flex">
-                        <div class="input-item bg-gray-100 bg-gray-100 rounded-full rounded-md relative dark:bg-gray-800">
-                            <input type="text" placeholder="Add your Comment.." class="bg-transparent max-h-10 shadow-none">
-                            <div class="absolute bottom-0 flex h-full items-center right-0 right-3 text-xl space-x-2">
-                                <a href="#"> <i class="uil-image"></i></a>
-                                <a href="#"> <i class="uil-video"></i></a>
-                                <i class="emoji-icon fa-solid fa-face-laugh"></i>
-                            </div>
-                        </div>
-                        <div class="icon-item icon-modal">
-                            <i class="send-icon fa-solid fa-paper-plane"></i>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-    </div>
 
     <!-- Upload modal -->
     <div id="upload-modal" class="uk-modal-container" uk-modal>
@@ -295,7 +95,7 @@
                     <div id="upload-cancel-btn"><i class="fas fa-times"></i></div>
                     <div class="upload-file-name">File name here</div>
                 </div>
-                <input id="upload-default-btn" type="file" hidden />
+                <input id="upload-default-btn" type="file" multiple hidden />
                 <button id="upload-custom-btn" onclick="defaultBtnActive()">Choose a file</button>
             </div>
 
@@ -358,15 +158,15 @@
     </script>
 
     <script>
-        //Dark mode
-        (function (window, document, undefined) {
-            'use strict';
-            if (!('localStorage' in window)) return;
-            var nightMode = localStorage.getItem('gmtNightMode');
-            if (nightMode) {
-                document.documentElement.className += ' dark';
-            }
-        })(window, document);
+            //Dark mode
+            (function (window, document, undefined) {
+                'use strict';
+                if (!('localStorage' in window)) return;
+                var nightMode = localStorage.getItem('gmtNightMode');
+                if (nightMode) {
+                    document.documentElement.className += ' dark';
+                }
+            })(window, document);
 
 
         (function (window, document, undefined) {
@@ -411,23 +211,23 @@
 
     <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
     <script src="https://kit.fontawesome.com/bda3bb47f4.js" crossorigin="anonymous"></script>
-    
+
 
     <script>
         // Slide show (fix)
-        var indexValue = 1;
+        var indexValue = 0;
         showImg(indexValue);
         function btm_slide(e) { showImg(indexValue = e); }
         function side_slide(e) { showImg(indexValue += e); }
         function showImg(e) {
             var i;
-            const img = document.querySelectorAll('.story-img');
-            const sliders = document.querySelectorAll('.btn-sliders span')
-            if (e > img.length) {
-                indexValue = indexValue = 1;
+            const img = document.querySelectorAll('#story-modal-3 .story-img');
+            const sliders = document.querySelectorAll('#story-modal-3 .btn-sliders span')
+            if (e == img.length) {
+                indexValue = 0;
             }
-            if (e < 1) {
-                indexValue = img.length;
+            if (e < 0) {
+                indexValue = img.length -1;
             }
             for (i = 0; i < img.length; i++) {
                 img[i].style.display = "none";
@@ -437,8 +237,8 @@
                 sliders[i].style.background = "rgba(225, 225, 225, 0.2)";
             }
 
-            img[indexValue - 1].style.display = "block";
-            sliders[indexValue - 1].style.background = "#fff";
+            img[indexValue].style.display = "block";
+            sliders[indexValue].style.background = "#fff";
         }
 
         // Fix sidebar
@@ -448,6 +248,29 @@
                 sidebar.style.display = "none";
             }
         }
+
+        // Xử lí thêm class active vào thẻ li phần sidebar
+        $(document).ready(function () {
+            var pageTitle = $('title').text();
+            switch (true) {
+                case pageTitle.includes("Home Page"):
+                    $(".sidebar ul li:eq(0)").addClass("active");
+                    break;
+                case pageTitle.includes("Search"):
+                    $(".sidebar ul li:eq(1)").addClass("active");
+                    break;
+                case pageTitle.includes("Messages Page"):
+                    $(".sidebar ul li:eq(2)").addClass("active");
+                    break;
+                case pageTitle.includes("Setting Page"):
+                    $(".sidebar ul li:eq(3)").addClass("active");
+                    break;
+                case pageTitle.includes("Profile Page"):
+                    $(".sidebar ul li:eq(4)").addClass("active");
+                    break;
+            }
+        });
+
     </script>
 </body>
 
@@ -455,14 +278,14 @@
 </html>
 
 <style>
-.nav-link{
-    color: black;
-}
+    .nav-link {
+        color: black;
+    }
 
-/* @@media (max-width: 470px) {
-  .border-md-top {
-    border-top: 1px solid #dee2e6;
-    border-left: none;
-  }
-} */
+    /* @@media (max-width: 470px) {
+              .border-md-top {
+                border-top: 1px solid #dee2e6;
+                border-left: none;
+              }
+            } */
 </style>
