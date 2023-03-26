@@ -84,6 +84,9 @@
                     <div class="invalid-feedback">
                         Please provide a valid email address.
                     </div>
+                        <div class="text-danger">
+                            @Html.ValidationMessageFor(model => model.Email)
+                        </div>
                     <input asp-for="Password" type="password" placeholder="Password" id="password" class="form-control mb-2 shadow-none" required style="border: 1px solid #d3d5d8 !important;">
                     <div class="invalid-feedback">
                         Please choose a Password

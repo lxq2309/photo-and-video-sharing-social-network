@@ -1,4 +1,7 @@
-﻿@{
+﻿@model SocialNetwork.Models.Account
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
     ViewData["Title"] = "Profile Page";
     Layout = "_LayoutHome";
 }
@@ -33,82 +36,103 @@
                      onclick="$('#upload-profile-picture').modal({fadeDuration: 50, fadeDelay: 0.5, showClose: false});">
             </div>
         </div>
+        <form asp-action="profile">
+            <div class="lg:w/8/12 flex-1 flex flex-col lg:items-start items-center">
 
-        <div class="lg:w/8/12 flex-1 flex flex-col lg:items-start items-center">
+                <h2 class="font-semibold lg:text-2xl text-lg mb-2">@Model.FullName</h2>
+                <p class="lg:text-left mb-2 text-center  dark:text-orange-100">
+                    @Model.AboutMe
+                </p>
 
-            <h2 class="font-semibold lg:text-2xl text-lg mb-2"> Stella Jonathan</h2>
-            <p class="lg:text-left mb-2 text-center  dark:text-orange-100">
-                Nam liber tempor cum soluta
-                nobis
-                eleifend option congue nihil imperdiet
-                doming id quod mazim placerat facer possim assum
-            </p>
-
-            <div class="flex font-semibold mb-3 space-x-2  dark:text-gray-10">
-                <a href="#">Travailing</a> , <a href="#">Sports</a> , <a href="#">Movies</a>
-            </div>
+                <div class="flex font-semibold mb-3 space-x-2  dark:text-gray-10">
+                    @Model.Location
+                </div>
 
 
-            <div class="capitalize flex font-semibold space-x-3 text-center text-sm my-2">
-                <a href="#" class="bg-gray-300 shadow-sm p-2 px-6 rounded-md dark:bg-gray-700">Follow</a>
-                <a href="#"
-                   class="bg-pink-500 shadow-sm p-2 pink-500 px-6 rounded-md text-white hover:text-white hover:bg-pink-600">
-                    Send message
-                </a>
-                <div>
-
+                <div class="capitalize flex font-semibold space-x-3 text-center text-sm my-2">
+                    <a href="#" class="bg-gray-300 shadow-sm p-2 px-6 rounded-md dark:bg-gray-700">Follow</a>
                     <a href="#"
-                       class="bg-gray-300 flex h-12 h-full items-center justify-center rounded-full text-xl w-9 dark:bg-gray-700">
-                        <i class="fa-solid fa-chevron-down"></i>
+                       class="bg-pink-500 shadow-sm p-2 pink-500 px-6 rounded-md text-white hover:text-white hover:bg-pink-600">
+                        Send message
                     </a>
+                    <div>
 
-                    <div class="bg-white w-56 shadow-md mx-auto p-2 mt-12 rounded-md text-gray-500 hidden text-base dark:bg-gray-900"
-                         uk-drop="mode: click">
+                        <a href="#"
+                           class="bg-gray-300 flex h-12 h-full items-center justify-center rounded-full text-xl w-9 dark:bg-gray-700">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
 
-                        <ul class="space-y-1">
-                            <li>
-                                <a href="#"
-                                   class="flex items-center px-3 py-2 hover:bg-gray-200 hover:text-gray-800 rounded-md dark:hover:bg-gray-700">
-                                    <i style="padding-right: 5px;"
-                                       class="fa-solid fa-user-minus"></i>Unfollow
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                   class="flex items-center px-3 py-2 hover:bg-gray-200 hover:text-gray-800 rounded-md dark:hover:bg-gray-700">
-                                    <i style="padding-right: 5px;" class="fa-solid fa-share-nodes"></i>
-                                    Share This Profile
-                                </a>
-                            </li>
-                            <li>
-                                <hr class="-mx-2 my-2  dark:border-gray-700">
-                            </li>
-                            <li>
-                                <a href="#"
-                                   class="flex items-center px-3 py-2 text-red-500 hover:bg-red-100 hover:text-red-500 rounded-md dark:hover:bg-red-600">
-                                    <i style="padding-right: 5px;" class="fa-solid fa-ban"></i> Block
-                                </a>
-                            </li>
-                        </ul>
+                        <div class="bg-white w-56 shadow-md mx-auto p-2 mt-12 rounded-md text-gray-500 hidden text-base dark:bg-gray-900"
+                             uk-drop="mode: click">
+
+                            <ul class="space-y-1">
+                                <li>
+                                    <a href="#"
+                                       class="flex items-center px-3 py-2 hover:bg-gray-200 hover:text-gray-800 rounded-md dark:hover:bg-gray-700">
+                                        <i style="padding-right: 5px;"
+                                           class="fa-solid fa-user-minus"></i>Unfollow
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                       class="flex items-center px-3 py-2 hover:bg-gray-200 hover:text-gray-800 rounded-md dark:hover:bg-gray-700">
+                                        <i style="padding-right: 5px;" class="fa-solid fa-share-nodes"></i>
+                                        Share This Profile
+                                    </a>
+                                </li>
+                                <li>
+                                    <hr class="-mx-2 my-2  dark:border-gray-700">
+                                </li>
+                                <li>
+                                    <a href="#"
+                                       class="flex items-center px-3 py-2 text-red-500 hover:bg-red-100 hover:text-red-500 rounded-md dark:hover:bg-red-600">
+                                        <i style="padding-right: 5px;" class="fa-solid fa-ban"></i> Block
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </div>
 
                     </div>
 
                 </div>
 
+                <div class="divide-gray-300 divide-transparent divide-x grid grid-cols-3 lg:text-left lg:text-lg mt-3 text-center w-full dark:text-gray-100">
+                    @{
+                        string followingText = Model.Following.ToString();
+                        string followerText = Model.Follower.ToString();
+                        string PostCount = ViewBag.PostCount.ToString();
+                        if (Model.Following >= 1000)
+                        {
+                            int? followingK = Model.Following / 1000;
+                            followingText = followingK.ToString() + "K";
+                        }
+                        if (Model.Follower >= 1000)
+                        {
+                            int? followerK = Model.Follower / 1000;
+                            followerText = followerK.ToString() + "K";
+                        }
+                        if (ViewBag.PostCount >= 1000)
+                        {
+                            int? PostK = ViewBag.PostCount / 1000;
+                            PostCount = PostK.ToString() + "K";
+                        }
+                    }
+                    <div class="flex lg:flex-row flex-col p-3"> 
+                        @PostCount <strong class="lg:pl-2">Posts</strong>
+                    </div>
+                    <div class="lg:pl-4 flex lg:flex-row flex-col p-3">
+                        @followerText <strong class="lg:pl-2">Followers</strong>
+                    </div>
+                    <div class="lg:pl-4 flex lg:flex-row flex-col p-3">
+                        @followingText <strong class="lg:pl-2">Following</strong>
+                    </div>
+                </div>
+
             </div>
 
-            <div class="divide-gray-300 divide-transparent divide-x grid grid-cols-3 lg:text-left lg:text-lg mt-3 text-center w-full dark:text-gray-100">
-                <div class="flex lg:flex-row flex-col"> 120k <strong class="lg:pl-2">Posts</strong></div>
-                <div class="lg:pl-4 flex lg:flex-row flex-col">
-                    420k <strong class="lg:pl-2">Followers</strong>
-                </div>
-                <div class="lg:pl-4 flex lg:flex-row flex-col">
-                    530k <strong class="lg:pl-2">Following</strong>
-                </div>
-            </div>
-
-        </div>
-
+        </form>
+       
         <div class="w-20"></div>
 
     </div>
@@ -285,3 +309,7 @@
 
 
 </div>
+
+<script>
+    
+</script>
