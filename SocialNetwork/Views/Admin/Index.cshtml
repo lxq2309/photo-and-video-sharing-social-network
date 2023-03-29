@@ -1,0 +1,541 @@
+﻿@{
+    ViewData["Title"] = "Admin Page";
+    Layout = null;
+}
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@using X.PagedList.Mvc.Core;
+@model X.PagedList.IPagedList<Account>
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link href="/assets/images/favicon.png" rel="icon" type="image/png">
+
+    <!-- Basic Page Needs
+        ================================================== -->
+    <title>Instello Sharing Photos</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Instello - Sharing Photos platform HTML Template">
+
+    <!-- icons
+        ================================================== -->
+    <link rel="stylesheet" href="/assets/css/icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- CSS
+        ================================================== -->
+    <link rel="stylesheet" href="/assets/css/uikit.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/tailwind.css">
+    <link rel="stylesheet" href="/assets/css/chat.css">
+
+    @*Quynh lam*@
+    <style>
+        @@media (min-width: 1024px) {
+            header .header_inner {
+                max-width: 980px;
+            }
+
+            .pro-container {
+                max-width: 860px;
+            }
+        }
+    </style>
+
+    @*tạo tab bằng btrap*@
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        .admin-area {
+            padding: 10px 30px;
+            margin: 20px;
+        }
+        table {
+            font-weight: 100px;
+        }
+
+        .tabs {
+            display: flex;
+            position: relative;
+        }
+
+            .tabs .line {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 0;
+                height: 6px;
+                border-radius: 15px;
+                background-color: #c23564;
+                transition: all 0.2s ease;
+            }
+
+        .tab-item {
+            min-width: 80px;
+            padding: 16px 20px 11px 20px;
+            font-size: 20px;
+            text-align: center;
+            color: #c23564;
+            background-color: #fff;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            border-bottom: 5px solid transparent;
+            opacity: 0.6;
+            cursor: pointer;
+            transition: all 0.5s ease;
+        }
+
+        .tab-icon {
+            font-size: 24px;
+            width: 32px;
+            position: relative;
+            top: 2px;
+        }
+
+        .tab-item:hover {
+            opacity: 1;
+            background-color: rgba(194, 53, 100, 0.05);
+            border-color: rgba(194, 53, 100, 0.1);
+        }
+
+        .tab-item.active {
+            opacity: 1;
+        }
+
+        .tab-content {
+            padding: 28px 0;
+        }
+
+        .tab-pane {
+            color: #333;
+            display: none;
+        }
+
+        .tab-pane.active {
+            display: block;
+        }
+
+        .tab-pane h2 {
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
+
+        .header-table-radius-left {
+            border-top-left-radius: 10px;
+        }
+
+        .header-table-radius-right {
+            border-top-right-radius: 10px;
+        }
+
+        thead {
+            background-color: #c23564;
+            color: white;
+        }
+        thead tr th{
+            border: 0px !important;
+        }
+        .border-right {
+            border-right: 1px solid #dee2e6;
+        }
+
+        .border-left {
+            border-left: 1px solid #dee2e6;
+        }
+        .center {
+            color: #c23564;
+            font-size: 18px;
+            text-align: center;
+        }
+        .page-item .page-link {
+            color: #c23564;
+        }
+
+        .pagination .active .page-link {
+            background-color: #c23564;
+            border-color: #c23564;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div id="wrapper">
+
+        @await Html.PartialAsync("_PartialSidebar")
+
+        <div class="main_content">
+
+            <header>
+                @await Html.PartialAsync("_PartialHeader")
+            </header>
+
+            <div class="admin-area  bg-white rounded-md lg:shadow-lg shadow">
+
+                <div>
+                    <!-- Tab items -->
+                    <div class="tabs">
+                        <div class="tab-item active">
+                            <i class="tab-icon fas fa-user-alt"></i>
+                            Account
+                        </div>
+                        <div class="tab-item">
+                            <i class="tab-icon fas fa-newspaper"></i>
+                            Post
+                        </div>
+                        
+                        <div class="line"></div>
+                    </div>
+
+                    <!-- Tab content -->
+                    <div class="tab-content">
+                        <div class="tab-pane active">
+                            <p class="alert-danger">
+                                @TempData["Message"]
+                            </p>
+                            <table class="table table-striped table-hover table-responsive">
+                                <thead>
+                                    <tr>
+                                        <th class="header-table-radius-left text-base"> ID </th>
+                                        <th class="text-base"> @Html.DisplayNameFor(model => model[0].FullName)</th>
+                                        <th class="text-base"> @Html.DisplayNameFor(model => model[0].DisplayName)</th>
+                                        <th class="text-base"> @Html.DisplayNameFor(model => model[0].Email)</th>
+                                        <th class="text-base"> @Html.DisplayNameFor(model => model[0].Location)</th>
+                                        <th class="text-base"> @Html.DisplayNameFor(model => model[0].Phone)</th>
+                                        @*<th class = "text-base"> @Html.DisplayNameFor(model => model[0].DayOfBirth)</th>*@
+                                        <th class="text-base"> @Html.DisplayNameFor(model => model[0].Gender)</th>
+                                        <th class="text-base"> Role</th>
+                                        <th class="text-base"> 
+                                            
+                                        </th>
+                                        <th class="header-table-radius-right text-base">
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model)
+                                    {
+                                        <tr>
+                                            <td class="border-left font-medium">
+                                                @Html.DisplayFor(modelItem => item.AccountId)
+                                            </td>
+                                            <td class="font-medium">
+                                                @Html.DisplayFor(modelItem => item.FullName)
+                                            </td>
+                                            <td class="font-medium">
+                                                @Html.DisplayFor(modelItem => item.DisplayName)
+                                            </td>
+                                            <td class="font-medium">
+                                                @Html.DisplayFor(modelItem => item.Email)
+                                            </td>
+                                            <td class="font-medium">
+                                                @Html.DisplayFor(modelItem => item.Location)
+                                            </td>
+                                            <td class="font-medium">
+                                                @Html.DisplayFor(modelItem => item.Phone)
+                                            </td>
+                                            @{
+                                                string role = "user";
+                                                string cls = "";
+                                                if (item.IsAdmin == true) {
+                                                    role = "admin";
+                                                    cls = "success";
+                                                }
+
+                                            }
+                                            @{
+                                                string gender = "venus";
+                                                if (item.Gender == true)
+                                                    gender = "mars";
+
+                                            }
+                                            <td class="center font-medium">
+                                                <i class="fa-solid fa-@gender"></i>
+                                            </td>
+                                            <td class="font-medium">
+                                                <button type="button" class="btn btn-@cls btn-sm">@role</button>
+                                            </td>
+                                            @{
+                                                string accStatus = "ban";
+                                                string clss = "dark";
+                                                
+                                                if (item.IsBanned == true)
+                                                {
+                                                    accStatus = "banned";
+                                                    clss = "danger";
+                                                }
+                                            }
+                                            <td class="font-medium">
+                                                <a href="/admin/BanAccount?accountId=@item.AccountId" class="btn btn-outline-@clss btn-sm" role="button">@accStatus</a>
+                                            </td>
+                                            <td class="border-right font-medium">
+                                                <a href="#" style="border-color: #c23564; background-color: #c23564;" class="btn btn-info btn-sm" role="button">view detail</a>
+                                            </td>
+                                        </tr>
+                                    }
+
+                                </tbody>
+                            </table>
+
+                            <ul class="pagination justify-content-center">
+                                @Html.PagedListPager(Model,page => Url.Action("index", new {page=page}),new X.PagedList.Web.Common.PagedListRenderOptions(){
+                                    LiElementClasses = new List<String> {"page-item"},
+                                    PageClasses = new List<String> {"page-link"}
+                                })
+                            </ul>
+                        </div>
+                        <div class="tab-pane">
+                            <h2>Angular</h2>
+                            <p>Angular is an application design framework and development platform for creating efficient and sophisticated single-page apps.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- tab -->
+    <script>
+        const $ = document.querySelector.bind(document)
+        const $$ = document.querySelectorAll.bind(document)
+
+        const tabs = $$('.tab-item')
+        const panes = $$('.tab-pane')
+
+        const tabActive = $('.tab-item.active')
+        const line = $('.tabs .line')
+
+        line.style.left = tabActive.offsetLeft + 'px'
+        line.style.width = tabActive.offsetWidth + 'px'
+
+
+        tabs.forEach((tab, index) => {
+            const pane = panes[index]
+
+            tab.onclick = function () {
+                // chọn phần tử có class là tab-item, phần tử con là .active,
+                $('.tab-item.active').classList.remove('active')
+                $('.tab-pane.active').classList.remove('active')
+
+                line.style.left = tab.offsetLeft + 'px'
+                line.style.width = tab.offsetWidth + 'px'
+
+                this.classList.add('active')
+                pane.classList.add('active')
+            }
+        })
+    </script>
+
+    <!-- Upload modal -->
+    <div id="upload-modal" class="uk-modal-container" uk-modal>
+        <button class="uk-modal-close-default btn-close-upload type="button" uk-close></button>
+
+        <div class="uk-modal-dialog story-modal">
+            <div class=" header-upload">
+                <div class="header-modal-share">
+                </div>
+
+                <div class="header-modal-title">
+                    <h1 class="header-modal-title-text">Create new post</h1>
+                </div>
+
+                <div class="header-modal-share">
+                    <button class="header-modal-btn">Share</button>
+                </div>
+            </div>
+            <div class="story-modal-media upload-modal-media">
+                <div class="upload-wrapper">
+                    <img src="" class="upload-image inset-0 h-full w-full" alt="">
+                    <div class="upload-content">
+                        <div class="upload-icon">
+                            <div class="fas fa-cloud-upload-alt"></div>
+                        </div>
+                        <div class="upload-text">No file chosen, yet!</div>
+                    </div>
+                    <div id="upload-cancel-btn"><i class="fas fa-times"></i></div>
+                    <div class="upload-file-name">File name here</div>
+                </div>
+                <input id="upload-default-btn" type="file" hidden />
+                <button id="upload-custom-btn" onclick="defaultBtnActive()">Choose a file</button>
+            </div>
+
+            <div class="flex-1 bg-white dark:bg-gray-900 dark:text-gray-100 upload-note-item">
+                <div class="border-b flex items-center justify-between px-5 py-3 dark:border-gray-600">
+                    <div class="flex flex-1 items-center space-x-4">
+                        <a href="#">
+                            <div class="bg-gradient-to-tr from-yellow-600 to-pink-600 p-0.5 rounded-full">
+                                <img src="/assets/images/avatars/avatar-2.jpg"
+                                     class="bg-gray-200 border border-white rounded-full w-8 h-8">
+                            </div>
+                        </a>
+                        <span class="block text-lg font-semibold"> Johnson smith </span>
+                    </div>
+                    <a href="#">
+                        <i class="icon-feather-more-horizontal text-2xl rounded-full p-2 transition -mr-1"></i>
+                    </a>
+                </div>
+
+                <div class="story-content p-4" data-simplebar>
+                    <form action="">
+                        <textarea name="" id="" cols="12" rows="20" placeholder="Write your comments..." class="txt-comments"></textarea>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        const wrapper = document.querySelector('.upload-wrapper')
+        const fileName = document.querySelector('.upload-file-name')
+        const defaultBtn = document.querySelector('#upload-default-btn')
+        const cancelBtn = document.querySelector('#upload-cancel-btn')
+        const customBtn = document.querySelector('#upload-custom-btn')
+        const img = document.querySelector('.upload-image')
+        function defaultBtnActive() {
+            defaultBtn.click()
+        }
+
+        defaultBtn.addEventListener('change', function () {
+            const file = this.files[0]
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function () {
+                    const result = reader.result
+                    img.src = result
+                    wrapper.classList.add("active")
+                }
+                cancelBtn.addEventListener("click", function () {
+                    img.src = ""
+                })
+                reader.readAsDataURL(file)
+            }
+            if (this.value) {
+                let valueStore = this.value;
+                fileName.textContent = valueStore;
+            }
+        })
+    </script>
+
+    <script>
+            //Dark mode
+            (function (window, document, undefined) {
+                'use strict';
+                if (!('localStorage' in window)) return;
+                var nightMode = localStorage.getItem('gmtNightMode');
+                if (nightMode) {
+                    document.documentElement.className += ' dark';
+                }
+            })(window, document);
+
+
+        (function (window, document, undefined) {
+
+            'use strict';
+
+            // Feature test
+            if (!('localStorage' in window)) return;
+
+            // Get our newly insert toggle
+            var nightMode = document.querySelector('#night-mode');
+            if (!nightMode) return;
+
+            // When clicked, toggle night mode on or off
+            nightMode.addEventListener('click', function (event) {
+                event.preventDefault();
+                document.documentElement.classList.toggle('dark');
+                if (document.documentElement.classList.contains('dark')) {
+                    localStorage.setItem('gmtNightMode', true);
+                    return;
+                }
+                localStorage.removeItem('gmtNightMode');
+            }, false);
+
+        })(window, document);
+    </script>
+
+    <!-- Upload modal -->
+    <!-- Scripts
+       ================================================== -->
+    <script src="/assets/js/tippy.all.min.js"></script>
+    <script src="/assets/js/jquery-3.3.1.min.js"></script>
+    <script src="/assets/js/uikit.js"></script>
+    <script src="/assets/js/simplebar.js"></script>
+    <script src="/assets/js/custom.js"></script>
+
+    @*Quynh them*@
+    <!-- Jquery Modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+    <script src="https://kit.fontawesome.com/bda3bb47f4.js" crossorigin="anonymous"></script>
+
+
+    <script>
+        // Slide show (fix)
+        var indexValue = 1;
+        showImg(indexValue);
+        function btm_slide(e) { showImg(indexValue = e); }
+        function side_slide(e) { showImg(indexValue += e); }
+        function showImg(e) {
+            var i;
+            const img = document.querySelectorAll('.story-img');
+            const sliders = document.querySelectorAll('.btn-sliders span')
+            if (e > img.length) {
+                indexValue = indexValue = 1;
+            }
+            if (e < 1) {
+                indexValue = img.length;
+            }
+            for (i = 0; i < img.length; i++) {
+                img[i].style.display = "none";
+            }
+
+            for (i = 0; i < sliders.length; i++) {
+                sliders[i].style.background = "rgba(225, 225, 225, 0.2)";
+            }
+
+            img[indexValue - 1].style.display = "block";
+            sliders[indexValue - 1].style.background = "#fff";
+        }
+
+        // Fix sidebar
+        function toggle() {
+            var sidebar = document.querySelector('.sidebar');
+            if (sidebar.style.display === "block") {
+                sidebar.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+
+</html>
+
+<style>
+    .nav-link {
+        color: black;
+    }
+
+    /* @@media (max-width: 470px) {
+      .border-md-top {
+        border-top: 1px solid #dee2e6;
+        border-left: none;
+      }
+    } */
+</style>

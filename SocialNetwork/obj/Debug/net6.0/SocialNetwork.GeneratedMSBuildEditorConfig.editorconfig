@@ -9,81 +9,81 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = SocialNetwork
 build_property.RootNamespace = SocialNetwork
-build_property.ProjectDir = C:\Users\MyPc\Desktop\Ki2Nam3\LTWeb\BTL\Project\SocialNetwork\SocialNetwork\
+build_property.ProjectDir = C:\Users\SyLV\OneDrive\Máy tính\Master\SocialNetwork\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\MyPc\Desktop\Ki2Nam3\LTWeb\BTL\Project\SocialNetwork\SocialNetwork
+build_property.MSBuildProjectDirectory = C:\Users\SyLV\OneDrive\Máy tính\Master\SocialNetwork
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/MyPc/Desktop/Ki2Nam3/LTWeb/BTL/Project/SocialNetwork/SocialNetwork/Views/Account/Login.cshtml]
+[C:/Users/SyLV/OneDrive/Máy tính/Master/SocialNetwork/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MyPc/Desktop/Ki2Nam3/LTWeb/BTL/Project/SocialNetwork/SocialNetwork/Views/Account/Profile.cshtml]
+[C:/Users/SyLV/OneDrive/Máy tính/Master/SocialNetwork/Views/Account/Profile.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxQcm9maWxlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MyPc/Desktop/Ki2Nam3/LTWeb/BTL/Project/SocialNetwork/SocialNetwork/Views/Account/Register.cshtml]
+[C:/Users/SyLV/OneDrive/Máy tính/Master/SocialNetwork/Views/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MyPc/Desktop/Ki2Nam3/LTWeb/BTL/Project/SocialNetwork/SocialNetwork/Views/Account/Setting.cshtml]
+[C:/Users/SyLV/OneDrive/Máy tính/Master/SocialNetwork/Views/Account/Setting.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxTZXR0aW5nLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MyPc/Desktop/Ki2Nam3/LTWeb/BTL/Project/SocialNetwork/SocialNetwork/Views/Action/Search.cshtml]
+[C:/Users/SyLV/OneDrive/Máy tính/Master/SocialNetwork/Views/Action/Search.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWN0aW9uXFNlYXJjaC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MyPc/Desktop/Ki2Nam3/LTWeb/BTL/Project/SocialNetwork/SocialNetwork/Views/Admin/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/MyPc/Desktop/Ki2Nam3/LTWeb/BTL/Project/SocialNetwork/SocialNetwork/Views/Home/Index.cshtml]
+[C:/Users/SyLV/OneDrive/Máy tính/Master/SocialNetwork/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MyPc/Desktop/Ki2Nam3/LTWeb/BTL/Project/SocialNetwork/SocialNetwork/Views/Home/Privacy.cshtml]
+[C:/Users/SyLV/OneDrive/Máy tính/Master/SocialNetwork/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MyPc/Desktop/Ki2Nam3/LTWeb/BTL/Project/SocialNetwork/SocialNetwork/Views/Messages/ChatSession.cshtml]
+[C:/Users/SyLV/OneDrive/Máy tính/Master/SocialNetwork/Views/Messages/ChatSession.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVzc2FnZXNcQ2hhdFNlc3Npb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MyPc/Desktop/Ki2Nam3/LTWeb/BTL/Project/SocialNetwork/SocialNetwork/Views/Shared/Components/PostDetail/Default.cshtml]
+[C:/Users/SyLV/OneDrive/Máy tính/Master/SocialNetwork/Views/Shared/Components/PostDetail/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcUG9zdERldGFpbFxEZWZhdWx0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MyPc/Desktop/Ki2Nam3/LTWeb/BTL/Project/SocialNetwork/SocialNetwork/Views/Shared/Error.cshtml]
+[C:/Users/SyLV/OneDrive/Máy tính/Master/SocialNetwork/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MyPc/Desktop/Ki2Nam3/LTWeb/BTL/Project/SocialNetwork/SocialNetwork/Views/Shared/_LayoutHome.cshtml]
+[C:/Users/SyLV/OneDrive/Máy tính/Master/SocialNetwork/Views/Shared/_LayoutHome.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRIb21lLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MyPc/Desktop/Ki2Nam3/LTWeb/BTL/Project/SocialNetwork/SocialNetwork/Views/Shared/_PartialHeader.cshtml]
+[C:/Users/SyLV/OneDrive/Máy tính/Master/SocialNetwork/Views/Shared/_PartialHeader.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9QYXJ0aWFsSGVhZGVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MyPc/Desktop/Ki2Nam3/LTWeb/BTL/Project/SocialNetwork/SocialNetwork/Views/Shared/_PartialSidebar.cshtml]
+[C:/Users/SyLV/OneDrive/Máy tính/Master/SocialNetwork/Views/Shared/_PartialSidebar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9QYXJ0aWFsU2lkZWJhci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MyPc/Desktop/Ki2Nam3/LTWeb/BTL/Project/SocialNetwork/SocialNetwork/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/SyLV/OneDrive/Máy tính/Master/SocialNetwork/Views/Shared/_PartialStoryModal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9QYXJ0aWFsU3RvcnlNb2RhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SyLV/OneDrive/Máy tính/Master/SocialNetwork/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MyPc/Desktop/Ki2Nam3/LTWeb/BTL/Project/SocialNetwork/SocialNetwork/Views/_ViewImports.cshtml]
+[C:/Users/SyLV/OneDrive/Máy tính/Master/SocialNetwork/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MyPc/Desktop/Ki2Nam3/LTWeb/BTL/Project/SocialNetwork/SocialNetwork/Views/_ViewStart.cshtml]
+[C:/Users/SyLV/OneDrive/Máy tính/Master/SocialNetwork/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MyPc/Desktop/Ki2Nam3/LTWeb/BTL/Project/SocialNetwork/SocialNetwork/Views/Shared/_Layout.cshtml]
+[C:/Users/SyLV/OneDrive/Máy tính/Master/SocialNetwork/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-lh69jpwqls
