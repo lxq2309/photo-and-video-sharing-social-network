@@ -291,3 +291,15 @@ C:\Users\MyPc\Desktop\Ki2Nam3\LTWeb\BTL\Project\SocialNetwork\SocialNetwork\obj\
 C:\Users\MyPc\Desktop\Ki2Nam3\LTWeb\BTL\Project\SocialNetwork\SocialNetwork\obj\Debug\net6.0\SocialNetwork.pdb
 C:\Users\MyPc\Desktop\Ki2Nam3\LTWeb\BTL\Project\SocialNetwork\SocialNetwork\obj\Debug\net6.0\SocialNetwork.genruntimeconfig.cache
 C:\Users\MyPc\Desktop\Ki2Nam3\LTWeb\BTL\Project\SocialNetwork\SocialNetwork\obj\Debug\net6.0\ref\SocialNetwork.dll
+C:\Users\SyLV\OneDrive\Máy tính\Master\SocialNetwork\obj\Debug\net6.0\SocialNetwork.csproj.AssemblyReference.cache
+C:\Users\SyLV\OneDrive\Máy tính\Master\SocialNetwork\obj\Debug\net6.0\SocialNetwork.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SyLV\OneDrive\Máy tính\Master\SocialNetwork\obj\Debug\net6.0\SocialNetwork.AssemblyInfoInputs.cache
+C:\Users\SyLV\OneDrive\Máy tính\Master\SocialNetwork\obj\Debug\net6.0\SocialNetwork.AssemblyInfo.cs
+C:\Users\SyLV\OneDrive\Máy tính\Master\SocialNetwork\obj\Debug\net6.0\SocialNetwork.csproj.CoreCompileInputs.cache
+C:\Users\SyLV\OneDrive\Máy tính\Master\SocialNetwork\obj\Debug\net6.0\SocialNetwork.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\SyLV\OneDrive\Máy tính\Master\SocialNetwork\obj\Debug\net6.0\SocialNetwork.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\SyLV\OneDrive\Máy tính\Master\SocialNetwork\obj\Debug\net6.0\SocialNetwork.RazorAssemblyInfo.cache
+C:\Users\SyLV\OneDrive\Máy tính\Master\SocialNetwork\obj\Debug\net6.0\SocialNetwork.RazorAssemblyInfo.cs
+C:\Users\SyLV\OneDrive\Máy tính\Master\SocialNetwork\obj\Debug\net6.0\SocialNetwork.dll
+C:\Users\SyLV\OneDrive\Máy tính\Master\SocialNetwork\obj\Debug\net6.0\refint\SocialNetwork.dll
+C:\Users\SyLV\OneDrive\Máy tính\Master\SocialNetwork\obj\Debug\net6.0\SocialNetwork.pdb
