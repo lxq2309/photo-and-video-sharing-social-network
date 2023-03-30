@@ -1,9 +1,12 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using SocialNetwork.Models;
+using SocialNetwork.ViewModels;
 
 namespace SocialNetwork.Controllers
 {
     public class ActionController : Controller
     {
+        SocialNetworkDbContext db = new SocialNetworkDbContext();
         public IActionResult Index()
         {
             return View();

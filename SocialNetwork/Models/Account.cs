@@ -39,6 +39,8 @@ public partial class Account
 
     public bool? Gender { get; set; }
 
+    public bool? IsBanned { get; set; }
+
     public virtual ICollection<Comment> Comments { get; } = new List<Comment>();
 
     public virtual ICollection<Message> Messages { get; } = new List<Message>();
