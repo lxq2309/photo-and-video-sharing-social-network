@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\SyLV\\OneDrive\\Máy tính\\Master\\SocialNetwork\\SocialNetwork.csproj": {}
+    "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\New project\\SocialNetwork\\SocialNetwork.csproj": {}
   },
   "projects": {
-    "C:\\Users\\SyLV\\OneDrive\\Máy tính\\Master\\SocialNetwork\\SocialNetwork.csproj": {
+    "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\New project\\SocialNetwork\\SocialNetwork.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SyLV\\OneDrive\\Máy tính\\Master\\SocialNetwork\\SocialNetwork.csproj",
+        "projectUniqueName": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\New project\\SocialNetwork\\SocialNetwork.csproj",
         "projectName": "SocialNetwork",
-        "projectPath": "C:\\Users\\SyLV\\OneDrive\\Máy tính\\Master\\SocialNetwork\\SocialNetwork.csproj",
-        "packagesPath": "C:\\Users\\SyLV\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SyLV\\OneDrive\\Máy tính\\Master\\SocialNetwork\\obj\\",
+        "projectPath": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\New project\\SocialNetwork\\SocialNetwork.csproj",
+        "packagesPath": "C:\\Users\\MyPc\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\New project\\SocialNetwork\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\SyLV\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\MyPc\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -86,7 +86,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

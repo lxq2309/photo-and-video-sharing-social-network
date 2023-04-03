@@ -38,7 +38,6 @@ namespace SocialNetwork.Controllers
                     return RedirectToAction("Index", "Home");
                 }
             }
-            ModelState.AddModelError("Email", "Invalid email or password");
             return View();
         }
 
@@ -62,7 +61,6 @@ namespace SocialNetwork.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Register(Account account)
         {
-            ModelState.AddModelError("Email", "");
             if (db.Accounts.FirstOrDefault(x => x.Email == account.Email) != null)
             {
                 ModelState.AddModelError("Email", "Email has already been taken.");
