@@ -91,14 +91,23 @@
                         @{
                             Message newestMessage = CurrentAccount.Data.getNewestMessage(item);
                         }
+                        
                         <a href="/Messages/ChatSession/">
                             <div class="drop_avatar">
                                 <img src="/assets/images/avatars/avatar-1.jpg" alt="">
                             </div>
                             <div class="drop_content">
+                                @if (newestMessage != null)
+                                {
+                                    <strong> @item.Name </strong> <time> @newestMessage.CreateAt </time>
+                                    <p> @newestMessage.MessageContent </p>
+                                }
+                                else
+                                {
+                                    <strong> @item.Name </strong> <time> -- </time>
+                                    <p> Chat with me bro! </p>
+                                }
 
-                                <strong> @item.Name </strong> <time> @newestMessage.CreateAt </time>
-                                <p> @newestMessage.MessageContent </p>
                             </div>
                         </a>
                     </li>

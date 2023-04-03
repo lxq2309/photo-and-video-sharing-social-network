@@ -31,7 +31,7 @@
 
             public static Message getNewestMessage(ChatSession chatSession)
             {
-                return _context.Messages.Where(x => x.ChatId == chatSession.ChatId).OrderByDescending(x => x.MessageId).First();
+                return _context.Messages.Where(x => x.ChatId == chatSession.ChatId).OrderByDescending(x => x.MessageId).FirstOrDefault();
             }
         }
     }

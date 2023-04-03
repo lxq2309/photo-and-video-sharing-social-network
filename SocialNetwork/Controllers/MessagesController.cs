@@ -39,20 +39,14 @@ namespace SocialNetwork.Controllers
         [Route("Messages/ChatSession/{chatId:int}")]
         public IActionResult ChatSession(int chatId)
         {
-            List<ChatSession> chatSessions = CurrentAccount.Data.getListChatSession();
+
+            List<ChatSession> chatSessions = SortChatSession(CurrentAccount.Data.getListChatSession());
             List<KeyValuePair<ChatSession, Account>> chatSessionsAccount = new List<KeyValuePair<ChatSession, Account>>();
             Account partner = GetChatPartner(chatId);
-            if (chatId > 0 && partner != null)
-            {
-                chatSessionsAccount.Add(new KeyValuePair<ChatSession, Account>(dbContext.ChatSessions.SingleOrDefault(x => x.ChatId == chatId)
-                    , partner));
-            }
+            
             foreach (ChatSession item in chatSessions)
             {
-                if (item.ChatId != chatId)
-                {
-                    chatSessionsAccount.Add(new KeyValuePair<ChatSession, Account>(item, GetChatPartner(item.ChatId)));
-                }
+                chatSessionsAccount.Add(new KeyValuePair<ChatSession, Account>(item, GetChatPartner(item.ChatId)));    
             }
             
             ChatSessionMessagesViewModel chatSessionMessagesViewModel = new ChatSessionMessagesViewModel(
@@ -64,12 +58,32 @@ namespace SocialNetwork.Controllers
             return View(chatSessionMessagesViewModel);
         }
 
+        private List<ChatSession> SortChatSession(List<ChatSession> chatSession)
+        {
+            for(int i=0; i<chatSession.Count; i++)
+            {
+                for (int j=i+1; j<chatSession.Count; j++)
+                {
+                    if (chatSession[j].Messages.LastOrDefault() == null)
+                        continue;
+                    if (chatSession[i].Messages.LastOrDefault() == null || chatSession[i].Messages.LastOrDefault().CreateAt < chatSession[j].Messages.LastOrDefault().CreateAt)
+                    {
+                        ChatSession tmp = chatSession[i];
+                        chatSession[i] = chatSession[j];
+                        chatSession[j] = tmp;
+                    }
+                }
+            }
+            return chatSession;
+        }
+
         [HttpGet]
         [Route("Messages/account/{accountId:int}")]
         public IActionResult ChatSessionAccount(int accountId)
         {
             //lấy ra tài khoản đích đang muốn nhắn tin
             List<ChatSession> chatSessionsPartner = dbContext.Accounts.Where(x => x.AccountId == accountId).SelectMany(y => y.Chats).ToList();
+            chatSessionsPartner = SortChatSession(chatSessionsPartner);
             Account partner = dbContext.Accounts.SingleOrDefault(x => x.AccountId == accountId);
             foreach (var item in chatSessionsPartner)
             {
@@ -111,13 +125,14 @@ namespace SocialNetwork.Controllers
             message.MessageContent = mess;
             message.CreateAt = DateTime.Now;
             message.AccountId = chatID;
-
+            //CurrentAccount.account.Messages.Add(message);
             dbContext.Messages.Add(message);
             dbContext.ChatSessions.SingleOrDefault(x => x.ChatId == chatID).Messages.Add(message);
-            //CurrentAccount.account.Messages.Add(message);
+            
             dbContext.Accounts.SingleOrDefault(x => x.AccountId == CurrentAccount.account.AccountId).Messages.Add(message);
             
             dbContext.SaveChanges();
+            dbContext.SaveChangesAsync();
             return RedirectToAction("ChatSession", new {chatID = chatID });
         }
 
