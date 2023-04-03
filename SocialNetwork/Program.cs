@@ -1,7 +1,15 @@
-﻿var builder = WebApplication.CreateBuilder(args);
+﻿using Microsoft.EntityFrameworkCore;
+using SocialNetwork.Models;
+
+var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+//var connectionString = builder.Configuration.GetConnectionString("SocialNetworkDbContext");
+//builder.Services.AddDbContext<SocialNetworkDbContext>(x => x.UseSqlServer(connectionString));
+
+builder.Services.AddSession();
 
 var app = builder.Build();
 
@@ -19,9 +27,10 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
+app.UseSession();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Account}/{action=Login}/{id?}");
+    pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();

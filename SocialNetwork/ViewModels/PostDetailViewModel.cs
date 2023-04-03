@@ -11,7 +11,12 @@ namespace SocialNetwork.ViewModels
         {
             Post = post;
         }
-
+        public List<Account> GetListAccountLiked()
+        {
+            List<Account> lstAccount = _context.Posts.Where(x => x.PostId == Post.PostId).SelectMany(x => x.Accounts).ToList();
+            return lstAccount;
+        }
+        // lay du lieu o day khac gi voi lay du lieu tu ben controller roi add vao
         public Account GetPostOwnerAccount()
         {
             return _context.Accounts.Single(x => x.AccountId== Post.AccountId);

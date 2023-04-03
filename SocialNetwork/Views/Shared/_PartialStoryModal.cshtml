@@ -56,10 +56,18 @@
 
                 <div class="py-4 ">
                     <div class="flex justify-around">
-                        <a href="#" class="flex items-center space-x-3">
-                            <div class="flex font-bold items-baseline"> <i style="font-size: 16px; margin-right: 5px;" class="fa-solid fa-thumbs-up"></i> </i> Like</div>
+                        <a class="flex items-center space-x-3">
+                            @{
+                                string like = Model.GetListAccountLiked().Count.ToString();
+                                @foreach (var account in Model.GetListAccountLiked())
+                                {
+                                    if (account.AccountId == CurrentAccount.account.AccountId)
+                                        like = "liked";
+                                }
+                            }
+                            <div onclick="handleLikePost(@Model.Post.PostId)" style="cursor: pointer;" class="flex font-bold items-baseline handleLike_@Model.Post.PostId @like"> <i style="font-size: 16px; margin-right: 5px;" class="fa-solid fa-thumbs-up"></i> </i> Like</div>
                         </a>
-                        <a href="#" class="flex items-center space-x-3">
+                        <a  class="flex items-center space-x-3">
                             <div class="flex font-bold items-baseline"> <i style="font-size: 16px; margin-right: 5px;" class="fa-solid fa-comment"></i> Comment</div>
                         </a>
                         <a href="#" class="flex items-center space-x-3">
@@ -74,13 +82,13 @@
                             <img src="/assets/images/avatars/avatar-2.jpg" alt="" class="w-6 h-6 rounded-full border-2 border-white -ml-2">
                         </div>
                         <div>
-                            Liked by <strong> @Model.Post.LikeCount persons </strong>
+                            Liked by <strong class="handleLikeCount_@Model.Post.PostId">@Model.Post.LikeCount persons </strong>
                         </div>
                     </div>
                 </div>
 
 
-                <div class="-mt-1 space-y-1">
+                <div class="-mt-1 space-y-1 comment-area-model-@Model.Post.PostId">
                     @foreach (var comment in Model.GetListComment())
                     {
                         <div class="flex flex-1 items-center space-x-2">
@@ -98,7 +106,7 @@
 
             </div>
             <div class="p-3 border-t dark:border-gray-600">
-                <div class="comment-item flex">
+                <form onSubmit="handleComment(event, @Model.Post.PostId)" class="comment-item flex">
                     <div class="input-item bg-gray-100 bg-gray-100 rounded-full rounded-md relative dark:bg-gray-800">
                         <input type="text" placeholder="Add your Comment.." class="bg-transparent max-h-10 shadow-none">
                         <div class="absolute bottom-0 flex h-full items-center right-0 right-3 text-xl space-x-2">
@@ -107,10 +115,10 @@
                             <i class="emoji-icon fa-solid fa-face-laugh"></i>
                         </div>
                     </div>
-                    <div class="icon-item icon-modal">
+                    <button class="icon-item icon-modal">
                         <i class="send-icon fa-solid fa-paper-plane"></i>
-                    </div>
-                </div>
+                    </button>
+                </form>
             </div>
 
         </div>

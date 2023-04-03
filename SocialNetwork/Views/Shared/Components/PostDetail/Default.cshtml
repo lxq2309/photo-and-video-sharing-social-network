@@ -5,17 +5,17 @@
 {
     @await Html.PartialAsync("_PartialStoryModal", item)
     <!-- post 1-->
-    <div class="bg-white shadow rounded-md dark:bg-gray-900 -mx-2 lg:mx-0">
+    <div class="bg-white shadow rounded-md dark:bg-gray-900 -mx-2 lg:mx-0 @item.Post.PostId">
 
         <!-- post header-->
         <div class="flex justify-between items-center px-4 py-3">
             <div class="flex flex-1 items-center space-x-4">
-                <a href="#">
+                <a href="/account/profile?accountId=@item.GetPostOwnerAccount().AccountId">
                     <div class="bg-gradient-to-tr from-yellow-600 to-pink-600 p-0.5 rounded-full">
                         <img src="/assets/images/avatars/avatar-2.jpg" class="bg-gray-200 border border-white rounded-full w-8 h-8">
                     </div>
                 </a>
-                <span class="block capitalize font-semibold dark:text-gray-100"> @item.GetPostOwnerAccount().FullName </span>
+                <a href="/account/profile?accountId=@item.GetPostOwnerAccount().AccountId" class="block capitalize font-semibold dark:text-gray-100"> @item.GetPostOwnerAccount().FullName </a>
             </div>
             <div>
                 <a href="#"> <i style="font-size: 20px;" class="fa-solid fa-ellipsis-vertical"></i> </a>
@@ -95,13 +95,21 @@
         <div class="py-3 px-4 space-y-3">
 
             <div class="flex space-x-4 lg:font-bold">
-                <a href="#" class="flex items-center space-x-2">
-                    <div class="p-2 rounded-full text-black">
+                @{
+                    string like = "";
+                    @foreach (var account in item.GetListAccountLiked())
+                    {
+                        if (account.AccountId == CurrentAccount.account.AccountId)
+                            like = "liked";
+                    }
+                }
+                <a style="cursor: pointer;" onclick="handleLikePost(@item.Post.PostId)" class="flex items-center space-x-2 ">
+                    <div class="p-2 rounded-full text-black handleLike_@item.Post.PostId @like">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" width="22" height="22" class="dark:text-gray-100">
                             <path d="M2 10.5a1.5 1.5 0 113 0v6a1.5 1.5 0 01-3 0v-6zM6 10.333v5.43a2 2 0 001.106 1.79l.05.025A4 4 0 008.943 18h5.416a2 2 0 001.962-1.608l1.2-6A2 2 0 0015.56 8H12V4a2 2 0 00-2-2 1 1 0 00-1 1v.667a4 4 0 01-.8 2.4L6.8 7.933a4 4 0 00-.8 2.4z" />
                         </svg>
                     </div>
-                    <div> Like </div>
+                    <div class="handleLike_@item.Post.PostId @like"> Like </div>
                 </a>
                 <a href="#" class="flex items-center space-x-2">
                     <div class="p-2 rounded-full text-black">
@@ -125,11 +133,11 @@
                     <img src="/assets/images/avatars/avatar-2.jpg" alt="" class="w-6 h-6 rounded-full border-2 border-white dark:border-gray-900 -ml-2">
                 </div>
                 <div class="dark:text-gray-100">
-                    Liked by <strong>@item.Post.LikeCount persons </strong>
+                    Liked by <strong class="handleLikeCount_@item.Post.PostId">@item.Post.LikeCount persons </strong>
                 </div>
             </div>
 
-            <div class="border-t pt-4 space-y-4 dark:border-gray-600">
+            <div class="border-t pt-4 space-y-4 dark:border-gray-600 comment-area-@item.Post.PostId">
                 @foreach (var comment in item.GetListComment())
                 {
                     <div class="flex">
@@ -147,7 +155,7 @@
                 }
             </div>
 
-            <div class="comment-item flex">
+            <form onSubmit="handleComment(event, @item.Post.PostId)" method="post" class="comment-item flex">
                 <div class="input-item bg-gray-100 bg-gray-100 rounded-full rounded-md relative dark:bg-gray-800">
                     <input type="text" placeholder="Add your Comment.." class="bg-transparent max-h-10 shadow-none">
                     <div class="absolute bottom-0 flex h-full items-center right-0 right-3 text-xl space-x-2">
@@ -156,10 +164,10 @@
                         <i class="emoji-icon fa-solid fa-face-laugh"></i>
                     </div>
                 </div>
-                <div class="icon-item">
+                <button type="submit" class="icon-item">
                     <i class="send-icon fa-solid fa-paper-plane"></i>
-                </div>
-            </div>
+                </button>
+            </form>
 
 
         </div>

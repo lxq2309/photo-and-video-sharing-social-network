@@ -68,7 +68,7 @@
             <div class="lg:p-12 max-w-md max-w-xl lg:my-0 my-12 mx-auto p-6 space-y-">
                 <h1 class="lg:text-3xl text-xl font-semibold  mb-6"> Log in</h1>
                 <p class="mb-2 text-black text-lg"> Email or Username</p>
-                <form asp-controller="Account" asp-action="Login" method="get">
+                <form asp-controller="Account" asp-action="Login" method="post">
                     <input asp-for="Email" type="email" placeholder="example@mydomain.com" class="bg-gray-200 mb-2 shadow-none dark:bg-gray-800" required style="border: 1px solid #d3d5d8 !important;">
                     <input asp-for="Password" type="password" placeholder="***********" class="bg-gray-200 mb-2 shadow-none dark:bg-gray-800" required style="border: 1px solid #d3d5d8 !important;">
                     <div class="flex justify-between my-4">

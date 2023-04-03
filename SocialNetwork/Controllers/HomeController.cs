@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using SocialNetwork.Models;
+using SocialNetwork.Models.Authentication;
 using System.Diagnostics;
 
 namespace SocialNetwork.Controllers
@@ -13,6 +14,7 @@ namespace SocialNetwork.Controllers
             _logger = logger;
         }
 
+        [Authentication]
         public IActionResult Index()
         {
             var lst = context.Posts.ToList();

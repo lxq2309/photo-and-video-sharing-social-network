@@ -12,34 +12,46 @@ namespace SocialNetwork.Controllers
         }
 
         // =================== Login ===================
+        [HttpGet]
         public IActionResult Login()
         {
-            return View();
-        }
-
-        [HttpGet]
-        public IActionResult Login(string email, string password)
-        {
-            var account = db.Accounts.SingleOrDefault(x => x.Email == email && x.Password == password);
-            if (account == null)
+            if (HttpContext.Session.GetInt32("accountId") == null)
             {
-                ModelState.AddModelError("Email", "Invalid email or password");
                 return View();
             }
+            else
+            {
+                return RedirectToAction("Index", "Home");
+            }
+        }
 
-            CurrentAccount.initSession(account.AccountId);
-
-            return RedirectToAction("Index", "Home");
+        [HttpPost]
+        public IActionResult Login(string email, string password)
+        {
+            if (HttpContext.Session.GetInt32("accountId") == null)
+            {
+                var account = db.Accounts.SingleOrDefault(x => x.Email == email && x.Password == password);
+                if (account != null)
+                {
+                    HttpContext.Session.SetInt32("accountId", account.AccountId);
+                    CurrentAccount.initSession(account.AccountId);
+                    return RedirectToAction("Index", "Home");
+                }
+            }
+            return View();
         }
 
         // =================== Logout ===================
         public IActionResult Logout()
         {
             // xử lý action logout sau đó chuyển về view login 
+            HttpContext.Session.Clear();
+            HttpContext.Session.Remove("accountId");
             return RedirectToAction("Login", "Account");
         }
 
         // =================== Register ===================
+        [HttpGet]
         public IActionResult Register()
         {
             return View();
@@ -49,7 +61,7 @@ namespace SocialNetwork.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Register(Account account)
         {
-            ModelState.AddModelError("Email", "");
+            // ModelState.AddModelError("Email", "");
             if (db.Accounts.FirstOrDefault(x => x.Email == account.Email) != null)
             {
                 ModelState.AddModelError("Email", "Email has already been taken.");
@@ -65,11 +77,12 @@ namespace SocialNetwork.Controllers
         }
 
         // =================== Profile ===================
-        public IActionResult Profile()
+        public IActionResult Profile(int accountId)
         {
             // chắc là sẽ thêm tham số mã tài khoản nhận vào ở đây
-            var account = db.Accounts.SingleOrDefault(x => x.Email == CurrentAccount.account.Email);
-            int postCount = db.Posts.Count(x => x.AccountId == CurrentAccount.account.AccountId);
+            var account = db.Accounts.SingleOrDefault(x => x.AccountId == accountId);
+
+            int postCount = db.Posts.Count(x => x.AccountId == accountId);
             ViewBag.PostCount = postCount;
             return View(account);
         }

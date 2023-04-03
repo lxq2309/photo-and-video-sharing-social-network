@@ -5,7 +5,7 @@ namespace SocialNetwork.Models;
 
 public partial class Relationship
 {
-    public int CreateAt { get; set; }
+    public DateTime? CreateAt { get; set; }
 
     public int? SourceAccountId { get; set; }
 
