@@ -17,7 +17,6 @@ namespace SocialNetwork.Controllers
             _logger = logger;
         }
         
-        [Route("Messages")]
         public IActionResult Index()
         {
             // Nhan vao id cuoc tro chuyen, neu co thi luu id vao TempData roi chuyen sang trang ChatSession
