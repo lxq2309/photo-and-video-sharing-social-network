@@ -71,6 +71,7 @@
                 <form asp-controller="Account" asp-action="Login" method="post">
                     <input asp-for="Email" type="email" placeholder="example@mydomain.com" class="bg-gray-200 mb-2 shadow-none dark:bg-gray-800" required style="border: 1px solid #d3d5d8 !important;">
                     <input asp-for="Password" type="password" placeholder="***********" class="bg-gray-200 mb-2 shadow-none dark:bg-gray-800" required style="border: 1px solid #d3d5d8 !important;">
+                    <span asp-validation-for="Email" class="text-danger"></span>
                     <div class="flex justify-between my-4">
                         <div class="checkbox">
                             <input type="checkbox" id="chekcbox1" checked>

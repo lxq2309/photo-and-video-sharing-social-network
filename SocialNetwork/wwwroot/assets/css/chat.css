@@ -5,13 +5,13 @@
 
 /* make scroll */
 .scrollbar {
-  height: 550px !important;
+  height: 500px !important;
   overflow-y: scroll;
 }
 
 /* split chatbox */
 .header-chatbox{
-  height: 10%;
+  height: 12%;
 }
 .body-chatbox{
   height: 70%

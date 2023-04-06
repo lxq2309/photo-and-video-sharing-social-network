@@ -53,14 +53,10 @@
                 @foreach (var item in CurrentAccount.Data.getListNotification())
                 {
                     <li>
-                        <a href="#">
-                            <div class="drop_avatar">
-                                <img src="/assets/images/avatars/avatar-1.jpg" alt="">
-                            </div>
+                        <a href="#@item.PostId">
                             <div class="drop_content">
                                 <p>
-                                    <strong>Quynh Le</strong>  @item.Content
-                                    <span class="text-link"> tên bài viết  </span>
+                                    @item.Content
                                 </p>
                                 <span class="time-ago"> @item.CreateAt </span>
                             </div>

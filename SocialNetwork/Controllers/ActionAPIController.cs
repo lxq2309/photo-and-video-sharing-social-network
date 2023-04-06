@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 using Newtonsoft.Json;
 using SocialNetwork.Models;
+using SocialNetwork.Models.Authentication;
 using System.Text;
 using static SocialNetwork.Models.CurrentAccount;
 
@@ -55,6 +56,7 @@ namespace SocialNetwork.Controllers
             return false;
         }
 
+        [Authentication]
         [HttpPost("addComment")]
         public IActionResult commentPost(Comment comment)
         {
@@ -79,6 +81,7 @@ namespace SocialNetwork.Controllers
             return new JsonResult(null);
         }
 
+        [Authentication]
         [HttpGet("Comment")]
         public IEnumerable<Comment> GetComment(string postID)
         {
