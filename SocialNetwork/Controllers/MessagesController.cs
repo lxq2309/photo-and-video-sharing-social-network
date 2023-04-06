@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Identity.Client;
 using SocialNetwork.Models;
+using SocialNetwork.Models.Authentication;
 using SocialNetwork.ViewModels;
 using System;
 using System.Linq;
@@ -16,7 +17,8 @@ namespace SocialNetwork.Controllers
         {
             _logger = logger;
         }
-        
+
+        [Authentication]
         public IActionResult Index()
         {
             // Nhan vao id cuoc tro chuyen, neu co thi luu id vao TempData roi chuyen sang trang ChatSession
@@ -25,6 +27,7 @@ namespace SocialNetwork.Controllers
             return RedirectToAction("ChatSession", "Messages");
         }
 
+        [Authentication]
         [HttpGet]
         [Route("Messages/ChatSession")]
         public IActionResult ChatSession()
@@ -34,6 +37,7 @@ namespace SocialNetwork.Controllers
             return RedirectToAction("ChatSession", new {chatId = -1});
         }
 
+        [Authentication]
         [HttpGet]
         [Route("Messages/ChatSession/{chatId:int}")]
         public IActionResult ChatSession(int chatId)
@@ -76,6 +80,7 @@ namespace SocialNetwork.Controllers
             return chatSession;
         }
 
+        [Authentication]
         [HttpGet]
         [Route("Messages/account/{accountId:int}")]
         public IActionResult ChatSessionAccount(int accountId)
@@ -97,6 +102,7 @@ namespace SocialNetwork.Controllers
             return RedirectToAction("ChatSessionAccount", new { accountId = accountId });
         }
 
+        [Authentication]
         public void CreateNewChatSession(Account currAcc, Account partner)
         {
             ChatSession tmp = new ChatSession();
@@ -116,23 +122,34 @@ namespace SocialNetwork.Controllers
             dbContext.SaveChanges();
         }
 
+        // khong biet tai sao o day ko truyen duoc qua body
+        [Authentication]
         [HttpPost]
-        public IActionResult SendMessage(string mess, int chatID)
+        public IActionResult SendMessage(Message message)
         {
-            Message message = new Message();
-            message.ChatId = chatID;
-            message.MessageContent = mess;
+            //Message message = new Message();
+            //message.ChatId = chatID;
+            //message.MessageContent = mess;
             message.CreateAt = DateTime.Now;
-            message.AccountId = chatID;
+            //message.AccountId = chatID;
+            message.AccountId = message.ChatId;
             //CurrentAccount.account.Messages.Add(message);
             dbContext.Messages.Add(message);
-            dbContext.ChatSessions.SingleOrDefault(x => x.ChatId == chatID).Messages.Add(message);
+            dbContext.ChatSessions.SingleOrDefault(x => x.ChatId == message.ChatId).Messages.Add(message);
             
             dbContext.Accounts.SingleOrDefault(x => x.AccountId == CurrentAccount.account.AccountId).Messages.Add(message);
             
             dbContext.SaveChanges();
             dbContext.SaveChangesAsync();
-            return RedirectToAction("ChatSession", new {chatID = chatID });
+
+            var data = new
+            {
+                content = message.MessageContent,
+                createAt = message.CreateAt.ToString(),
+                accountAvatar = CurrentAccount.account.Avatar
+            };
+            return new JsonResult(data);
+            // return RedirectToAction("ChatSession", new {chatID = message.ChatId });
         }
 
         [HttpGet]

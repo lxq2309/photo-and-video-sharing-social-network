@@ -1,9 +1,14 @@
-﻿@model SocialNetwork.Models.Account
+﻿@using SocialNetwork.ViewModels
+@model SocialNetwork.Models.Account
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 
 @{
     ViewData["Title"] = "Profile Page";
     Layout = "_LayoutHome";
+}
+
+@{
+    List<PostDetailViewModel> ListPostDetail = ViewBag.ListPostDetail;
 }
 
 <div class="container pro-container m-auto">
@@ -48,52 +53,69 @@
                     @Model.Location
                 </div>
 
-
                 <div class="capitalize flex font-semibold space-x-3 text-center text-sm my-2">
-                    <a href="#" class="bg-gray-300 shadow-sm p-2 px-6 rounded-md dark:bg-gray-700">Follow</a>
-                    <a href="/messages/account/@Model.AccountId"
+                    @if (Model.AccountId == CurrentAccount.account.AccountId)
+                    {
+                        <a href="/account/setting" class="bg-gray-300 shadow-sm p-2 px-6 rounded-md dark:bg-gray-700">Edit profile</a>
+                    }
+                    else
+                    {
+                        if (ViewBag.Following)
+                        {
+                            <a href="#" class="bg-gray-300 shadow-sm p-2 px-6 rounded-md dark:bg-gray-700">Following</a>
+                        }
+                        else
+                        {
+                            <a href="#" class="bg-gray-300 shadow-sm p-2 px-6 rounded-md dark:bg-gray-700">Follow</a>
+                        }
+                        <a href="/messages/account/@Model.AccountId"
                        class="bg-pink-500 shadow-sm p-2 pink-500 px-6 rounded-md text-white hover:text-white hover:bg-pink-600">
-                        Send message
-                    </a>
-                    <div>
-
-                        <a href="#"
-                           class="bg-gray-300 flex h-12 h-full items-center justify-center rounded-full text-xl w-9 dark:bg-gray-700">
-                            <i class="fa-solid fa-chevron-down"></i>
+                            Send message
                         </a>
+                        <div>
 
-                        <div class="bg-white w-56 shadow-md mx-auto p-2 mt-12 rounded-md text-gray-500 hidden text-base dark:bg-gray-900"
+                            @*Expand*@
+
+                            <a href="#"
+                           class="bg-gray-300 flex h-12 h-full items-center justify-center rounded-full text-xl w-9 dark:bg-gray-700">
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </a>
+
+                            <div class="bg-white w-56 shadow-md mx-auto p-2 mt-12 rounded-md text-gray-500 hidden text-base dark:bg-gray-900"
                              uk-drop="mode: click">
 
-                            <ul class="space-y-1">
-                                <li>
-                                    <a href="#"
+                                <ul class="space-y-1">
+                                    <li>
+                                        <a href="#"
                                        class="flex items-center px-3 py-2 hover:bg-gray-200 hover:text-gray-800 rounded-md dark:hover:bg-gray-700">
-                                        <i style="padding-right: 5px;"
+                                            <i style="padding-right: 5px;"
                                            class="fa-solid fa-user-minus"></i>Unfollow
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#"
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
                                        class="flex items-center px-3 py-2 hover:bg-gray-200 hover:text-gray-800 rounded-md dark:hover:bg-gray-700">
-                                        <i style="padding-right: 5px;" class="fa-solid fa-share-nodes"></i>
-                                        Share This Profile
-                                    </a>
-                                </li>
-                                <li>
-                                    <hr class="-mx-2 my-2  dark:border-gray-700">
-                                </li>
-                                <li>
-                                    <a href="#"
+                                            <i style="padding-right: 5px;" class="fa-solid fa-share-nodes"></i>
+                                            Share This Profile
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <hr class="-mx-2 my-2  dark:border-gray-700">
+                                    </li>
+                                    <li>
+                                        <a href="#"
                                        class="flex items-center px-3 py-2 text-red-500 hover:bg-red-100 hover:text-red-500 rounded-md dark:hover:bg-red-600">
-                                        <i style="padding-right: 5px;" class="fa-solid fa-ban"></i> Block
-                                    </a>
-                                </li>
-                            </ul>
+                                            <i style="padding-right: 5px;" class="fa-solid fa-ban"></i> Block
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </div>
 
                         </div>
+                    }
 
-                    </div>
+
 
                 </div>
 
@@ -118,7 +140,7 @@
                             PostCount = PostK.ToString() + "K";
                         }
                     }
-                    <div class="flex lg:flex-row flex-col p-3"> 
+                    <div class="flex lg:flex-row flex-col p-3">
                         @PostCount <strong class="lg:pl-2">Posts</strong>
                     </div>
                     <div class="lg:pl-4 flex lg:flex-row flex-col p-3">
@@ -132,7 +154,7 @@
             </div>
 
         </form>
-       
+
         <div class="w-20"></div>
 
     </div>
@@ -150,153 +172,32 @@
     </div>
 
     <div class="my-6 grid lg:grid-cols-4 grid-cols-2 gap-1.5 hover:text-yellow-700 uk-link-reset">
-        <div>
-            <div class="bg-red-500 max-w-full lg:h-64 h-40 rounded-md relative overflow-hidden uk-transition-toggle"
-                 tabindex="0">
-                <img src="/assets/images/avatars/avatar-lg-1.jpg"
-                     class="w-full h-full absolute object-cover inset-0">
+        @foreach (var item in ListPostDetail)
+        {
+            @await Html.PartialAsync("_PartialStoryModal", item)
+            <div>
+                <a href="#story-modal-@item.Post.PostId" uk-toggle>
+                    <div class="bg-red-500 max-w-full lg:h-64 h-40 rounded-md relative overflow-hidden uk-transition-toggle"
+                     tabindex="0">
+                        <img src="/assets/images/avatars/avatar-6.jpg"
+                         class="w-full h-full absolute object-cover inset-0">
 
-                <div class="absolute bg-black bg-opacity-40 bottom-0 flex h-full items-center justify-center space-x-5 text-lg text-white uk-transition-scale-up w-full">
-                    <a href="#story-modal" uk-toggle class="flex items-center">
-                        <ion-icon name="heart"
-                                  class="mr-1"></ion-icon> 150
-                    </a>
-                    <a href="#story-modal" uk-toggle class="flex items-center">
-                        <ion-icon name="chatbubble-ellipses" class="mr-1"></ion-icon> 30
-                    </a>
+                        <div class="absolute bg-black bg-opacity-40 bottom-0 flex h-full items-center justify-center space-x-5 text-lg text-white uk-transition-scale-up w-full">
+                            <span class="flex items-center">
+                                <ion-icon name="heart"
+                                      class="mr-1"></ion-icon> @item.GetListAccountLiked().Count
+                            </span>
+                            <span class="flex items-center">
+                                <ion-icon name="chatbubble-ellipses" class="mr-1"></ion-icon> @item.GetListComment().Count
+                            </span>
 
-                </div>
+                        </div>
 
+                    </div>
+                </a>
             </div>
-        </div>
-        <div>
-            <div class="bg-red-500 max-w-full lg:h-64 h-40 rounded-md relative overflow-hidden uk-transition-toggle"
-                 tabindex="0">
-                <img src="/assets/images/post/img1.jpg" class="w-full h-full absolute object-cover inset-0">
+        }
 
-                <div class="absolute bg-black bg-opacity-40 bottom-0 flex h-full items-center justify-center space-x-5 text-lg text-white uk-transition-scale-up w-full">
-                    <a href="#story-modal" uk-toggle class="flex items-center">
-                        <ion-icon name="heart"
-                                  class="mr-1"></ion-icon> 150
-                    </a>
-                    <a href="#story-modal" uk-toggle class="flex items-center">
-                        <ion-icon name="chatbubble-ellipses" class="mr-1"></ion-icon> 30
-                    </a>
-
-                </div>
-
-            </div>
-        </div>
-        <div>
-            <div class="bg-red-500 max-w-full lg:h-64 h-40 rounded-md relative overflow-hidden uk-transition-toggle"
-                 tabindex="0">
-                <img src="/assets/images/post/img2.jpg" class="w-full h-full absolute object-cover inset-0">
-
-                <div class="absolute bg-black bg-opacity-40 bottom-0 flex h-full items-center justify-center space-x-5 text-lg text-white uk-transition-scale-up w-full">
-                    <a href="#story-modal" uk-toggle class="flex items-center">
-                        <ion-icon name="heart"
-                                  class="mr-1"></ion-icon> 150
-                    </a>
-                    <a href="#story-modal" uk-toggle class="flex items-center">
-                        <ion-icon name="chatbubble-ellipses" class="mr-1"></ion-icon> 30
-                    </a>
-
-                </div>
-
-            </div>
-        </div>
-        <div>
-            <div class="bg-red-500 max-w-full lg:h-64 h-40 rounded-md relative overflow-hidden uk-transition-toggle"
-                 tabindex="0">
-                <img src="/assets/images/post/img3.jpg" class="w-full h-full absolute object-cover inset-0">
-
-                <div class="absolute bg-black bg-opacity-40 bottom-0 flex h-full items-center justify-center space-x-5 text-lg text-white uk-transition-scale-up w-full">
-                    <a href="#story-modal" uk-toggle class="flex items-center">
-                        <ion-icon name="heart"
-                                  class="mr-1"></ion-icon> 150
-                    </a>
-                    <a href="#story-modal" uk-toggle class="flex items-center">
-                        <ion-icon name="chatbubble-ellipses" class="mr-1"></ion-icon> 30
-                    </a>
-
-                </div>
-
-            </div>
-        </div>
-        <div>
-            <div class="bg-red-500 max-w-full lg:h-64 h-40 rounded-md relative overflow-hidden uk-transition-toggle"
-                 tabindex="0">
-                <img src="/assets/images/post/img4.jpg" class="w-full h-full absolute object-cover inset-0">
-
-                <div class="absolute bg-black bg-opacity-40 bottom-0 flex h-full items-center justify-center space-x-5 text-lg text-white uk-transition-scale-up w-full">
-                    <a href="#story-modal" uk-toggle class="flex items-center">
-                        <ion-icon name="heart"
-                                  class="mr-1"></ion-icon> 150
-                    </a>
-                    <a href="#story-modal" uk-toggle class="flex items-center">
-                        <ion-icon name="chatbubble-ellipses" class="mr-1"></ion-icon> 30
-                    </a>
-
-                </div>
-
-            </div>
-        </div>
-        <div>
-            <div class="bg-red-500 max-w-full lg:h-64 h-40 rounded-md relative overflow-hidden uk-transition-toggle"
-                 tabindex="0">
-                <img src="/assets/images/post/img5.jpg" class="w-full h-full absolute object-cover inset-0">
-
-                <div class="absolute bg-black bg-opacity-40 bottom-0 flex h-full items-center justify-center space-x-5 text-lg text-white uk-transition-scale-up w-full">
-                    <a href="#story-modal" uk-toggle class="flex items-center">
-                        <ion-icon name="heart"
-                                  class="mr-1"></ion-icon> 150
-                    </a>
-                    <a href="#story-modal" uk-toggle class="flex items-center">
-                        <ion-icon name="chatbubble-ellipses" class="mr-1"></ion-icon> 30
-                    </a>
-
-                </div>
-
-            </div>
-        </div>
-        <div>
-            <div class="bg-red-500 max-w-full lg:h-64 h-40 rounded-md relative overflow-hidden uk-transition-toggle"
-                 tabindex="0">
-                <img src="/assets/images/avatars/avatar-1.jpg"
-                     class="w-full h-full absolute object-cover inset-0">
-
-                <div class="absolute bg-black bg-opacity-40 bottom-0 flex h-full items-center justify-center space-x-5 text-lg text-white uk-transition-scale-up w-full">
-                    <a href="#story-modal" uk-toggle class="flex items-center">
-                        <ion-icon name="heart"
-                                  class="mr-1"></ion-icon> 150
-                    </a>
-                    <a href="#story-modal" uk-toggle class="flex items-center">
-                        <ion-icon name="chatbubble-ellipses" class="mr-1"></ion-icon> 30
-                    </a>
-
-                </div>
-
-            </div>
-        </div>
-        <div>
-            <div class="bg-red-500 max-w-full lg:h-64 h-40 rounded-md relative overflow-hidden uk-transition-toggle"
-                 tabindex="0">
-                <img src="/assets/images/avatars/avatar-6.jpg"
-                     class="w-full h-full absolute object-cover inset-0">
-
-                <div class="absolute bg-black bg-opacity-40 bottom-0 flex h-full items-center justify-center space-x-5 text-lg text-white uk-transition-scale-up w-full">
-                    <a href="#story-modal" uk-toggle class="flex items-center">
-                        <ion-icon name="heart"
-                                  class="mr-1"></ion-icon> 150
-                    </a>
-                    <a href="#story-modal" uk-toggle class="flex items-center">
-                        <ion-icon name="chatbubble-ellipses" class="mr-1"></ion-icon> 30
-                    </a>
-
-                </div>
-
-            </div>
-        </div>
 
     </div>
 
@@ -310,6 +211,9 @@
 
 </div>
 
+@section Scripts
+{
 <script>
-    
+
 </script>
+}

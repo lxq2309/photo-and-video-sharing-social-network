@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using SocialNetwork.Models;
+using SocialNetwork.Models.Authentication;
 using SocialNetwork.ViewModels;
 
 namespace SocialNetwork.Controllers
@@ -11,7 +12,7 @@ namespace SocialNetwork.Controllers
         {
             return View();
         }
-
+        [Authentication]
         public IActionResult Search(string? searchText)
         {
             List<Account> lstAccount;

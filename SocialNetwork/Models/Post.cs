@@ -25,5 +25,7 @@ public partial class Post
 
     public virtual ICollection<Medium> Media { get; } = new List<Medium>();
 
+    public virtual ICollection<Notification> Notifications { get; } = new List<Notification>();
+
     public virtual ICollection<Account> Accounts { get; } = new List<Account>();
 }
