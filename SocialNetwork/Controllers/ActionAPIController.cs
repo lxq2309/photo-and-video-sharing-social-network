@@ -89,5 +89,68 @@ namespace SocialNetwork.Controllers
             
             return lstComment;
         }
+
+        /*
+
+                                   _
+                        _ooOoo_
+                       o8888888o
+                       88" . "88
+                       (| -_- |)
+                       O\  =  /O
+                    ____/`---'\____
+                  .'  \\|     |//  `.
+                 /  \\|||  :  |||//  \
+                /  _||||| -:- |||||_  \
+                |   | \\\  -  /'| |   |
+                | \_|  `\`---'//  |_/ |
+                \  .-\__ `-. -'__/-.  /
+              ___`. .'  /--.--\  `. .'___
+           ."" '<  `.___\_<|>_/___.' _> \"".
+          | | :  `- \`. ;`. _/; .'/ /  .' ; |
+          \  \ `-.   \_\_`. _.'_/_/  -' _.' /
+===========`-.`___`-.__\ \___  /__.-'_.'_.-'================
+                        `=--=-'
+                     CODE KHÔNG BUG
+         */
+
+
+        [Route("unfollow")]
+        [HttpDelete]
+        public bool Unfollow(int source, int target)
+        {
+            var item = db.Relationships.AsNoTracking().SingleOrDefault(x => x.SourceAccountId == source && x.TargetAccountId == target);
+            if (item == null)
+            {
+                return false;
+            }
+            string tableName = "Relationship";
+            string query = $"DELETE FROM {tableName} " +
+                           $"WHERE SourceAccountId = {source} AND TargetAccountId = {target}";
+            db.Database.ExecuteSqlRaw(query);
+            CurrentAccount.account.Following--;
+            db.Accounts.SingleOrDefault(x => x.AccountId == target).Follower--;
+            db.SaveChanges();
+            return true;
+        }
+
+        [Route("follow")]
+        [HttpPut]
+        public bool Follow(int source, int target)
+        {
+            var checkExist = db.Relationships.AsNoTracking().SingleOrDefault(x => x.SourceAccountId == source && x.TargetAccountId == target);
+            if (checkExist != null)
+            {
+                return false;
+            }
+            string query = $"INSERT INTO Relationship(SourceAccountID,TargetAccountID,TypeID)" +
+                           $" VALUES ({source}, {target}, 2)";
+            db.Database.ExecuteSqlRaw(query);
+            CurrentAccount.account.Following++;
+            db.Accounts.SingleOrDefault(x => x.AccountId == target).Follower++;
+            db.SaveChanges();
+            return true;
+        }
+
     }
 }

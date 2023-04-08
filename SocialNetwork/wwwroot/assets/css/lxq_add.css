@@ -1,0 +1,42 @@
+﻿#confirm-unfollow {
+    text-align: center;
+    border: 1px solid rgb(219, 219, 219);
+    border-radius: 20px;
+    padding: 0;
+    font-size: 14px;
+}
+
+.dark #confirm-unfollow {
+    background-color: #111827 !important;
+    color: white;
+}
+
+#confirm-unfollow .heading {
+    padding: 26px 32px;
+    font-size: 20px;
+}
+
+#confirm-unfollow .list-item button.item {
+    border-top: 1px solid rgb(219, 219, 219);
+    width: 100%;
+    padding: 16px 32px;
+}
+
+    #confirm-unfollow .list-item button.item:nth-child(1) {
+        color: #ed4956;
+        font-weight: bold;
+    }
+
+    #confirm-unfollow .list-item button.item:nth-child(2) {
+        color: #0095f6;
+        font-weight: bold;
+    }
+
+#confirm-unfollow .list-item input.item {
+    display: none !important;
+}
+
+#action-follow, action-unfollow {
+    margin: 0;
+    padding: 0;
+}

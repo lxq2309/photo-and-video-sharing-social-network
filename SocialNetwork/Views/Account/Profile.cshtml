@@ -9,6 +9,8 @@
 
 @{
     List<PostDetailViewModel> ListPostDetail = ViewBag.ListPostDetail;
+    int currentAccountId = CurrentAccount.account.AccountId;
+    int targetAccountId = Model.AccountId;
 }
 
 <div class="container pro-container m-auto">
@@ -54,7 +56,7 @@
                 </div>
 
                 <div class="capitalize flex font-semibold space-x-3 text-center text-sm my-2">
-                    @if (Model.AccountId == CurrentAccount.account.AccountId)
+                    @if (targetAccountId == currentAccountId)
                     {
                         <a href="/account/setting" class="bg-gray-300 shadow-sm p-2 px-6 rounded-md dark:bg-gray-700">Edit profile</a>
                     }
@@ -62,11 +64,30 @@
                     {
                         if (ViewBag.Following)
                         {
-                            <a href="#" class="bg-gray-300 shadow-sm p-2 px-6 rounded-md dark:bg-gray-700">Following</a>
+                            <!-- hộp thoại xác nhận bỏ follow-->
+                            <div id="confirm-unfollow" class="modal" style="display: none;">
+                                <div class="heading">
+                                    <h3>Xác nhận bỏ theo dõi người này ?</h3>
+                                </div>
+                                <div class="list-item">
+                                    <button class="item" onclick="unfollow(@currentAccountId, @targetAccountId); $.modal.close();">
+                                        Bỏ theo dõi
+                                    </button>
+                                    <button class="item" onclick="$.modal.close();">Hủy</button>
+                                </div>
+                            </div>
+                            <a href="#"
+                               class="bg-gray-300 shadow-sm p-2 px-6 rounded-md dark:bg-gray-700"
+                               onclick="$('#confirm-unfollow').modal({fadeDuration: 50, fadeDelay: 0.5, showClose: false});">
+                                    Following
+                           </a>
                         }
                         else
                         {
-                            <a href="#" class="bg-gray-300 shadow-sm p-2 px-6 rounded-md dark:bg-gray-700">Follow</a>
+                            <a class="bg-gray-300 shadow-sm p-2 px-6 rounded-md dark:bg-gray-700"
+                                onclick="follow(@currentAccountId, @targetAccountId)">
+                                    Follow
+                            </a>
                         }
                         <a href="/messages/account/@Model.AccountId"
                        class="bg-pink-500 shadow-sm p-2 pink-500 px-6 rounded-md text-white hover:text-white hover:bg-pink-600">
@@ -211,9 +232,39 @@
 
 </div>
 
-@section Scripts
+@section ScriptProfile
 {
 <script>
+        function unfollow(sourceId, targetId)
+        {
+            $.ajax({
+                url: `https://localhost:7150/api/actionapi/unfollow?source=${sourceId}&target=${targetId}`,
+                type: 'DELETE',
+                success: function (data) {
+                    location.reload();
+                },
+                error: function (xhr, textStatus, errorThrown) {
+                    alert("Error");
+
+                }
+            });
+        }
+
+        function follow(sourceId, targetId)
+        {
+            $.ajax({
+                url: `https://localhost:7150/api/actionapi/follow?source=${sourceId}&target=${targetId}`,
+                type: 'PUT',
+                contentType: 'application/json',
+                success: function (data) {
+                    location.reload();
+                },
+                error: function (xhr, textStatus, errorThrown) {
+                    alert("Error");
+                }
+            });
+
+        }
 
 </script>
 }
