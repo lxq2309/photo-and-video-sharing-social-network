@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<!DOCTYPE html>
 <html lang="en">
 
 
@@ -31,6 +33,14 @@
 
     @*Quynh lam*@
     <style>
+        #upload-custom-btn{
+            margin: 10px 0;
+        }
+
+        .upload-wrapper:hover{
+            cursor: pointer;
+        }
+
         @@media (min-width: 1024px) {
             header .header_inner {
                 max-width: 980px;
@@ -73,11 +83,10 @@
 
 
     <!-- Upload modal -->
-    <div id="upload-modal" class="uk-modal-container" uk-modal>
-        <button class="uk-modal-close-default btn-close-upload type="button" uk-close></button>
-
+    <form method="post" action="/Home/CreatePost" id="upload-modal" class="uk-modal-container" uk-modal enctype="multipart/form-data">
+        <button class="uk-modal-close-default btn-close-upload" type="button" uk-close></button>
         <div class="uk-modal-dialog story-modal">
-            <div class=" header-upload">
+            <div class="grid-cols-12 header-upload">
                 <div class="header-modal-share">
                 </div>
 
@@ -86,11 +95,11 @@
                 </div>
 
                 <div class="header-modal-share">
-                    <button class="header-modal-btn">Share</button>
+                    <button class="header-modal-btn" type="submit">Share</button>
                 </div>
             </div>
             <div class="story-modal-media upload-modal-media">
-                <div class="upload-wrapper">
+                <div class="upload-wrapper" onclick="document.getElementById('upload-default-btn').click()">
                     <img src="" class="upload-image inset-0 h-full w-full" alt="">
                     <div class="upload-content">
                         <div class="upload-icon">
@@ -101,7 +110,7 @@
                     <div id="upload-cancel-btn"><i class="fas fa-times"></i></div>
                     <div class="upload-file-name">File name here</div>
                 </div>
-                <input id="upload-default-btn" type="file" multiple hidden />
+                <input placeholder="safdads" id="upload-default-btn" type="file" multiple hidden name="images" />
                 <button id="upload-custom-btn" onclick="defaultBtnActive()">Choose a file</button>
             </div>
 
@@ -110,11 +119,11 @@
                     <div class="flex flex-1 items-center space-x-4">
                         <a href="#">
                             <div class="bg-gradient-to-tr from-yellow-600 to-pink-600 p-0.5 rounded-full">
-                                <img src="/assets/images/avatars/avatar-2.jpg"
-                                     class="bg-gray-200 border border-white rounded-full w-8 h-8">
+                                <img src="~/images/avatars/@CurrentAccount.account.AccountId/@CurrentAccount.account.Avatar"
+                                        class="bg-gray-200 border border-white rounded-full w-8 h-8">
                             </div>
                         </a>
-                        <span class="block text-lg font-semibold"> Johnson smith </span>
+                        <span class="block text-lg font-semibold"> @CurrentAccount.account.DisplayName </span>
                     </div>
                     <a href="#">
                         <i class="icon-feather-more-horizontal text-2xl rounded-full p-2 transition -mr-1"></i>
@@ -122,14 +131,12 @@
                 </div>
 
                 <div class="story-content p-4" data-simplebar>
-                    <form action="">
-                        <textarea name="" id="" cols="12" rows="20" placeholder="Write your comments..." class="txt-comments"></textarea>
-                    </form>
+                    <textarea name="Content" id="" cols="12" rows="20" placeholder="Write your comments..." class="txt-comments"></textarea>
                 </div>
             </div>
-
         </div>
-    </div>
+    </form>
+
 
     <script>
         const wrapper = document.querySelector('.upload-wrapper')
@@ -161,18 +168,16 @@
                 fileName.textContent = valueStore;
             }
         })
-    </script>
 
-    <script>
-            //Dark mode
-            (function (window, document, undefined) {
-                'use strict';
-                if (!('localStorage' in window)) return;
-                var nightMode = localStorage.getItem('gmtNightMode');
-                if (nightMode) {
-                    document.documentElement.className += ' dark';
-                }
-            })(window, document);
+         //Dark mode
+        (function (window, document, undefined) {
+            'use strict';
+            if (!('localStorage' in window)) return;
+            var nightMode = localStorage.getItem('gmtNightMode');
+            if (nightMode) {
+                document.documentElement.className += ' dark';
+            }
+        })(window, document);
 
 
         (function (window, document, undefined) {
