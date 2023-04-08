@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "E2r9AJTnddkpzSJB1VUYDASjUY7251ErokpKdAPfPhg=",
+  "Hash": "VeDVeuVEUQ/5cSE69A0j32iDd8zSzWM1GRAJUhF4y9E=",
   "Source": "SocialNetwork",
   "BasePath": "_content/SocialNetwork",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\css\\icon.css"
+    },
+    {
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\New project\\SocialNetwork\\wwwroot\\assets\\css\\lxq_add.css",
+      "SourceId": "SocialNetwork",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\New project\\SocialNetwork\\wwwroot\\",
+      "BasePath": "_content/SocialNetwork",
+      "RelativePath": "assets/css/lxq_add.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\css\\lxq_add.css"
     },
     {
       "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\New project\\SocialNetwork\\wwwroot\\assets\\css\\style.css",

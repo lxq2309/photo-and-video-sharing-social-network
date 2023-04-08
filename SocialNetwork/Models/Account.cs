@@ -49,10 +49,6 @@ public partial class Account
 
     public virtual ICollection<Post> PostsNavigation { get; } = new List<Post>();
 
-    public virtual ICollection<Relationship> RelationshipSourceAccounts { get; } = new List<Relationship>();
-
-    public virtual ICollection<Relationship> RelationshipTargetAccounts { get; } = new List<Relationship>();
-
     public virtual ICollection<ChatSession> Chats { get; } = new List<ChatSession>();
 
     public virtual ICollection<Post> Posts { get; } = new List<Post>();
