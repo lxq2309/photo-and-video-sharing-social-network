@@ -85,8 +85,9 @@ namespace SocialNetwork.Controllers
         [Authentication]
         public IActionResult Profile(int accountId)
         {
-            // Xử lí trường hợp accountId bị null hoặc < 1
-            if (accountId == null || accountId < 1)
+            int maxAccountId = db.Accounts.Max(x => x.AccountId);
+            // Xử lí trường hợp accountId bị null hoặc < 1 hoặc > maxAccountId
+            if (accountId == null || accountId < 1 || accountId > maxAccountId)
             {
                 accountId = CurrentAccount.account.AccountId;
             }
