@@ -61,7 +61,7 @@ namespace SocialNetwork.Controllers
 					{
 						image.CopyTo(stream);
 					}
-					string filepath = "https://localhost:7150/" + "images/post/" + CurrentAccount.account.AccountId + "/" + image.FileName;
+					string filepath = "images/post/" + CurrentAccount.account.AccountId + "/" + image.FileName;
 					var postID = post.PostId;
 					medium.PostId = post.PostId;
 					medium.MediaLink = filepath.ToString();

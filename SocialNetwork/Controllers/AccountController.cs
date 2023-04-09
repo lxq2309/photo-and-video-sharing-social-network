@@ -1,14 +1,20 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using SocialNetwork.Models;
-using SocialNetwork.ViewModels;
 using SocialNetwork.Models.Authentication;
-
+using SocialNetwork.ViewModels;
+using IHostingEnvironment = Microsoft.AspNetCore.Hosting.IHostingEnvironment;
 
 namespace SocialNetwork.Controllers
 {
     public class AccountController : Controller
     {
+        private IHostingEnvironment _env;
         SocialNetworkDbContext db = new SocialNetworkDbContext();
+
+        public AccountController(IHostingEnvironment _enviroment)
+        {
+            _env = _enviroment;
+        }
 
         public IActionResult Index()
         {
@@ -74,6 +80,7 @@ namespace SocialNetwork.Controllers
             }
             if (ModelState.IsValid)
             {
+                account.Avatar = "images/avatars/default.jpg";
                 db.Accounts.Add(account);
                 db.SaveChanges();
                 return RedirectToAction("", "");
@@ -125,16 +132,62 @@ namespace SocialNetwork.Controllers
 
         [HttpPost]
         [Authentication]
-        public IActionResult setting(Account model)
+        public IActionResult setting(Account model, string accountType)
         {
             var account = db.Accounts.SingleOrDefault(x => x.Email == CurrentAccount.account.Email);
             account.FullName = model.FullName;
             account.AboutMe = model.AboutMe;
             account.Location = model.Location;
             account.Phone = model.Phone;
+            if (accountType == "public")
+            {
+                account.AccountType = "Public";
+            }
+            else
+            {
+                account.AccountType = "Private";
+            }
             db.SaveChanges();
             return View(account);
         }
 
+        // =================== Avatar ===================
+        [HttpPost]
+        public IActionResult UploadAvatar(IFormFile image)
+        {
+            while (image == null)
+            {
+                System.Threading.Thread.Sleep(100);
+            }
+            var account = db.Accounts.SingleOrDefault(x => x.Email == CurrentAccount.account.Email);
+            var serverMapPath = Path.Combine(_env.WebRootPath, "images/avatars/" + CurrentAccount.account.AccountId);
+            var serverMapPathFile = Path.Combine(serverMapPath, image.FileName);
+            Directory.CreateDirectory(serverMapPath);
+            var files = Directory.GetFiles(serverMapPath);
+            foreach (var file in files)
+            {
+                System.IO.File.Delete(file);
+            }
+            using (var stream = new FileStream(serverMapPathFile, FileMode.Create))
+            {
+                image.CopyTo(stream);
+            }
+            var filepath = "images/avatars/" + CurrentAccount.account.AccountId + "/" + image.FileName;
+            account.Avatar = filepath;
+            CurrentAccount.account.Avatar = account.Avatar;
+            db.SaveChanges();
+
+            return RedirectToAction("Profile", "Account");
+        }
+
+        [HttpPost]
+        public IActionResult RemoveAvatar()
+        {
+            var account = db.Accounts.SingleOrDefault(x => x.Email == CurrentAccount.account.Email);
+            account.Avatar = "images/avatars/default.jpg";
+            CurrentAccount.account.Avatar = account.Avatar;
+            db.SaveChanges();
+            return RedirectToAction("Profile", "Account");
+        }
     }
 }

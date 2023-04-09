@@ -21,11 +21,15 @@
             <h3>Thay đổi ảnh đại diện</h3>
         </div>
         <div class="list-item">
-            <button class="item" onclick="document.getElementById('input-file').click();">
-                Tải ảnh
-                lên
-            </button>
-            <button class="item" onclick="location.href=window.location.href;">Gỡ ảnh hiện tại</button>
+            <form id="upload-form" method="post" enctype="multipart/form-data" asp-action="UploadAvatar">
+                <button class="item" onclick="selectImage()" style="color: rgb(185 28 28);">
+                    Tải ảnh lên
+                </button>
+                <input name="image" id="input-file" accept="image/jpeg,image/png" class="item" type="file">
+            </form>
+            <form method="post" asp-action="RemoveAvatar">
+                <button class="item" onclick="location.href=window.location.href;">Gỡ ảnh hiện tại</button>
+            </form>
             <button class="item" onclick="$.modal.close();">Hủy</button>
             <form enctype="multipart/form-data" method="POST" role="presentation">
                 <input id="input-file"
@@ -38,7 +42,7 @@
 
         <div>
             <div class="bg-gradient-to-tr from-yellow-600 to-pink-600 p-1 rounded-full m-0.5 mr-2  w-56 h-56 relative overflow-hidden uk-transition-toggle">
-                <img src="/assets/images/avatars/avatar-7.jpg"
+                <img src="~/@CurrentAccount.account.Avatar"
                      class="bg-gray-200 border-4 border-white rounded-full w-full h-full dark:border-gray-900"
                      onclick="$('#upload-profile-picture').modal({fadeDuration: 50, fadeDelay: 0.5, showClose: false});">
             </div>
@@ -275,5 +279,14 @@
 
         }
 
+        function selectImage() {
+            // Trigger the file input dialog
+            document.getElementById('input-file').click();
+
+            // Submit the form when the user selects an image file
+            document.getElementById('input-file').onchange = function() {
+                document.getElementById('upload-form').submit();
+            };
+        }
 </script>
 }

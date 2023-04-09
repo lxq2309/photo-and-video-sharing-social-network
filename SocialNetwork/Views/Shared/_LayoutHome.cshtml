@@ -2,8 +2,6 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -113,13 +111,12 @@
                 <input placeholder="safdads" id="upload-default-btn" type="file" multiple hidden name="images" />
                 <button id="upload-custom-btn" onclick="defaultBtnActive()">Choose a file</button>
             </div>
-
             <div class="flex-1 bg-white dark:bg-gray-900 dark:text-gray-100 upload-note-item">
                 <div class="border-b flex items-center justify-between px-5 py-3 dark:border-gray-600">
                     <div class="flex flex-1 items-center space-x-4">
                         <a href="#">
                             <div class="bg-gradient-to-tr from-yellow-600 to-pink-600 p-0.5 rounded-full">
-                                <img src="~/images/avatars/@CurrentAccount.account.AccountId/@CurrentAccount.account.Avatar"
+                                <img src="~/@CurrentAccount.account.Avatar"
                                         class="bg-gray-200 border border-white rounded-full w-8 h-8">
                             </div>
                         </a>
@@ -142,15 +139,18 @@
         const wrapper = document.querySelector('.upload-wrapper')
         const fileName = document.querySelector('.upload-file-name')
         const defaultBtn = document.querySelector('#upload-default-btn')
+        const shareBtn = document.querySelector('#post-share-btn')
         const cancelBtn = document.querySelector('#upload-cancel-btn')
         const customBtn = document.querySelector('#upload-custom-btn')
         const img = document.querySelector('.upload-image')
+
         function defaultBtnActive() {
             defaultBtn.click()
         }
 
         defaultBtn.addEventListener('change', function () {
             const file = this.files[0]
+            console.log(this.files)
             if (file) {
                 const reader = new FileReader();
                 reader.onload = function () {

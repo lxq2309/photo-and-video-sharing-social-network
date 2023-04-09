@@ -278,9 +278,6 @@
                                     <li class="nav-item py-2" role="presentation" id="tabLi">
                                         <button class="nav-link active" id="profileTab" data-bs-toggle="pill" href="#tab1">Profile setting</button>
                                     </li>
-                                    <li class="nav-item py-2" role="presentation" id="tabLi">
-                                        <button class="nav-link" id="privacyTab" data-bs-toggle="pill" href="#tab2">Privacy and security</button>
-                                    </li>
                                 </ul>
                             </div>
                             <div class="col-12 col-md-9 border-start tab-content" id="myTabContent">
@@ -313,63 +310,27 @@
                                                 <option value="false">Male</option>
                                             </select>
                                         </div>
+                                        <br />
+                                        <div class="flex justify-between items-center col-span-2">
+                                            <div>
+                                                <div class="fs-4 text fw-bold"> Type of Accout</div>
+                                                <div class="type">Private (No one can see your activity)</div>
+                                            </div>
+                                            <div class="switches-list -mt-8 is-large switch-1 col-span-2">
+                                                <div class="switch-container">
+                                                    <label class="switch">
+                                                        <input type="checkbox" name="accountType" value="public" @if(Model.AccountType == "Public") {<text>checked="checked"</text>}>
+                                                        <span class="switch-button"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <input type="hidden" name="accountType" value="private">
+                                        <hr>
                                     </div>
-
                                     <div class="bg-gray-10 p-6 pt-0 flex justify-end space-x-3">
                                         <button class="p-2 px-4 rounded bg-gray-50 text-red-500" id="cancel-button"> Cancel </button>
                                         <button type="submit" class="button bg-blue-700" id="save-button"> Save </button>
-                                    </div>
-                                </div>
-
-                                <div class="tab-pane fade p-3" id="tab2" aria-labelledby="privacyTab">
-                                    <div>
-                                        <div class="flex justify-between items-center">
-                                            <div>
-                                                <div class="fs-4 text fw-bold"> Who follow me ?</div>
-                                                <div class="follow">Only your followers can see who follows you.</div>
-                                            </div>
-                                            <div class="switches-list -mt-8 is-large switch-1">
-                                                <div class="switch-container">
-                                                    <label class="switch"><input type="checkbox"><span class="switch-button"></span> </label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <hr>
-                                        <div class="flex justify-between items-center">
-                                            <div>
-                                                <div class="fs-4 text fw-bold"> Show my activities ?</div>
-                                                <div class="activities"> Only your followers can see your activities.</div>
-                                            </div>
-                                            <div class="switches-list -mt-8 is-large switch-2">
-                                                <div class="switch-container">
-                                                    <label class="switch"><input type="checkbox"><span class="switch-button"></span> </label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <hr>
-                                        <div class="flex justify-between items-center">
-                                            <div>
-                                                <div class="fs-4 text fw-bold"> Search engines?</div>
-                                                <div class="search"> Only your followers can see your search history.</div>
-                                            </div>
-                                            <div class="switches-list -mt-8 is-large switch-3">
-                                                <div class="switch-container">
-                                                    <label class="switch"><input type="checkbox"><span class="switch-button"></span> </label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <hr>
-                                        <div class="flex justify-between items-center">
-                                            <div>
-                                                <div class="fs-4 text fw-bold"> Allow Commenting?</div>
-                                                <div class="comment"> Only your followers can comment on your post.</div>
-                                            </div>
-                                            <div class="switches-list -mt-8 is-large switch-4">
-                                                <div class="switch-container">
-                                                    <label class="switch"><input type="checkbox"><span class="switch-button"></span> </label>
-                                                </div>
-                                            </div>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -449,43 +410,16 @@
         //switch element
         // Get the switch element
         var switch1 = document.querySelector('.switch-1 input[type="checkbox"]');
-        var switch2 = document.querySelector('.switch-2 input[type="checkbox"]');
-        var switch3 = document.querySelector('.switch-3 input[type="checkbox"]');
-        var switch4 = document.querySelector('.switch-4 input[type="checkbox"]');
 
         // Get the text elements that need to be changed
-        var follow = document.querySelector('.flex .follow');
-        var activities = document.querySelector('.flex .activities');
-        var search = document.querySelector('.flex .search');
-        var comment = document.querySelector('.flex .comment');
+        var type = document.querySelector('.flex .type');
 
         // Add an event listener to the switch element
         switch1.addEventListener('change', function (event) {
             if (event.target.checked) {
-                follow.textContent = "Everyone can see who follow you.";
+                type.textContent = "Public (Everyone can see your activity).";
             } else {
-                follow.textContent = "Only your followers can see who follows you.";
-            }
-        });
-        switch2.addEventListener('change', function (event) {
-            if (event.target.checked) {
-                activities.textContent = "Everyone can see your activities.";
-            } else {
-                activities.textContent = "Only your followers can see your activities.";
-            }
-        });
-        switch3.addEventListener('change', function (event) {
-            if (event.target.checked) {
-                search.textContent = "Everyone can see your search history.";
-            } else {
-                search.textContent = "Only your followers can see your search history.";
-            }
-        });
-        switch4.addEventListener('change', function (event) {
-            if (event.target.checked) {
-                comment.textContent = "Everyone can comment on your post.";
-            } else {
-                comment.textContent = "Only your followers can comment on your post.";
+                type.textContent = "Private (No one can see your activity)";
             }
         });
 
@@ -496,7 +430,6 @@
             var noBtn = myModal.querySelector(".no-button");
             noBtn.addEventListener("click", function () {
                 modal.hide();
-                console.log("test ok");
             });
         });
 
