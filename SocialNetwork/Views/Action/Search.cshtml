@@ -23,8 +23,8 @@
                 {
                     <li>
                         <div class="bg-gray-200 max-w-full lg:h-64 h-52 rounded-lg relative overflow-hidden">
-                            <a href="profile.html">
-                                <img src="/assets/images/post/img10.jpg"
+                            <a href="/account/profile?accountId=@item.AccountId">
+                                <img src="/assets/images/avatars/@item.Avatar"
                                      class="w-full h-full absolute object-cover inset-0">
                             </a>
                             <a href="#" class="absolute right-3 top-3 bg-black bg-opacity-60 rounded-full"
@@ -71,11 +71,22 @@
     <div class="mt-6 grid lg:grid-cols-3 grid-cols-2 gap-3 hover:text-yellow-700 uk-link-reset">
         @foreach(var item in Model.lstPost)
         {
+            @await Html.PartialAsync("_PartialStoryModal", item)
         <div>
             <div class="bg-green-400 max-w-full lg:h-72 h-48 rounded-lg relative overflow-hidden shadow uk-transition-toggle">
-                <a href="#story-modal" uk-toggle>
-                    <img src="/assets/images/post/img2.jpg"
-                         class="w-full h-full absolute object-cover inset-0">
+                    <a href="#story-modal-@item.Post.PostId" uk-toggle>
+                        @{
+                            string linkImg = "";
+                            if (item.GetListMedia().Count == 0)
+                            {
+                                linkImg = "https://images.unsplash.com/photo-1604147706283-d7119b5b822c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8d2hpdGV8ZW58MHx8MHx8&w=1000&q=80";
+                            }
+                            else
+                                linkImg = item.GetListMedia()[0].MediaLink;
+                        }
+                        <img src="@linkImg"
+                             class="w-full h-full absolute object-cover inset-0">
+                             
                 </a>
                 <div class="flex flex-1 items-center absolute bottom-0 w-full p-3 text-white custom-overly1 uk-transition-slide-bottom-medium">
                     <a href="profile.html" class="lg:flex flex-1 items-center hidden">
@@ -83,11 +94,11 @@
                             <img src="/assets/images/avatars/avatar-2.jpg"
                                  class="bg-gray-200 border border-white rounded-full w-8">
                         </div>
-                        <div> @item.Content </div>
+                            <div> @item.Post.Content </div>
                     </a>
                     <div class="flex space-x-2 flex-1 lg:flex-initial justify-around">
-                        <a href="#"> <i class="fa-regular fa-thumbs-up"></i> 250 </a>
-                        <a href="#"> <i class="fa-regular fa-comment"></i> 50 </a>
+                            <a href="#"> <i class="fa-regular fa-thumbs-up"></i> @item.Post.LikeCount </a>
+                        <a href="#"> <i class="fa-regular fa-comment"></i> @item.Post.CommentCount </a>
                     </div>
                 </div>
 

@@ -4,10 +4,15 @@
 <div id="story-modal-@Model.Post.PostId" class="uk-modal-container" uk-modal>
     <div class="uk-modal-dialog story-modal">
         <button class="uk-modal-close-default lg:-mt-9 lg:-mr-9 -mt-5 -mr-5 shadow-lg bg-white rounded-full p-4 transition dark:bg-gray-600 dark:text-white" type="button" uk-close></button>
-        @if (Model.GetListMedia().Count < 2)
+        @if (Model.GetListMedia().Count == 0)
         {
             <div class="story-modal-media">
-                <img src="/assets/images/post/img4.jpg" alt="" class="post-image inset-0 h-full w-full">
+            </div>
+        }
+        else if (Model.GetListMedia().Count < 2)
+        {
+            <div class="story-modal-media">
+                <img src="@Model.GetListMedia()[0].MediaLink" alt="" class="post-image inset-0 h-full w-full">
             </div>
         }
         else
@@ -15,9 +20,10 @@
             <div class="story-modal-slider">
                 <div class="content">
                     <div class="images">
-                        <img src="/assets/images/post/img9.jpg" alt="" class="story-img">
-                        <img src="/assets/images/post/img10.jpg" alt="" class="story-img">
-                        <img src="/assets/images/post/img11.jpg" alt="" class="story-img">
+                        @foreach(var item in Model.GetListMedia())
+                        {
+                            <img src="@item.MediaLink" alt="" class="story-img">
+                        }
                     </div>
                     <div onclick="side_slide(-1)" class="slide left">
                         <span class="fas fa-angle-left"></span>

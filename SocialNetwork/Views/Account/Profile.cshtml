@@ -200,7 +200,16 @@
                 <a href="#story-modal-@item.Post.PostId" uk-toggle>
                     <div class="bg-red-500 max-w-full lg:h-64 h-40 rounded-md relative overflow-hidden uk-transition-toggle"
                      tabindex="0">
-                        <img src="/assets/images/avatars/avatar-6.jpg"
+                        @{
+                            string linkImg = "";
+                            if (item.GetListMedia().Count == 0)
+                            {
+                                linkImg = "https://images.unsplash.com/photo-1604147706283-d7119b5b822c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8d2hpdGV8ZW58MHx8MHx8&w=1000&q=80";
+                            }
+                            else
+                                linkImg = item.GetListMedia()[0].MediaLink;
+                        }
+                        <img src="@linkImg"
                          class="w-full h-full absolute object-cover inset-0">
 
                         <div class="absolute bg-black bg-opacity-40 bottom-0 flex h-full items-center justify-center space-x-5 text-lg text-white uk-transition-scale-up w-full">
