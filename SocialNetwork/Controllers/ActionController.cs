@@ -31,7 +31,12 @@ namespace SocialNetwork.Controllers
                 lstPost = db.Posts.ToList().Where(x => x.Content.Contains(searchText)).ToList();
             }
 
-            var result = new SearchResultViewModel(lstAccount, lstPost);
+            var lstPostDetail = new List<PostDetailViewModel>();
+            foreach (var item in lstPost)
+            {
+                lstPostDetail.Add(new PostDetailViewModel(item));
+            }
+            var result = new SearchResultViewModel(lstAccount, lstPostDetail);
             return View(result);    
         }
     }

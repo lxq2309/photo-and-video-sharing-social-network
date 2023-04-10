@@ -90,22 +90,35 @@ namespace SocialNetwork.Controllers
 
         // =================== Profile ===================
         [Authentication]
-        public IActionResult Profile(int accountId)
+        public IActionResult Profile(int? accountId)
         {
+            
             int maxAccountId = db.Accounts.Max(x => x.AccountId);
             // Xử lí trường hợp accountId bị null hoặc < 1 hoặc > maxAccountId
+            int currentAccountId = CurrentAccount.account.AccountId;
             if (accountId == null || accountId < 1 || accountId > maxAccountId)
             {
-                accountId = CurrentAccount.account.AccountId;
+                accountId = currentAccountId;
             }
-            // chắc là sẽ thêm tham số mã tài khoản nhận vào ở đây
+            // Lấy thông tin của tài khoản từ accountId
             var account = db.Accounts.SingleOrDefault(x => x.AccountId == accountId);
 
+            // Kiểm tra xem tài khoản này có bị block không ?
+            bool blocked = db.Relationships
+                           .SingleOrDefault(x => x.SourceAccountId == currentAccountId 
+                                              && x.TargetAccountId == accountId
+                                              && x.TypeId == 3) != null;
+            if (blocked)
+            {
+                return RedirectToAction("Index", "Home");
+            }
+            
+            // Đếm số lượng post của account này
             int postCount = db.Posts.Count(x => x.AccountId == accountId);
             ViewBag.PostCount = postCount;
 
             // Lấy danh sách các post detail của tài khoản
-            var lstPost = db.Posts.Where(x => x.AccountId == accountId).ToList();
+            var lstPost = db.Posts.Where(x => x.AccountId == accountId && x.IsDeleted == false).OrderByDescending(x => x.CreateAt).ToList();
             List<PostDetailViewModel> lstPostDetail = new List<PostDetailViewModel>();
             foreach (var item in lstPost)
             {
@@ -114,11 +127,18 @@ namespace SocialNetwork.Controllers
             ViewBag.ListPostDetail = lstPostDetail;
 
             // Kiểm tra có đang theo dõi tài khoản này hay không
-            bool following = db.Relationships.Where(x => x.SourceAccountId == CurrentAccount.account.AccountId
-                                                      && x.TargetAccountId == accountId)
-                                             .ToList()
-                                             .Count != 0;
+            bool following = db.Relationships
+                               .SingleOrDefault(x => x.SourceAccountId == currentAccountId
+                                              && x.TargetAccountId == accountId
+                                              && x.TypeId == 2) != null;
             ViewBag.Following = following;
+
+            // Kiểm tra xem đã gửi Request Follow chưa
+            bool requested = db.Relationships
+                               .SingleOrDefault(x => x.SourceAccountId == currentAccountId
+                                              && x.TargetAccountId == accountId
+                                              && x.TypeId == 1) != null;
+            ViewBag.Requested = requested;
             return View(account);
         }
 
@@ -172,7 +192,7 @@ namespace SocialNetwork.Controllers
             {
                 image.CopyTo(stream);
             }
-            var filepath = "images/avatars/" + CurrentAccount.account.AccountId + "/" + image.FileName;
+            var filepath = "/images/avatars/" + CurrentAccount.account.AccountId + "/" + image.FileName;
             account.Avatar = filepath;
             CurrentAccount.account.Avatar = account.Avatar;
             db.SaveChanges();
@@ -184,10 +204,32 @@ namespace SocialNetwork.Controllers
         public IActionResult RemoveAvatar()
         {
             var account = db.Accounts.SingleOrDefault(x => x.Email == CurrentAccount.account.Email);
-            account.Avatar = "images/avatars/default.jpg";
+            account.Avatar = "/images/avatars/default.jpg";
             CurrentAccount.account.Avatar = account.Avatar;
             db.SaveChanges();
             return RedirectToAction("Profile", "Account");
+        }
+
+        [Authentication]
+        public IActionResult FollowRequest()
+        {
+            var lstIdRequest = db.Relationships
+                .Where(x => x.TargetAccountId == CurrentAccount.account.AccountId && x.TypeId == 1)
+                .Select(x => x.SourceAccountId)
+                .ToList();
+            var lstRequest = db.Accounts.Where(x => lstIdRequest.Contains(x.AccountId)).ToList();
+            return View(lstRequest);
+        }
+
+        [Authentication]
+        public IActionResult BlockedList()
+        {
+            var lstIdBlocked = db.Relationships
+                .Where(x => x.SourceAccountId == CurrentAccount.account.AccountId && x.TypeId == 3)
+                .Select(x => x.TargetAccountId)
+                .ToList();
+            var lstBlocked = db.Accounts.Where(x => lstIdBlocked.Contains(x.AccountId)).ToList();
+            return View(lstBlocked);
         }
     }
 }

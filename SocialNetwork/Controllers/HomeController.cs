@@ -21,8 +21,7 @@ namespace SocialNetwork.Controllers
 		[Authentication]
 		public IActionResult Index()
 		{
-			var lst = context.Posts.ToList();
-			return View(lst);
+			return View();
 		}
 
 		public IActionResult Privacy()
@@ -61,7 +60,7 @@ namespace SocialNetwork.Controllers
 					{
 						image.CopyTo(stream);
 					}
-					string filepath = "images/post/" + CurrentAccount.account.AccountId + "/" + image.FileName;
+					string filepath = "/images/post/" + CurrentAccount.account.AccountId + "/" + image.FileName;
 					var postID = post.PostId;
 					medium.PostId = post.PostId;
 					medium.MediaLink = filepath.ToString();

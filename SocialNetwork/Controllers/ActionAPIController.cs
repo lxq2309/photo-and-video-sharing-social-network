@@ -7,7 +7,6 @@ using Newtonsoft.Json;
 using SocialNetwork.Models;
 using SocialNetwork.Models.Authentication;
 using System.Text;
-using static SocialNetwork.Models.CurrentAccount;
 
 namespace SocialNetwork.Controllers
 {
@@ -42,14 +41,14 @@ namespace SocialNetwork.Controllers
                     if (item.AccountId.Equals(CurrentAccount.account.AccountId))
                     {
                         post.Accounts.Remove(item);
-                        post.LikeCount--;
+                        post.LikeCount = post.LikeCount - 1;
                         db.SaveChanges();
                         return false;
                     }
                 }
                 var account = db.Accounts.Include(x => x.Posts).FirstOrDefault(x => x.AccountId.Equals(CurrentAccount.account.AccountId));
                 account.Posts.Add(post);
-                post.LikeCount++;
+                post.LikeCount = post.LikeCount + 1;
                 db.SaveChanges();
                 return true;
             }
@@ -65,6 +64,8 @@ namespace SocialNetwork.Controllers
             {
                 comment.CreateAt = DateTime.Now;
                 db.Comments.Add(comment);
+                var post = db.Posts.SingleOrDefault(x => x.PostId == comment.PostId);
+                post.CommentCount = post.CommentCount + 1;
                 db.SaveChanges();
 
                 var account = db.Accounts.SingleOrDefault(x => x.AccountId == comment.AccountId);
@@ -86,7 +87,7 @@ namespace SocialNetwork.Controllers
         public IEnumerable<Comment> GetComment(string postID)
         {
             var lstComment = db.Comments.Where(x => x.PostId == int.Parse(postID)).ToList();
-            
+
             return lstComment;
         }
 
@@ -114,40 +115,171 @@ namespace SocialNetwork.Controllers
                      CODE KHÔNG BUG
          */
 
+        //unfollow
 
         [Route("unfollow")]
         [HttpDelete]
         public bool Unfollow(int source, int target)
         {
-            var item = db.Relationships.AsNoTracking().SingleOrDefault(x => x.SourceAccountId == source && x.TargetAccountId == target);
-            if (item == null)
+            // Kiểm tra xem đã follow người này chưa
+            var checkExist = db.Relationships.AsNoTracking().SingleOrDefault(x => x.SourceAccountId == source && x.TargetAccountId == target && x.TypeId == 2);
+            if (checkExist == null)
             {
+                // Nếu chưa follow thì không unfollow được
                 return false;
             }
-            string tableName = "Relationship";
-            string query = $"DELETE FROM {tableName} " +
+            // Nếu đã follow thì tiến hành unfollow
+            string query = $"DELETE FROM Relationship " +
                            $"WHERE SourceAccountId = {source} AND TargetAccountId = {target}";
             db.Database.ExecuteSqlRaw(query);
-            CurrentAccount.account.Following--;
-            db.Accounts.SingleOrDefault(x => x.AccountId == target).Follower--;
+            var targetAccount = db.Accounts.SingleOrDefault(x => x.AccountId == target);
+            CurrentAccount.account.Following = CurrentAccount.account.Following - 1;
+            CurrentAccount.update();
+            targetAccount.Follower = targetAccount.Follower - 1;
             db.SaveChanges();
             return true;
         }
 
+        //follow
         [Route("follow")]
-        [HttpPut]
+        [HttpPost]
         public bool Follow(int source, int target)
         {
-            var checkExist = db.Relationships.AsNoTracking().SingleOrDefault(x => x.SourceAccountId == source && x.TargetAccountId == target);
+            // Kiểm tra xem đã follow người này chưa
+            var checkExist = db.Relationships.AsNoTracking().SingleOrDefault(x => x.SourceAccountId == source && x.TargetAccountId == target && x.TypeId == 2);
             if (checkExist != null)
             {
+                // Nếu đã follow rồi thì không cho follow nữa
                 return false;
             }
+            // Nếu chưa follow thì tiến hành follow
             string query = $"INSERT INTO Relationship(SourceAccountID,TargetAccountID,TypeID)" +
                            $" VALUES ({source}, {target}, 2)";
             db.Database.ExecuteSqlRaw(query);
-            CurrentAccount.account.Following++;
-            db.Accounts.SingleOrDefault(x => x.AccountId == target).Follower++;
+            var targetAccount = db.Accounts.SingleOrDefault(x => x.AccountId == target);
+            CurrentAccount.account.Following = CurrentAccount.account.Following + 1;
+            CurrentAccount.update();
+            targetAccount.Follower = targetAccount.Follower + 1;
+            db.SaveChanges();
+            return true;
+        }
+
+        //Block
+        [Route("block")]
+        [HttpPut]
+        public bool Block(int source, int target)
+        {
+            string query;
+
+            // Kiểm tra xem đã follow người này chưa
+            var checkExist = db.Relationships.AsNoTracking().SingleOrDefault(x => x.SourceAccountId == source && x.TargetAccountId == target && x.TypeId == 2);
+            if (checkExist == null)
+            {
+                // Nếu chưa follow thì thêm mới bản ghi
+                query = $"INSERT INTO Relationship(SourceAccountID,TargetAccountID,TypeID)" +
+                        $" VALUES ({source}, {target}, 3)";
+            }
+            else
+            {
+                // Nếu follow rồi thì điều chỉnh lại following và follower
+                query = $"UPDATE Relationship " +
+                        $"SET TypeID = 3 " +
+                        $"WHERE SourceAccountId = {source} AND TargetAccountId = {target}";
+                var targetAccount = db.Accounts.SingleOrDefault(x => x.AccountId == target);
+                CurrentAccount.account.Following = CurrentAccount.account.Following - 1;
+                CurrentAccount.update();
+                targetAccount.Follower = targetAccount.Follower - 1;
+            }
+            db.Database.ExecuteSqlRaw(query);
+            db.SaveChanges();
+            return true;
+        }
+
+        //Unblock
+        [Route("unblock")]
+        [HttpDelete]
+        public bool Unblock(int source, int target)
+        {
+            // Kiểm tra xem đã block người này chưa
+            var checkExist = db.Relationships.AsNoTracking().SingleOrDefault(x => x.SourceAccountId == source && x.TargetAccountId == target && x.TypeId == 3);
+            if (checkExist == null)
+            {
+                // Nếu chưa block thì không làm gì cả
+                return false;
+            }
+
+            // Nếu đã block thì tiến hành unblock cho họ
+            string query = $"DELETE FROM Relationship " +
+                           $"WHERE SourceAccountId = {source} AND TargetAccountId = {target}";
+            db.Database.ExecuteSqlRaw(query);
+            db.SaveChanges();
+            return true;
+        }
+
+        // Gửi yêu cầu follow
+        [Route("request_follow")]
+        [HttpPost]
+        public bool RequestFollow(int source, int target) 
+        {
+            // Kiểm tra xem đã gửi yêu cầu follow trước đó hay chưa
+            var checkExist = db.Relationships.AsNoTracking().SingleOrDefault(x => x.SourceAccountId == source && x.TargetAccountId == target && x.TypeId == 1);
+            if (checkExist != null)
+            {
+                // Nếu đã gửi yêu cầu follow rồi thì không làm gì cả
+                return false;
+            }
+
+            // Nếu chưa gửi yêu cầu follow thì tiến hành gửi
+            string query = $"INSERT INTO Relationship(SourceAccountID,TargetAccountID,TypeID)" +
+                           $" VALUES ({source}, {target}, 1)";
+            db.Database.ExecuteSqlRaw(query);
+            db.SaveChanges();
+            return true;
+        }
+
+        // Huỷ yêu cầu
+        [Route("cancel_request_follow")]
+        [HttpDelete]
+        public bool CancelRequestFollow(int source, int target)
+        {
+            // Kiểm tra xem đã gửi yêu cầu follow người này chưa
+            var checkExist = db.Relationships.AsNoTracking().SingleOrDefault(x => x.SourceAccountId == source && x.TargetAccountId == target && x.TypeId == 1);
+            if (checkExist == null)
+            {
+                // Nếu chưa gửi yêu cầu thì không làm gì cả
+                return false;
+            }
+
+            // Nếu đã yêu cầu thì tiến hành huỷ yêu cầu
+            string query = $"DELETE FROM Relationship " +
+                           $"WHERE SourceAccountId = {source} AND TargetAccountId = {target}";
+            db.Database.ExecuteSqlRaw(query);
+            db.SaveChanges();
+            return true;
+        }
+
+        // Chấp nhận yêu cầu
+        [Route("accept_request_follow")]
+        [HttpPut]
+        public bool AcceptRequestFollow(int source, int target)
+        {
+            // Kiểm tra xem có yêu cầu follow không
+            var checkExist = db.Relationships.AsNoTracking().SingleOrDefault(x => x.SourceAccountId == source && x.TargetAccountId == target && x.TypeId == 1);
+            if (checkExist == null)
+            {
+                // Nếu không có thì không làm gì cả
+                return false;
+            }
+
+            // Nếu có yêu cầu follow thì tiến hành accept follow
+            string query = $"UPDATE Relationship " +
+                           $"SET TypeID = 2 " +
+                           $"WHERE SourceAccountId = {source} AND TargetAccountId = {target}";
+            var sourceAccount = db.Accounts.SingleOrDefault(x => x.AccountId == target);
+            CurrentAccount.account.Follower = CurrentAccount.account.Follower + 1;
+            CurrentAccount.update();
+            sourceAccount.Following = sourceAccount.Following + 1;
+            db.Database.ExecuteSqlRaw(query);
             db.SaveChanges();
             return true;
         }

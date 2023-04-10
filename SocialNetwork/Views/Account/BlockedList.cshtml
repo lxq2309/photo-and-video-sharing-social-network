@@ -1,0 +1,75 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "_LayoutHome";
+}
+
+<style>
+    /* Hiệu ứng hover */
+    .shadow-lg {
+        box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    /*Hiệu ứng cho từng item*/
+    .item {
+        border-bottom: 1px solid #E8E8E8;
+    }
+
+    /* Hiệu ứng cho nút unblock */
+    button.unblock {
+        background-color: #0074D9;
+        color: white;
+    }
+
+        button.unblock:hover {
+            background-color: #0052A5;
+            box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2), 0px 8px 10px 1px rgba(0,0,0,0.14), 0px 3px 14px 2px rgba(0,0,0,0.12);
+        }
+
+        button.unblock:active {
+            background-color: #0052A5;
+            box-shadow: inset 0 1px 2px rgba(0,0,0,0.3);
+        }
+</style>
+
+@model List<Account>
+<div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-200">
+    <h1 class="font-bold text-2xl text-gray-800 py-4 px-6 bg-gray-100">Blocked List</h1>
+    @foreach (var item in Model)
+    {
+        <div class="item flex items-center p-4">
+            <div class="mr-4">
+                <img class="w-12 h-12 rounded-full object-cover border-2 border-white" src="avatar.jpg" alt="Avatar">
+            </div>
+            <div>
+                <h3 class="text-gray-800 font-bold text-md">@item.FullName</h3>
+                <p class="text-gray-500">@@@item.DisplayName</p>
+            </div>
+            <div class="flex-1"></div>
+            <div class="flex items-center space-x-4">
+                <button class="unblock px-4 py-2 text-sm text-black bg-gray-100 rounded-full transition duration-200 shadow-md"
+                        onclick="unblock(@CurrentAccount.account.AccountId, @item.AccountId)">
+                    Unblock
+                </button>
+            </div>
+        </div>
+    }
+</div>
+
+<script>
+    function unblock(sourceId, targetId)
+        {
+            $.ajax({
+                url: `https://localhost:7150/api/actionapi/unblock?source=${sourceId}&target=${targetId}`,
+                type: 'DELETE',
+                success: function (data) {
+                    location.reload();
+                },
+                error: function (xhr, textStatus, errorThrown) {
+                    alert("Error");
+
+                }
+            });
+        }
+</script>

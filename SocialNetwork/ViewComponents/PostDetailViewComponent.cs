@@ -13,7 +13,7 @@ namespace SocialNetwork.ViewComponents
         {
             int currentAccountID = CurrentAccount.account.AccountId;
             var lstAccountIDFollow = _context.Relationships.Where(x=>x.SourceAccountId == currentAccountID && x.TypeId == 2).Select(x=>x.TargetAccountId).ToList();
-            var lstPost = _context.Posts.Where(x => lstAccountIDFollow.Contains(x.AccountId));
+            var lstPost = _context.Posts.Where(x => (lstAccountIDFollow.Contains(x.AccountId) || x.AccountId == currentAccountID) && x.IsDeleted == false).OrderByDescending(x => x.CreateAt);
             var lstPostDetail = new List<PostDetailViewModel>();
             foreach (var post in lstPost)
             {
