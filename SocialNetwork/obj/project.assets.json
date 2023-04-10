@@ -10607,11 +10607,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\New project\\SocialNetwork\\SocialNetwork.csproj",
+      "projectUniqueName": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\TheLastOne\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\SocialNetwork.csproj",
       "projectName": "SocialNetwork",
-      "projectPath": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\New project\\SocialNetwork\\SocialNetwork.csproj",
+      "projectPath": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\TheLastOne\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\SocialNetwork.csproj",
       "packagesPath": "C:\\Users\\MyPc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\New project\\SocialNetwork\\obj\\",
+      "outputPath": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\TheLastOne\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\MyPc\\AppData\\Roaming\\NuGet\\NuGet.Config",

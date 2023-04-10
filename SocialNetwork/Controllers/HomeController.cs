@@ -41,7 +41,7 @@ namespace SocialNetwork.Controllers
 		public IActionResult CreatePost(string Content, List<IFormFile> images)
 		{
 			Post post = new Post();
-			Medium medium = new Medium();
+			 Medium medium = new Medium();
 			post.AccountId = CurrentAccount.account.AccountId;
 			post.Content = Content;
 			post.CreateAt = DateTime.Now;
@@ -62,8 +62,9 @@ namespace SocialNetwork.Controllers
 						image.CopyTo(stream);
 					}
 					string filepath = "/images/post/" + CurrentAccount.account.AccountId + "/" + image.FileName;
-					var postID = post.PostId;
-					medium.PostId = post.PostId;
+                    //var postID = post.PostId;
+                    //Medium medium = new Medium();
+                    medium.PostId = post.PostId;
 					medium.MediaLink = filepath.ToString();
 					medium.MediaType = image.GetType().Name.ToString();
 					context.Media.Add(medium);

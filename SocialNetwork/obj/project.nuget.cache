@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ecZo0cXq0cDBUpGj4UNjpS/PD8bCn4gXUhTTmxN+23z1pBKUfF+kYH9wyNqTetFiPFdyDQhgRphh4zXsg1kcqw==",
+  "dgSpecHash": "HrezJNaAi0/X8t3PxZWSYpLlQJP2ET7IBRtrRz/YT6Y8bDscDBZovOgiwfVJjZrphG5nwrg42e/x513AMz2mVA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\New project\\SocialNetwork\\SocialNetwork.csproj",
+  "projectFilePath": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\TheLastOne\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\SocialNetwork.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\MyPc\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\MyPc\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
