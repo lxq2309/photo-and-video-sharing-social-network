@@ -9,6 +9,11 @@
             account = _context.Accounts.SingleOrDefault(x => x.AccountId == accountId);
         }
 
+        public static void update()
+        {
+            _context.SaveChanges();
+        }
+
         public static class Data
         {
             public static int getPostCount()

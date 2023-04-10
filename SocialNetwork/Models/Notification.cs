@@ -13,6 +13,10 @@ public partial class Notification
 
     public DateTime? CreateAt { get; set; }
 
+    public int? TypeNotification { get; set; }
+
+    public bool? IsRead { get; set; }
+
     public int? AccountId { get; set; }
 
     public virtual Account? Account { get; set; }
