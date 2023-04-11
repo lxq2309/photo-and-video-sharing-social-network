@@ -53,7 +53,7 @@ namespace SocialNetwork.Controllers
 			{
 				if (image != null)
 				{
-					string serverMapPath = Path.Combine(_env.WebRootPath, "images/post/" + CurrentAccount.account.AccountId);
+					string serverMapPath = Path.Combine(_env.WebRootPath, "images/post/" + CurrentAccount.account.AccountId + "/" + post.PostId);
 					string serverMapPathFile = Path.Combine(serverMapPath, image.FileName);
 					Directory.CreateDirectory(serverMapPath);
 					using (var stream = new FileStream(serverMapPathFile, FileMode.Create))
