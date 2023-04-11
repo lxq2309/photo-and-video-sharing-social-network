@@ -4,6 +4,9 @@
 }
 @using SocialNetwork.ViewModels
 @model ChatSessionMessagesViewModel
+@{
+    SocialNetworkDbContext db = new SocialNetworkDbContext();
+}
 <div class="container m-auto pt-5">
 
     <h1 class="font-semibold lg:mb-5 text-2xl"> Messages</h1>
@@ -36,12 +39,12 @@
                                     @if (item.Key.Messages.Count() > 0)
                                     {
                                         <span class="absolute right-0 top-1 text-xs">@item.Key.Messages.Last().CreateAt.ToString().Substring(10)</span>
-                                        <p class="truncate">@item.Key.Messages.Last().MessageContent</p>
+                                        <p class="truncate" id="pLastMess">@item.Key.Messages.Last().MessageContent</p>
                                     }
                                     else
                                     {
                                         <span class="absolute right-0 top-1 text-xs">--</span>
-                                        <p class="truncate">In box to love</p>
+                                        <p class="truncate" id="pLastMess">Say hi!</p>
                                     }
                                 </div>
                             </a>
@@ -167,7 +170,8 @@
                 success: function (data) {
                     var messageArea = document.querySelector('.messageArea')
                     var newMessage = document.createElement('custom-tag')
-
+                    var lastMess = document.getElementById("pLastMess")
+                    lastMess.innerHTML = data.content
                     newMessage.innerHTML = `
                         <h3 class="lg:w-60 mx-auto text-sm uk-heading-line uk-text-center lg:pt-2"><span> ${data.createAt} </span></h3>
                         <div class="flex lg:items-center flex-row-reverse">
