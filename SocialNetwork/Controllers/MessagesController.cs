@@ -49,7 +49,8 @@ namespace SocialNetwork.Controllers
             
             foreach (ChatSession item in chatSessions)
             {
-                chatSessionsAccount.Add(new KeyValuePair<ChatSession, Account>(item, GetChatPartner(item.ChatId)));    
+                var chatSession = dbContext.ChatSessions.Include(cs => cs.Messages).SingleOrDefault(cs => cs.ChatId == item.ChatId);
+                chatSessionsAccount.Add(new KeyValuePair<ChatSession, Account>(chatSession, GetChatPartner(item.ChatId)));    
             }
             
             ChatSessionMessagesViewModel chatSessionMessagesViewModel = new ChatSessionMessagesViewModel(
@@ -140,7 +141,6 @@ namespace SocialNetwork.Controllers
             dbContext.Accounts.SingleOrDefault(x => x.AccountId == CurrentAccount.account.AccountId).Messages.Add(message);
             
             dbContext.SaveChanges();
-            dbContext.SaveChangesAsync();
 
             var data = new
             {
