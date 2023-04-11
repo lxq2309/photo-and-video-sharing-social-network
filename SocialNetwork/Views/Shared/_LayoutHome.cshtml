@@ -31,11 +31,11 @@
 
     @*Quynh lam*@
     <style>
-        #upload-custom-btn{
+        #upload-custom-btn {
             margin: 10px 0;
         }
 
-        .upload-wrapper:hover{
+        .upload-wrapper:hover {
             cursor: pointer;
         }
 
@@ -51,13 +51,12 @@
 
         .liked {
             color: #c23564;
-            
         }
     </style>
 </head>
 
 <body>
-
+    <div class="notification-copy-successful">Copy link post successfully !</div>
 
     <div id="wrapper">
 
@@ -77,9 +76,6 @@
 
     <!-- Chi tiết 1 bài đăng (like, comment here) -->
     <!-- Story modal -->
-    
-
-
     <!-- Upload modal -->
     <form method="post" action="/Home/CreatePost" id="upload-modal" class="uk-modal-container" uk-modal enctype="multipart/form-data">
         <button class="uk-modal-close-default btn-close-upload" type="button" uk-close></button>
@@ -117,7 +113,7 @@
                         <a href="#">
                             <div class="bg-gradient-to-tr from-yellow-600 to-pink-600 p-0.5 rounded-full">
                                 <img src="@CurrentAccount.account.Avatar"
-                                        class="bg-gray-200 border border-white rounded-full w-8 h-8">
+                                     class="bg-gray-200 border border-white rounded-full w-8 h-8">
                             </div>
                         </a>
                         <span class="block text-lg font-semibold"> @CurrentAccount.account.DisplayName </span>
@@ -169,15 +165,15 @@
             }
         })
 
-         //Dark mode
-        (function (window, document, undefined) {
-            'use strict';
-            if (!('localStorage' in window)) return;
-            var nightMode = localStorage.getItem('gmtNightMode');
-            if (nightMode) {
-                document.documentElement.className += ' dark';
-            }
-        })(window, document);
+            //Dark mode
+            (function (window, document, undefined) {
+                'use strict';
+                if (!('localStorage' in window)) return;
+                var nightMode = localStorage.getItem('gmtNightMode');
+                if (nightMode) {
+                    document.documentElement.className += ' dark';
+                }
+            })(window, document);
 
 
         (function (window, document, undefined) {
@@ -226,22 +222,30 @@
 
     <script>
         // Slide show (fix)
-        var indexValue = 0;
-        showImg(indexValue);
-        function btm_slide(e) { showImg(indexValue = e); }
-        function side_slide(e) { showImg(indexValue += e); }
-        function showImg(e) {
+        let indexValue = 0;
+        function slideShow(postId) {
+            indexValue = 0;
+            showImg(postId, indexValue);
+        }
+        // Slide show (fix)
+
+        function btm_slide(postId, e) { showImg(postId, indexValue = e); }
+        function side_slide(postId, e) { showImg(postId, indexValue += e); }
+        function showImg(postId, e) {
             var i;
-            const img = document.querySelectorAll('#story-modal-3 .story-img');
-            const sliders = document.querySelectorAll('#story-modal-3 .btn-sliders span')
+            const img = document.querySelectorAll('#story-modal-' + postId + ' .story-img');
+            const sliders = document.querySelectorAll('#story-modal-' + postId + ' .btn-sliders span')
             if (e == img.length) {
                 indexValue = 0;
             }
             if (e < 0) {
-                indexValue = img.length -1;
+                indexValue = img.length - 1;
             }
             for (i = 0; i < img.length; i++) {
                 img[i].style.display = "none";
+                if (img[i].tagName.toLowerCase() === 'video') {
+                    img[i].pause();
+                }
             }
 
             for (i = 0; i < sliders.length; i++) {
@@ -282,10 +286,31 @@
             }
         });
 
+        function copyToClipboard(text) {
+            const input = document.createElement('input');
+            input.setAttribute('type', 'text');
+            input.setAttribute('value', text);
+
+            document.body.appendChild(input);
+
+            input.select();
+
+            document.execCommand('copy');
+
+            document.body.removeChild(input);
+
+            const notification = document.querySelector('.notification-copy-successful');
+            notification.style.display = 'block';
+
+            setTimeout(() => {
+                notification.style.display = 'none';
+            }, 3000);
+        }
+
     </script>
 
 
-  @*  Xử lí like và comment*@
+    @*  Xử lí like và comment*@
     <script>
         function handleLikePost(postId) {
             var str = '.handleLike_' + postId
@@ -353,11 +378,11 @@
                     commentModel.classList.add("items-center")
                     commentModel.classList.add("space-x-2")
                     commentModel.innerHTML = `
-                                            <img src="/assets/images/avatars/avatar-2.jpg" class="rounded-full w-8 h-8">
-                                                    <span class="block capitalize font-semibold dark:text-gray-100">${data.accountName}</span>
-                                            <div class="flex-1 p-2">
-                                                ${data.content}
-                                            </div> `
+                                                                    <img src="/assets/images/avatars/avatar-2.jpg" class="rounded-full w-8 h-8">
+                                                                            <span class="block capitalize font-semibold dark:text-gray-100">${data.accountName}</span>
+                                                                    <div class="flex-1 p-2">
+                                                                        ${data.content}
+                                                                    </div> `
 
                     commentAreaModel.appendChild(commentModel)
                     console.log(commentAreaModel)
@@ -367,15 +392,15 @@
                     // Them comment vao post
                     comment.classList.add("flex")
                     comment.innerHTML = `
-                                    <div class="w-10 h-10 rounded-full relative flex-shrink-0">
-                                        <img src="/assets/images/avatars/avatar-1.jpg" alt="" class="absolute h-full rounded-full w-full">
-                                    </div>
-                                    <div class="text-gray-700 py-2 px-3 rounded-md bg-gray-100 h-full relative lg:ml-5 ml-2 lg:mr-20  dark:bg-gray-800 dark:text-gray-100">
-                                        <span class="block capitalize font-semibold dark:text-gray-100">${data.accountName}</span>
-                                        <p class="leading-6"> ${data.content} <urna class="i uil-heart"></urna> <i class="uil-grin-tongue-wink"> </i>
-                                        </p>
-                                        <div class="absolute w-3 h-3 top-3 -left-1 bg-gray-100 transform rotate-45 dark:bg-gray-800"></div>
-                                    </div>`
+                                                            <div class="w-10 h-10 rounded-full relative flex-shrink-0">
+                                                                <img src="/assets/images/avatars/avatar-1.jpg" alt="" class="absolute h-full rounded-full w-full">
+                                                            </div>
+                                                            <div class="text-gray-700 py-2 px-3 rounded-md bg-gray-100 h-full relative lg:ml-5 ml-2 lg:mr-20  dark:bg-gray-800 dark:text-gray-100">
+                                                                <span class="block capitalize font-semibold dark:text-gray-100">${data.accountName}</span>
+                                                                <p class="leading-6"> ${data.content} <urna class="i uil-heart"></urna> <i class="uil-grin-tongue-wink"> </i>
+                                                                </p>
+                                                                <div class="absolute w-3 h-3 top-3 -left-1 bg-gray-100 transform rotate-45 dark:bg-gray-800"></div>
+                                                            </div>`
                     commentArea?.appendChild(comment)
 
 
@@ -386,6 +411,23 @@
             });
 
 
+        }
+    </script>
+
+    @*Chuyển trạng thái thông báo thành đã đọc*@
+    <script>
+        function readNoti(notiId) {
+            $.ajax({
+                url: `https://localhost:7150/api/actionapi/update_isRead?notiId=${notiId}`,
+                type: 'PUT',
+                contentType: 'application/json',
+                success: function (data) {
+                    // khong lam gi =))
+                },
+                error: function (xhr, textStatus, errorThrown) {
+                    alert("Error");
+                }
+            });
         }
     </script>
 
@@ -402,9 +444,9 @@
     }
 
     /* @@media (max-width: 470px) {
-              .border-md-top {
-                border-top: 1px solid #dee2e6;
-                border-left: none;
-              }
-            } */
+                          .border-md-top {
+                            border-top: 1px solid #dee2e6;
+                            border-left: none;
+                          }
+                        } */
 </style>

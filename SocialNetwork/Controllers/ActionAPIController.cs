@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
+using Microsoft.Extensions.Hosting;
 using Newtonsoft.Json;
 using SocialNetwork.Models;
 using SocialNetwork.Models.Authentication;
@@ -49,7 +50,16 @@ namespace SocialNetwork.Controllers
                 var account = db.Accounts.Include(x => x.Posts).FirstOrDefault(x => x.AccountId.Equals(CurrentAccount.account.AccountId));
                 account.Posts.Add(post);
                 post.LikeCount = post.LikeCount + 1;
-                db.SaveChanges();
+
+                // thêm dữ liệu vào bảng Notification
+                Notification newNoti = new Notification();
+                newNoti.PostId = post.PostId;
+                newNoti.Content = $"{CurrentAccount.account.FullName} đã thích bài viết của bạn";
+                newNoti.TypeNotification = 1;
+                newNoti.AccountId = post.AccountId;
+                db.Notifications.Add(newNoti);
+
+				db.SaveChanges();
                 return true;
             }
             return false;
@@ -66,7 +76,16 @@ namespace SocialNetwork.Controllers
                 db.Comments.Add(comment);
                 var post = db.Posts.SingleOrDefault(x => x.PostId == comment.PostId);
                 post.CommentCount = post.CommentCount + 1;
-                db.SaveChanges();
+
+				// thêm dữ liệu vào bảng Notification
+				Notification newNoti = new Notification();
+				newNoti.PostId = post.PostId;
+				newNoti.Content = $"{CurrentAccount.account.FullName} đã bình luận về bài viết của bạn";
+				newNoti.TypeNotification = 1;
+				newNoti.AccountId = post.AccountId;
+				db.Notifications.Add(newNoti);
+
+				db.SaveChanges();
 
                 var account = db.Accounts.SingleOrDefault(x => x.AccountId == comment.AccountId);
 
@@ -160,7 +179,16 @@ namespace SocialNetwork.Controllers
             CurrentAccount.account.Following = CurrentAccount.account.Following + 1;
             CurrentAccount.update();
             targetAccount.Follower = targetAccount.Follower + 1;
-            db.SaveChanges();
+
+			// thêm dữ liệu vào bảng Notification
+			Notification newNoti = new Notification();
+            newNoti.PostId = source;
+            newNoti.Content = $"{CurrentAccount.account.FullName} đã bắt đầu theo dõi bạn";
+            newNoti.TypeNotification = 2;
+			newNoti.AccountId = target;
+			db.Notifications.Add(newNoti);
+
+			db.SaveChanges();
             return true;
         }
 
@@ -233,7 +261,15 @@ namespace SocialNetwork.Controllers
             string query = $"INSERT INTO Relationship(SourceAccountID,TargetAccountID,TypeID)" +
                            $" VALUES ({source}, {target}, 1)";
             db.Database.ExecuteSqlRaw(query);
-            db.SaveChanges();
+
+			// thêm dữ liệu vào bảng Notification
+			Notification newNoti = new Notification();
+			newNoti.Content = $"{CurrentAccount.account.FullName} đã gửi yêu cầu theo dõi bạn";
+			newNoti.TypeNotification = 3;
+			newNoti.AccountId = target;
+			db.Notifications.Add(newNoti);
+
+			db.SaveChanges();
             return true;
         }
 
@@ -280,6 +316,30 @@ namespace SocialNetwork.Controllers
             CurrentAccount.update();
             sourceAccount.Following = sourceAccount.Following + 1;
             db.Database.ExecuteSqlRaw(query);
+
+			// thêm dữ liệu vào bảng Notification
+			Notification newNoti = new Notification();
+            newNoti.PostId = target;
+			newNoti.Content = $"{CurrentAccount.account.FullName} đã chấp nhận yêu cầu theo dõi của bạn";
+			newNoti.TypeNotification = 2;
+			newNoti.AccountId = source;
+			db.Notifications.Add(newNoti);
+
+			db.SaveChanges();
+            return true;
+        }
+
+        // Cập nhật thuộc tính isRead = true cho thông báo
+        [Route("update_isRead")]
+        [HttpPut]
+        public bool updateIsRead(int notiId)
+        {
+            var noti = db.Notifications.SingleOrDefault(x => x.NotiId == notiId);
+            if (noti == null)
+            {
+                return false;
+            }
+            noti.IsRead = true;
             db.SaveChanges();
             return true;
         }

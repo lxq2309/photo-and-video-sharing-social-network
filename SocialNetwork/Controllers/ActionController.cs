@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using SocialNetwork.Models;
 using SocialNetwork.Models.Authentication;
 using SocialNetwork.ViewModels;
@@ -22,13 +23,13 @@ namespace SocialNetwork.Controllers
             if (searchText == null)
             {
                 lstAccount = db.Accounts.ToList();
-                lstPost = db.Posts.ToList();
-                
+                lstPost = db.Posts.Where(x => x.IsDeleted == false).ToList();
             }
             else
             {
-                lstAccount = db.Accounts.ToList().Where(x => x.FullName.Contains(searchText)).ToList();
-                lstPost = db.Posts.ToList().Where(x => x.Content.Contains(searchText)).ToList();
+                lstAccount = db.Accounts.Where(x => x.FullName.Contains(searchText)).ToList();
+                // chỗ này đang bug
+                lstPost = db.Posts.Where(x => x.IsDeleted == false && x.Content != null).ToList();
             }
 
             var lstPostDetail = new List<PostDetailViewModel>();

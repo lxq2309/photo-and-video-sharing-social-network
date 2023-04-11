@@ -7,12 +7,20 @@
         @if (Model.GetListMedia().Count == 0)
         {
             <div class="story-modal-media">
+                
             </div>
         }
         else if (Model.GetListMedia().Count < 2)
         {
             <div class="story-modal-media">
-                <img src="@Model.GetListMedia()[0].MediaLink" alt="" class="post-image inset-0 h-full w-full">
+                @if (Model.GetListMedia()[0].MediaType == "video")
+                {
+                    <video src="@Model.GetListMedia()[0].MediaLink" muted controls allowfullscreen uk-responsive class="post-image inset-0 h-full w-full"></video>
+                }
+                else
+                {
+                    <img src="@Model.GetListMedia()[0].MediaLink" alt="" class="post-image inset-0 h-full w-full">
+                }
             </div>
         }
         else
@@ -20,21 +28,29 @@
             <div class="story-modal-slider">
                 <div class="content">
                     <div class="images">
-                        @foreach(var item in Model.GetListMedia())
+                        @foreach (var item in Model.GetListMedia())
                         {
-                            <img src="@item.MediaLink" alt="" class="story-img">
+                            if (item.MediaType == "video")
+                            {
+                                <video src="@item.MediaLink" muted controls allowfullscreen uk-responsive class="story-img w-full"></video>
+                            }
+                            else
+                            {
+                                <img src="@item.MediaLink" alt="" class="story-img">
+                            }
                         }
                     </div>
-                    <div onclick="side_slide(-1)" class="slide left">
+                    <div onclick="side_slide(@Model.Post.PostId, -1)" class="slide left">
                         <span class="fas fa-angle-left"></span>
                     </div>
-                    <div onclick="side_slide(1)" class="slide right">
+                    <div onclick="side_slide(@Model.Post.PostId, 1)" class="slide right">
                         <span class="fas fa-angle-right"></span>
                     </div>
                     <div class="btn-sliders">
-                        <span onclick="btm_slide(0)"></span>
-                        <span onclick="btm_slide(1)"></span>
-                        <span onclick="btm_slide(2)"></span>
+                        @for (int i = 0; i < Model.GetListMedia().Count; i++)
+                        {
+                            <span onclick="btm_slide(@Model.Post.PostId, @i)"></span>
+                        }
                     </div>
                 </div>
             </div>
@@ -73,7 +89,7 @@
                             }
                             <div onclick="handleLikePost(@Model.Post.PostId)" style="cursor: pointer;" class="flex font-bold items-baseline handleLike_@Model.Post.PostId @like"> <i style="font-size: 16px; margin-right: 5px;" class="fa-solid fa-thumbs-up"></i> </i> Like</div>
                         </a>
-                        <a  class="flex items-center space-x-3">
+                        <a class="flex items-center space-x-3">
                             <div class="flex font-bold items-baseline"> <i style="font-size: 16px; margin-right: 5px;" class="fa-solid fa-comment"></i> Comment</div>
                         </a>
                         <a href="#" class="flex items-center space-x-3">

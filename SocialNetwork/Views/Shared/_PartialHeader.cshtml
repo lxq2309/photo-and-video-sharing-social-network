@@ -52,19 +52,72 @@
             <ul class="dropdown_scrollbar" data-simplebar>
                 @foreach (var item in CurrentAccount.Data.getListNotification())
                 {
-                    <li>
-                        <a href="#@item.PostId">
-                            <div class="drop_content">
-                                <p>
-                                    @item.Content
-                                </p>
-                                <span class="time-ago"> @item.CreateAt </span>
-                            </div>
-                        </a>
-                    </li>
+                    if (item.TypeNotification == 1)
+                    {
+                        // TypeNotification = 1 là thông báo về các tương tác liên quan đến bài đăng
+                        <li>
+                            <a href="#@item.PostId" onclick="readNoti(@item.NotiId)">
+                                <div class="drop_content">
+                                    <p>
+                                        @if (item.IsRead == false)
+                                        {
+                                            <span style="color: black; font-weight: bold;">@item.Content</span>
+                                        }
+                                        else
+                                        {
+                                            @item.Content
+                                        }
+                                    </p>
+                                    <span class="time-ago"> @item.CreateAt </span>
+                                </div>
+                            </a>
+                        </li>
+                    }
+                    else if (item.TypeNotification == 2)
+                    {
+                        // TypeNotification = 2 là thông báo liên quan đến các hoạt động follow, chấp nhận yêu cầu follow
+                        <li>
+                            <a href="/account/profile?accountId=@item.PostId" onclick="readNoti(@item.NotiId)">
+                                <div class="drop_content">
+                                    <p>
+                                        @if (item.IsRead == false)
+                                        {
+                                            <span style="color: black; font-weight: bold;">@item.Content</span>
+                                        }
+                                        else
+                                        {
+                                            @item.Content
+                                        }
+                                    </p>
+                                    <span class="time-ago"> @item.CreateAt </span>
+                                </div>
+                            </a>
+                        </li>
+                    }
+                    else if (item.TypeNotification == 3)
+                    {
+                        // TypeNotification = 3 là thông báo liên quan đến hoạt động gửi yêu cầu follow
+                        <li>
+                            <a href="/account/FollowRequest" onclick="readNoti(@item.NotiId)">
+                                <div class="drop_content">
+                                    <p>
+                                        @if (item.IsRead == false)
+                                        {
+                                            <span style="color: black; font-weight: bold;">@item.Content</span>
+                                        }
+                                        else
+                                        {
+                                            @item.Content
+                                        }
+                                    </p>
+                                    <span class="time-ago"> @item.CreateAt </span>
+                                </div>
+                            </a>
+                        </li>
+                    }
+                    
                 }
             </ul>
-            <a href="#" class="see-all">See all</a>
         </div>
 
         <!-- Messages -->

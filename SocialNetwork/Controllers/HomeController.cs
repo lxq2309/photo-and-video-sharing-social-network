@@ -41,7 +41,6 @@ namespace SocialNetwork.Controllers
 		public IActionResult CreatePost(string Content, List<IFormFile> images)
 		{
 			Post post = new Post();
-			 Medium medium = new Medium();
 			post.AccountId = CurrentAccount.account.AccountId;
 			post.Content = Content;
 			post.CreateAt = DateTime.Now;
@@ -62,11 +61,17 @@ namespace SocialNetwork.Controllers
 						image.CopyTo(stream);
 					}
 					string filepath = "/images/post/" + CurrentAccount.account.AccountId + "/" + image.FileName;
-                    //var postID = post.PostId;
-                    //Medium medium = new Medium();
-                    medium.PostId = post.PostId;
+					Medium medium = new Medium();
+					medium.PostId = post.PostId;
 					medium.MediaLink = filepath.ToString();
-					medium.MediaType = image.GetType().Name.ToString();
+                    if (image.ContentType.Contains("image"))
+                    {
+                        medium.MediaType = "image";
+                    }
+					else if (image.ContentType.Contains("video"))
+					{
+						medium.MediaType = "video";
+					}
 					context.Media.Add(medium);
 				}
 			}
@@ -85,6 +90,18 @@ namespace SocialNetwork.Controllers
             }
 
             return RedirectToAction("Index");
+        }
+
+		[Route("~/p/{postId}")]
+		public IActionResult SinglePostDetail(int postId)
+		{
+            var singlePost = context.Posts.SingleOrDefault(x => x.PostId == postId && x.IsDeleted == false);
+			if (singlePost == null)
+			{
+				return RedirectToAction("Index");
+			}
+			var singlePostDetail = new ViewModels.PostDetailViewModel(singlePost);
+			return View(singlePostDetail);
         }
     }
 }

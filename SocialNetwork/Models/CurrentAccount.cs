@@ -3,9 +3,10 @@
     public static class CurrentAccount
     {
         public static Account account;
-        private static SocialNetworkDbContext _context = new SocialNetworkDbContext();
+        private static SocialNetworkDbContext _context;
         public static void initSession(int accountId)
         {
+            _context = new SocialNetworkDbContext();
             account = _context.Accounts.SingleOrDefault(x => x.AccountId == accountId);
         }
 
@@ -18,17 +19,18 @@
         {
             public static int getPostCount()
             {
-                return _context.Posts.Count(x => x.AccountId == account.AccountId);
+                return new SocialNetworkDbContext().Posts.Count(x => x.AccountId == account.AccountId);
             }
 
             public static List<Notification> getListNotification()
             {
-                return _context.Notifications.Where(x => x.AccountId == account.AccountId).ToList();
+                return new SocialNetworkDbContext().Notifications.Where(x => x.AccountId == account.AccountId).OrderByDescending(x => x.NotiId).ToList();
             }
 
             public static List<ChatSession> getListChatSession()
             {
-                return _context.Accounts
+                update();
+                return new SocialNetworkDbContext().Accounts
                     .Where(x => x.AccountId == account.AccountId)
                     .SelectMany(x => x.Chats)
                     .ToList();
@@ -36,7 +38,8 @@
 
             public static Message getNewestMessage(ChatSession chatSession)
             {
-                return _context.Messages.Where(x => x.ChatId == chatSession.ChatId).OrderByDescending(x => x.MessageId).FirstOrDefault();
+                update();
+                return new SocialNetworkDbContext().Messages.Where(x => x.ChatId == chatSession.ChatId).OrderByDescending(x => x.MessageId).FirstOrDefault();
             }
         }
     }

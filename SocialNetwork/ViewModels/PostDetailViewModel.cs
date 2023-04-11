@@ -37,5 +37,17 @@ namespace SocialNetwork.ViewModels
             return _context.Accounts.Single(x => x.AccountId == comment.AccountId);
         }
 
+        public bool checkContainVideo()
+        {
+            foreach (var x in GetListMedia())
+            {
+                if (x.MediaType == "video")
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
     }
 }

@@ -69,7 +69,7 @@
                     Accept
                     </button>
                 <button class="decline px-4 py-2 text-sm text-black bg-gray-100 rounded-full transition duration-200 shadow-md"
-                        onclick="">
+                        onclick="declineRequestFollow(@item.AccountId, @CurrentAccount.account.AccountId)">
                     Decline
                 </button>
             </div>
@@ -94,4 +94,18 @@
             }
         });
     }
+
+    function declineRequestFollow(sourceId, targetId) {
+            $.ajax({
+                url: `https://localhost:7150/api/actionapi/cancel_request_follow?source=${sourceId}&target=${targetId}`,
+                type: 'DELETE',
+                contentType: 'application/json',
+                success: function (data) {
+                    location.reload();
+                },
+                error: function (xhr, textStatus, errorThrown) {
+                    alert("Error");
+                }
+            });
+        }
 </script>
