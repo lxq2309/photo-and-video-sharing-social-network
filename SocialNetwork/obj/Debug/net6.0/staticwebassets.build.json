@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "kE76BCr5BqMzHdZHNy103q8e+cMPKx2rAI+9wA6GN+4=",
+  "Hash": "ttNrpSWyX4VAJz9xN1snAPSzgV6Thi/uLPNFIBuLT5Q=",
   "Source": "SocialNetwork",
   "BasePath": "_content/SocialNetwork",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "SocialNetwork\\wwwroot",
       "Source": "SocialNetwork",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\obj\\Debug\\net6.0\\scopedcss\\bundle\\SocialNetwork.styles.css",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\obj\\Debug\\net6.0\\scopedcss\\bundle\\SocialNetwork.styles.css",
       "SourceId": "SocialNetwork",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "SocialNetwork.styles.css",
       "AssetKind": "All",
@@ -31,13 +31,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\obj\\Debug\\net6.0\\scopedcss\\bundle\\SocialNetwork.styles.css"
+      "OriginalItemSpec": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\obj\\Debug\\net6.0\\scopedcss\\bundle\\SocialNetwork.styles.css"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\SocialNetwork.bundle.scp.css",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\SocialNetwork.bundle.scp.css",
       "SourceId": "SocialNetwork",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "SocialNetwork.bundle.scp.css",
       "AssetKind": "All",
@@ -48,13 +48,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\SocialNetwork.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\SocialNetwork.bundle.scp.css"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\assets\\css\\chat.css",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\assets\\css\\chat.css",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "assets/css/chat.css",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\chat.css"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\assets\\css\\icon.css",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\assets\\css\\icon.css",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "assets/css/icon.css",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\icon.css"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\assets\\css\\lxq_add.css",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\assets\\css\\lxq_add.css",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "assets/css/lxq_add.css",
       "AssetKind": "All",
@@ -102,10 +102,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\lxq_add.css"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\assets\\css\\style.css",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\assets\\css\\style.css",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "assets/css/style.css",
       "AssetKind": "All",
@@ -119,10 +119,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\style.css"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\assets\\css\\tailwind.css",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\assets\\css\\tailwind.css",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "assets/css/tailwind.css",
       "AssetKind": "All",
@@ -136,10 +136,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\tailwind.css"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\assets\\css\\uikit.css",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\assets\\css\\uikit.css",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "assets/css/uikit.css",
       "AssetKind": "All",
@@ -153,10 +153,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\uikit.css"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\assets\\fonts\\Feather-Icons.ttf",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\assets\\fonts\\Feather-Icons.ttf",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "assets/fonts/Feather-Icons.ttf",
       "AssetKind": "All",
@@ -170,10 +170,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\fonts\\Feather-Icons.ttf"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\assets\\fonts\\Material-Icons.ttf",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\assets\\fonts\\Material-Icons.ttf",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "assets/fonts/Material-Icons.ttf",
       "AssetKind": "All",
@@ -187,10 +187,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\fonts\\Material-Icons.ttf"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\assets\\fonts\\unicons.woff",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\assets\\fonts\\unicons.woff",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "assets/fonts/unicons.woff",
       "AssetKind": "All",
@@ -204,10 +204,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\fonts\\unicons.woff"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\assets\\images\\avatars\\avatar-1.jpg",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\assets\\images\\avatars\\avatar-1.jpg",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "assets/images/avatars/avatar-1.jpg",
       "AssetKind": "All",
@@ -221,10 +221,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\avatars\\avatar-1.jpg"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\assets\\images\\avatars\\avatar-2.jpg",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\assets\\images\\avatars\\avatar-2.jpg",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "assets/images/avatars/avatar-2.jpg",
       "AssetKind": "All",
@@ -238,10 +238,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\avatars\\avatar-2.jpg"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\assets\\images\\avatars\\avatar-3.jpg",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\assets\\images\\avatars\\avatar-3.jpg",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "assets/images/avatars/avatar-3.jpg",
       "AssetKind": "All",
@@ -255,10 +255,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\avatars\\avatar-3.jpg"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\assets\\images\\avatars\\avatar-4.jpg",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\assets\\images\\avatars\\avatar-4.jpg",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "assets/images/avatars/avatar-4.jpg",
       "AssetKind": "All",
@@ -272,10 +272,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\avatars\\avatar-4.jpg"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\assets\\images\\avatars\\avatar-5.jpg",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\assets\\images\\avatars\\avatar-5.jpg",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "assets/images/avatars/avatar-5.jpg",
       "AssetKind": "All",
@@ -289,10 +289,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\avatars\\avatar-5.jpg"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\assets\\images\\avatars\\avatar-6.jpg",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\assets\\images\\avatars\\avatar-6.jpg",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "assets/images/avatars/avatar-6.jpg",
       "AssetKind": "All",
@@ -306,10 +306,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\avatars\\avatar-6.jpg"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\assets\\images\\avatars\\avatar-7.jpg",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\assets\\images\\avatars\\avatar-7.jpg",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "assets/images/avatars/avatar-7.jpg",
       "AssetKind": "All",
@@ -323,10 +323,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\avatars\\avatar-7.jpg"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\assets\\images\\avatars\\avatar-lg-1.jpg",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\assets\\images\\avatars\\avatar-lg-1.jpg",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "assets/images/avatars/avatar-lg-1.jpg",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\avatars\\avatar-lg-1.jpg"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\assets\\images\\icon-play.svg",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\assets\\images\\icon-play.svg",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "assets/images/icon-play.svg",
       "AssetKind": "All",
@@ -357,10 +357,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\icon-play.svg"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\assets\\images\\logo.png",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\assets\\images\\logo.png",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "assets/images/logo.png",
       "AssetKind": "All",
@@ -374,10 +374,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\logo.png"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\assets\\images\\logo-light.png",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\assets\\images\\logo-light.png",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "assets/images/logo-light.png",
       "AssetKind": "All",
@@ -391,10 +391,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\logo-light.png"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\assets\\images\\logo-mobile.png",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\assets\\images\\logo-mobile.png",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "assets/images/logo-mobile.png",
       "AssetKind": "All",
@@ -408,10 +408,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\logo-mobile.png"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\assets\\images\\logo-mobile-light.png",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\assets\\images\\logo-mobile-light.png",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "assets/images/logo-mobile-light.png",
       "AssetKind": "All",
@@ -425,10 +425,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\logo-mobile-light.png"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\assets\\images\\post\\img1.jpg",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\assets\\images\\post\\img1.jpg",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "assets/images/post/img1.jpg",
       "AssetKind": "All",
@@ -442,10 +442,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\post\\img1.jpg"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\assets\\images\\post\\img10.jpg",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\assets\\images\\post\\img10.jpg",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "assets/images/post/img10.jpg",
       "AssetKind": "All",
@@ -459,10 +459,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\post\\img10.jpg"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\assets\\images\\post\\img11.jpg",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\assets\\images\\post\\img11.jpg",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "assets/images/post/img11.jpg",
       "AssetKind": "All",
@@ -476,10 +476,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\post\\img11.jpg"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\assets\\images\\post\\img2.jpg",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\assets\\images\\post\\img2.jpg",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "assets/images/post/img2.jpg",
       "AssetKind": "All",
@@ -493,10 +493,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\post\\img2.jpg"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\assets\\images\\post\\img3.jpg",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\assets\\images\\post\\img3.jpg",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "assets/images/post/img3.jpg",
       "AssetKind": "All",
@@ -510,10 +510,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\post\\img3.jpg"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\assets\\images\\post\\img4.jpg",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\assets\\images\\post\\img4.jpg",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "assets/images/post/img4.jpg",
       "AssetKind": "All",
@@ -527,10 +527,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\post\\img4.jpg"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\assets\\images\\post\\img5.jpg",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\assets\\images\\post\\img5.jpg",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "assets/images/post/img5.jpg",
       "AssetKind": "All",
@@ -544,10 +544,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\post\\img5.jpg"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\assets\\images\\post\\img6.jpg",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\assets\\images\\post\\img6.jpg",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "assets/images/post/img6.jpg",
       "AssetKind": "All",
@@ -561,10 +561,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\post\\img6.jpg"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\assets\\images\\post\\img7.jpg",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\assets\\images\\post\\img7.jpg",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "assets/images/post/img7.jpg",
       "AssetKind": "All",
@@ -578,10 +578,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\post\\img7.jpg"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\assets\\images\\post\\img8.jpg",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\assets\\images\\post\\img8.jpg",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "assets/images/post/img8.jpg",
       "AssetKind": "All",
@@ -595,10 +595,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\post\\img8.jpg"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\assets\\images\\post\\img9.jpg",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\assets\\images\\post\\img9.jpg",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "assets/images/post/img9.jpg",
       "AssetKind": "All",
@@ -612,10 +612,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\post\\img9.jpg"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\assets\\images\\post\\VSCodeUserSetup-x64-1.74.3.exe",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\assets\\images\\post\\VSCodeUserSetup-x64-1.74.3.exe",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "assets/images/post/VSCodeUserSetup-x64-1.74.3.exe",
       "AssetKind": "All",
@@ -629,10 +629,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\post\\VSCodeUserSetup-x64-1.74.3.exe"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\assets\\js\\custom.js",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\assets\\js\\custom.js",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "assets/js/custom.js",
       "AssetKind": "All",
@@ -646,10 +646,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\js\\custom.js"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\assets\\js\\jquery-3.3.1.min.js",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\assets\\js\\jquery-3.3.1.min.js",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "assets/js/jquery-3.3.1.min.js",
       "AssetKind": "All",
@@ -663,10 +663,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\js\\jquery-3.3.1.min.js"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\assets\\js\\simplebar.js",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\assets\\js\\simplebar.js",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "assets/js/simplebar.js",
       "AssetKind": "All",
@@ -680,10 +680,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\js\\simplebar.js"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\assets\\js\\tippy.all.min.js",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\assets\\js\\tippy.all.min.js",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "assets/js/tippy.all.min.js",
       "AssetKind": "All",
@@ -697,10 +697,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\js\\tippy.all.min.js"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\assets\\js\\uikit.js",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\assets\\js\\uikit.js",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "assets/js/uikit.js",
       "AssetKind": "All",
@@ -714,10 +714,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\js\\uikit.js"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\css\\site.css",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -731,10 +731,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\favicon.ico",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -748,10 +748,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\images\\avatars\\1\\Untitled.png",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\images\\avatars\\1\\Untitled.png",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "images/avatars/1/Untitled.png",
       "AssetKind": "All",
@@ -765,12 +765,12 @@
       "OriginalItemSpec": "wwwroot\\images\\avatars\\1\\Untitled.png"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\images\\post\\1\\30ab15407f558f0bd644.jpg",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\images\\avatars\\2\\ace3efc08ed57e8b27c4.jpg",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
-      "RelativePath": "images/post/1/30ab15407f558f0bd644.jpg",
+      "RelativePath": "images/avatars/2/ace3efc08ed57e8b27c4.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -779,15 +779,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\post\\1\\30ab15407f558f0bd644.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\avatars\\2\\ace3efc08ed57e8b27c4.jpg"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\images\\post\\1\\315f0261839977c72e88.jpg",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\images\\post\\1\\25\\Vungdatlinhhon2.jpg",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
-      "RelativePath": "images/post/1/315f0261839977c72e88.jpg",
+      "RelativePath": "images/post/1/25/Vungdatlinhhon2.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -796,15 +796,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\post\\1\\315f0261839977c72e88.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\post\\1\\25\\Vungdatlinhhon2.jpg"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\images\\post\\1\\338037995_1542704712805931_4724205851980010884_n.mp4",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\images\\post\\1\\25\\Winds+of+Change+post.jpg",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
-      "RelativePath": "images/post/1/338037995_1542704712805931_4724205851980010884_n.mp4",
+      "RelativePath": "images/post/1/25/Winds+of+Change+post.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -813,15 +813,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\post\\1\\338037995_1542704712805931_4724205851980010884_n.mp4"
+      "OriginalItemSpec": "wwwroot\\images\\post\\1\\25\\Winds+of+Change+post.jpg"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\images\\post\\1\\338227254_865872157806459_2605259051707135787_n.mp4",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\images\\post\\1\\25\\yuumei.jpg",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
-      "RelativePath": "images/post/1/338227254_865872157806459_2605259051707135787_n.mp4",
+      "RelativePath": "images/post/1/25/yuumei.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -830,15 +830,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\post\\1\\338227254_865872157806459_2605259051707135787_n.mp4"
+      "OriginalItemSpec": "wwwroot\\images\\post\\1\\25\\yuumei.jpg"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\images\\post\\1\\33b8dd0d3a18ca469309.jpg",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\images\\post\\1\\25\\yuumei2.jpg",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
-      "RelativePath": "images/post/1/33b8dd0d3a18ca469309.jpg",
+      "RelativePath": "images/post/1/25/yuumei2.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -847,15 +847,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\post\\1\\33b8dd0d3a18ca469309.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\post\\1\\25\\yuumei2.jpg"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\images\\post\\1\\5463d1e3baf64aa813e7.jpg",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\images\\post\\1\\25\\yuumei3.jpg",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
-      "RelativePath": "images/post/1/5463d1e3baf64aa813e7.jpg",
+      "RelativePath": "images/post/1/25/yuumei3.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -864,15 +864,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\post\\1\\5463d1e3baf64aa813e7.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\post\\1\\25\\yuumei3.jpg"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\images\\post\\1\\676d04f86fed9fb3c6fc.jpg",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\images\\post\\1\\26\\1da66002871777492e06.jpg",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
-      "RelativePath": "images/post/1/676d04f86fed9fb3c6fc.jpg",
+      "RelativePath": "images/post/1/26/1da66002871777492e06.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -881,15 +881,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\post\\1\\676d04f86fed9fb3c6fc.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\post\\1\\26\\1da66002871777492e06.jpg"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\images\\post\\1\\74f475103505c55b9c14.jpg",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\images\\post\\1\\26\\3ed4c3a2a5b755e90ca6.jpg",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
-      "RelativePath": "images/post/1/74f475103505c55b9c14.jpg",
+      "RelativePath": "images/post/1/26/3ed4c3a2a5b755e90ca6.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -898,15 +898,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\post\\1\\74f475103505c55b9c14.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\post\\1\\26\\3ed4c3a2a5b755e90ca6.jpg"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\images\\post\\1\\84580651.jpg",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\images\\post\\1\\26\\9a2674701265e23bbb74.jpg",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
-      "RelativePath": "images/post/1/84580651.jpg",
+      "RelativePath": "images/post/1/26/9a2674701265e23bbb74.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -915,285 +915,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\post\\1\\84580651.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\post\\1\\26\\9a2674701265e23bbb74.jpg"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\images\\post\\1\\88f1f6259230626e3b21.jpg",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\js\\site.js",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
-      "BasePath": "_content/SocialNetwork",
-      "RelativePath": "images/post/1/88f1f6259230626e3b21.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\post\\1\\88f1f6259230626e3b21.jpg"
-    },
-    {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\images\\post\\1\\9ec24b5d2148d1168859.jpg",
-      "SourceId": "SocialNetwork",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
-      "BasePath": "_content/SocialNetwork",
-      "RelativePath": "images/post/1/9ec24b5d2148d1168859.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\post\\1\\9ec24b5d2148d1168859.jpg"
-    },
-    {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\images\\post\\1\\Untitled.png",
-      "SourceId": "SocialNetwork",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
-      "BasePath": "_content/SocialNetwork",
-      "RelativePath": "images/post/1/Untitled.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\post\\1\\Untitled.png"
-    },
-    {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\images\\post\\1\\vjp.png",
-      "SourceId": "SocialNetwork",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
-      "BasePath": "_content/SocialNetwork",
-      "RelativePath": "images/post/1/vjp.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\post\\1\\vjp.png"
-    },
-    {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\images\\post\\1\\WIN_20220820_10_58_57_Pro.jpg",
-      "SourceId": "SocialNetwork",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
-      "BasePath": "_content/SocialNetwork",
-      "RelativePath": "images/post/1/WIN_20220820_10_58_57_Pro.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\post\\1\\WIN_20220820_10_58_57_Pro.jpg"
-    },
-    {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\images\\post\\1\\WIN_20220820_11_04_33_Pro.jpg",
-      "SourceId": "SocialNetwork",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
-      "BasePath": "_content/SocialNetwork",
-      "RelativePath": "images/post/1/WIN_20220820_11_04_33_Pro.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\post\\1\\WIN_20220820_11_04_33_Pro.jpg"
-    },
-    {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\images\\post\\1\\WIN_20220820_11_05_03_Pro.mp4",
-      "SourceId": "SocialNetwork",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
-      "BasePath": "_content/SocialNetwork",
-      "RelativePath": "images/post/1/WIN_20220820_11_05_03_Pro.mp4",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\post\\1\\WIN_20220820_11_05_03_Pro.mp4"
-    },
-    {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\images\\post\\1\\WIN_20220820_11_05_56_Pro.jpg",
-      "SourceId": "SocialNetwork",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
-      "BasePath": "_content/SocialNetwork",
-      "RelativePath": "images/post/1/WIN_20220820_11_05_56_Pro.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\post\\1\\WIN_20220820_11_05_56_Pro.jpg"
-    },
-    {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\images\\post\\1\\WIN_20220826_08_07_15_Pro.jpg",
-      "SourceId": "SocialNetwork",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
-      "BasePath": "_content/SocialNetwork",
-      "RelativePath": "images/post/1/WIN_20220826_08_07_15_Pro.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\post\\1\\WIN_20220826_08_07_15_Pro.jpg"
-    },
-    {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\images\\post\\1\\z3249180089855_2d532cfd38a83f723e91dc98ae32b490.jpg",
-      "SourceId": "SocialNetwork",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
-      "BasePath": "_content/SocialNetwork",
-      "RelativePath": "images/post/1/z3249180089855_2d532cfd38a83f723e91dc98ae32b490.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\post\\1\\z3249180089855_2d532cfd38a83f723e91dc98ae32b490.jpg"
-    },
-    {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\images\\post\\1\\z3249180090900_b974e1857a0fde3f4ff99f2a656fae81.jpg",
-      "SourceId": "SocialNetwork",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
-      "BasePath": "_content/SocialNetwork",
-      "RelativePath": "images/post/1/z3249180090900_b974e1857a0fde3f4ff99f2a656fae81.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\post\\1\\z3249180090900_b974e1857a0fde3f4ff99f2a656fae81.jpg"
-    },
-    {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\images\\post\\1\\z3249180092176_3b0139433633f080c621159f2e88b701.jpg",
-      "SourceId": "SocialNetwork",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
-      "BasePath": "_content/SocialNetwork",
-      "RelativePath": "images/post/1/z3249180092176_3b0139433633f080c621159f2e88b701.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\post\\1\\z3249180092176_3b0139433633f080c621159f2e88b701.jpg"
-    },
-    {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\images\\post\\1\\z3249180123106_8e5f29f8427bdb36c8853df6f1af6441.jpg",
-      "SourceId": "SocialNetwork",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
-      "BasePath": "_content/SocialNetwork",
-      "RelativePath": "images/post/1/z3249180123106_8e5f29f8427bdb36c8853df6f1af6441.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\post\\1\\z3249180123106_8e5f29f8427bdb36c8853df6f1af6441.jpg"
-    },
-    {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\images\\post\\1\\z3249180125248_66fd22bdeb4e56d37a371146d3d4d4c9.jpg",
-      "SourceId": "SocialNetwork",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
-      "BasePath": "_content/SocialNetwork",
-      "RelativePath": "images/post/1/z3249180125248_66fd22bdeb4e56d37a371146d3d4d4c9.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\post\\1\\z3249180125248_66fd22bdeb4e56d37a371146d3d4d4c9.jpg"
-    },
-    {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\images\\post\\1\\z3249180126700_6256a8fd6ecda1108e9e3cd0ad79a5b5.jpg",
-      "SourceId": "SocialNetwork",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
-      "BasePath": "_content/SocialNetwork",
-      "RelativePath": "images/post/1/z3249180126700_6256a8fd6ecda1108e9e3cd0ad79a5b5.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\post\\1\\z3249180126700_6256a8fd6ecda1108e9e3cd0ad79a5b5.jpg"
-    },
-    {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\images\\post\\1\\z3249180130296_e39020cd8d1a7f5cf14c2e51bcab72ec.jpg",
-      "SourceId": "SocialNetwork",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
-      "BasePath": "_content/SocialNetwork",
-      "RelativePath": "images/post/1/z3249180130296_e39020cd8d1a7f5cf14c2e51bcab72ec.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\post\\1\\z3249180130296_e39020cd8d1a7f5cf14c2e51bcab72ec.jpg"
-    },
-    {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\js\\site.js",
-      "SourceId": "SocialNetwork",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -1207,10 +935,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -1224,10 +952,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -1241,10 +969,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -1258,10 +986,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -1275,10 +1003,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -1292,10 +1020,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -1309,10 +1037,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -1326,10 +1054,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -1343,10 +1071,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -1360,10 +1088,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -1377,10 +1105,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -1394,10 +1122,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -1411,10 +1139,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -1428,10 +1156,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -1445,10 +1173,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -1462,10 +1190,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -1479,10 +1207,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -1496,10 +1224,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -1513,10 +1241,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -1530,10 +1258,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -1547,10 +1275,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -1564,10 +1292,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -1581,10 +1309,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -1598,10 +1326,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -1615,10 +1343,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -1632,10 +1360,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -1649,10 +1377,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -1666,10 +1394,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -1683,10 +1411,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -1700,10 +1428,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -1717,10 +1445,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -1734,10 +1462,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -1751,10 +1479,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -1768,10 +1496,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -1785,10 +1513,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -1802,10 +1530,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -1819,10 +1547,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -1836,10 +1564,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -1853,10 +1581,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -1870,10 +1598,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -1887,10 +1615,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -1904,10 +1632,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -1921,10 +1649,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -1938,10 +1666,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -1955,10 +1683,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -1972,10 +1700,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -1989,10 +1717,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -2006,10 +1734,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -2023,10 +1751,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -2040,10 +1768,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -2057,10 +1785,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -2074,10 +1802,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -2091,10 +1819,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -2108,10 +1836,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -2125,10 +1853,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -2142,10 +1870,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -2159,10 +1887,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Working\\BTLWeb\\New\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
