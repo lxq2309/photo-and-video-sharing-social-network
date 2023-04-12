@@ -53,14 +53,14 @@ namespace SocialNetwork.Controllers
 			{
 				if (image != null)
 				{
-					string serverMapPath = Path.Combine(_env.WebRootPath, "images/post/" + CurrentAccount.account.AccountId + "/" + post.PostId);
+					string serverMapPath = Path.Combine(_env.WebRootPath, $"images/post/{CurrentAccount.account.AccountId}/{post.PostId}");
 					string serverMapPathFile = Path.Combine(serverMapPath, image.FileName);
 					Directory.CreateDirectory(serverMapPath);
 					using (var stream = new FileStream(serverMapPathFile, FileMode.Create))
 					{
 						image.CopyTo(stream);
 					}
-					string filepath = "/images/post/" + CurrentAccount.account.AccountId + "/" + image.FileName;
+					string filepath = $"/images/post/{CurrentAccount.account.AccountId}/{post.PostId}/{image.FileName}";
 					Medium medium = new Medium();
 					medium.PostId = post.PostId;
 					medium.MediaLink = filepath.ToString();

@@ -38,7 +38,7 @@
 
         <div>
             <div class="bg-gradient-to-tr from-yellow-600 to-pink-600 p-1 rounded-full m-0.5 mr-2  w-56 h-56 relative overflow-hidden uk-transition-toggle">
-                <img src="@CurrentAccount.account.Avatar"
+                <img src="@Model.Avatar"
                      class="bg-gray-200 border-4 border-white rounded-full w-full h-full dark:border-gray-900"
                      onclick="$('#upload-profile-picture').modal({fadeDuration: 50, fadeDelay: 0.5, showClose: false});">
             </div>
@@ -209,7 +209,7 @@
     <div class="my-6 grid lg:grid-cols-4 grid-cols-2 gap-1.5 hover:text-yellow-700 uk-link-reset">
         @if (currentAccountId != targetAccountId && Model.AccountType == "Private" && !ViewBag.Following)
         {
-            <p>Đây là tài khoản riêng tư</p>
+            <p>Đây là tài khoản riêng tư, vui lòng theo dõi để xem bài viết của họ</p>
         }
         else
         {
@@ -231,7 +231,7 @@
                                 {
                                     if (containVideo)
                                     {
-                                        linkImg = "https://cdn-icons-png.flaticon.com/512/4404/4404094.png";
+                                        linkImg = "https://img.freepik.com/premium-vector/video-icon_609277-390.jpg";
                                     }
                                     else
                                     {

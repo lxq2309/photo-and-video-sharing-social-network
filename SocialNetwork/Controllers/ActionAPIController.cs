@@ -52,13 +52,15 @@ namespace SocialNetwork.Controllers
                 post.LikeCount = post.LikeCount + 1;
 
                 // thêm dữ liệu vào bảng Notification
-                Notification newNoti = new Notification();
-                newNoti.PostId = post.PostId;
-                newNoti.Content = $"{CurrentAccount.account.FullName} đã thích bài viết của bạn";
-                newNoti.TypeNotification = 1;
-                newNoti.AccountId = post.AccountId;
-                db.Notifications.Add(newNoti);
-
+                if (CurrentAccount.account.AccountId != post.AccountId)
+                {
+                    Notification newNoti = new Notification();
+                    newNoti.PostId = post.PostId;
+                    newNoti.Content = $"{CurrentAccount.account.FullName} đã thích bài viết của bạn";
+                    newNoti.TypeNotification = 1;
+                    newNoti.AccountId = post.AccountId;
+                    db.Notifications.Add(newNoti);
+                }
 				db.SaveChanges();
                 return true;
             }
@@ -77,14 +79,16 @@ namespace SocialNetwork.Controllers
                 var post = db.Posts.SingleOrDefault(x => x.PostId == comment.PostId);
                 post.CommentCount = post.CommentCount + 1;
 
-				// thêm dữ liệu vào bảng Notification
-				Notification newNoti = new Notification();
-				newNoti.PostId = post.PostId;
-				newNoti.Content = $"{CurrentAccount.account.FullName} đã bình luận về bài viết của bạn";
-				newNoti.TypeNotification = 1;
-				newNoti.AccountId = post.AccountId;
-				db.Notifications.Add(newNoti);
-
+                // thêm dữ liệu vào bảng Notification
+                if (CurrentAccount.account.AccountId != post.AccountId)
+                {
+                    Notification newNoti = new Notification();
+                    newNoti.PostId = post.PostId;
+                    newNoti.Content = $"{CurrentAccount.account.FullName} đã bình luận về bài viết của bạn";
+                    newNoti.TypeNotification = 1;
+                    newNoti.AccountId = post.AccountId;
+                    db.Notifications.Add(newNoti);
+                }
 				db.SaveChanges();
 
                 var account = db.Accounts.SingleOrDefault(x => x.AccountId == comment.AccountId);

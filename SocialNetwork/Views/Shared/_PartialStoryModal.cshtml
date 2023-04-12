@@ -58,15 +58,18 @@
         <div class="flex-1 bg-white dark:bg-gray-900 dark:text-gray-100">
 
             <!-- post header-->
+            @{
+                var postOwnerAccount = Model.GetPostOwnerAccount();
+            }
             <div class="border-b flex items-center justify-between px-5 py-3 dark:border-gray-600">
                 <div class="flex flex-1 items-center space-x-4">
                     <a href="#">
                         <div class="bg-gradient-to-tr from-yellow-600 to-pink-600 p-0.5 rounded-full">
-                            <img src="/assets/images/avatars/avatar-2.jpg"
+                            <img src="@postOwnerAccount.Avatar"
                                  class="bg-gray-200 border border-white rounded-full w-8 h-8">
                         </div>
                     </a>
-                    <span class="block text-lg font-semibold"> @Model.GetPostOwnerAccount().FullName </span>
+                    <span class="block text-lg font-semibold"> @postOwnerAccount.FullName </span>
                 </div>
                 <a href="#">
                     <i class="icon-feather-more-horizontal text-2xl rounded-full p-2 transition -mr-1"></i>
@@ -113,10 +116,11 @@
                 <div class="-mt-1 space-y-1 comment-area-model-@Model.Post.PostId">
                     @foreach (var comment in Model.GetListComment())
                     {
+                        var commentAccount = Model.GetCommentAccount(comment);
                         <div class="flex flex-1 items-center space-x-2">
 
-                            <img src="/assets/images/avatars/avatar-2.jpg" class="rounded-full w-8 h-8">
-                            <span class="block capitalize font-semibold dark:text-gray-100">@Model.GetCommentAccount(comment).FullName</span>
+                            <img src="@commentAccount.Avatar" class="rounded-full w-8 h-8">
+                            <span class="block capitalize font-semibold dark:text-gray-100">@commentAccount.FullName</span>
                             <div class="flex-1 p-2">
                                 @comment.Content
                             </div>
