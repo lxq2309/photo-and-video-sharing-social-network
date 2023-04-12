@@ -7,5 +7,6 @@
 
 @using SocialNetwork.ViewModels
 @model PostDetailViewModel
-
-@await Html.PartialAsync("_PartialPostDetail", Model);
+<div class="container m-auto">
+    @await Html.PartialAsync("_PartialPostDetail", Model);
+</div>
