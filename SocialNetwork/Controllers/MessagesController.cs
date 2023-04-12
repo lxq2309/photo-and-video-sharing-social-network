@@ -98,7 +98,8 @@ namespace SocialNetwork.Controllers
                         return RedirectToAction("ChatSession", new { chatId = item.ChatId}); ;
                     }
             }
-            CreateNewChatSession(CurrentAccount.account, partner);
+            var currentAcc = dbContext.Accounts.SingleOrDefault(x => x.AccountId == CurrentAccount.account.AccountId);
+            CreateNewChatSession(currentAcc, partner);
 
             return RedirectToAction("ChatSessionAccount", new { accountId = accountId });
         }

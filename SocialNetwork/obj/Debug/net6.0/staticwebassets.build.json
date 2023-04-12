@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "nk+72tOmWPBjTHb3SfMhnBDBOUbzlcFCT3wG64LIGwo=",
+  "Hash": "Ez/tQ7uLHPD+uuyeNAhQW8p+Qjanf/wD7CfCH898+fc=",
   "Source": "SocialNetwork",
   "BasePath": "_content/SocialNetwork",
   "Mode": "Default",
@@ -748,12 +748,12 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "D:\\Working\\BTLWeb\\New\\fix\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\images\\avatars\\1\\Untitled.png",
+      "Identity": "D:\\Working\\BTLWeb\\New\\fix\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\images\\avatars\\1\\84580651.jpg",
       "SourceId": "SocialNetwork",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Working\\BTLWeb\\New\\fix\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\",
       "BasePath": "_content/SocialNetwork",
-      "RelativePath": "images/avatars/1/Untitled.png",
+      "RelativePath": "images/avatars/1/84580651.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -762,7 +762,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\avatars\\1\\Untitled.png"
+      "OriginalItemSpec": "wwwroot\\images\\avatars\\1\\84580651.jpg"
     },
     {
       "Identity": "D:\\Working\\BTLWeb\\New\\fix\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\wwwroot\\images\\avatars\\2\\ace3efc08ed57e8b27c4.jpg",
