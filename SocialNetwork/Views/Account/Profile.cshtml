@@ -15,25 +15,28 @@
 
 <div class="container pro-container m-auto">
 
-    <!-- profile-cover-->
-    <div id="upload-profile-picture" class="modal" style="display: none;">
-        <div class="heading">
-            <h3>Thay đổi ảnh đại diện</h3>
+    @if (currentAccountId == targetAccountId)
+    {
+        <!-- profile-cover-->
+        <div id="upload-profile-picture" class="modal" style="display: none;">
+            <div class="heading">
+                <h3>Thay đổi ảnh đại diện</h3>
+            </div>
+            <div class="list-item">
+                <form id="upload-form" method="post" enctype="multipart/form-data" asp-action="UploadAvatar">
+                    <button class="item" onclick="selectImage()" style="color: rgb(185 28 28);">
+                        Tải ảnh lên
+                    </button>
+                    <input name="image" id="input-file" accept="image/jpeg,image/png" class="item" type="file">
+                </form>
+                <form method="post" asp-action="RemoveAvatar">
+                    <button class="item" onclick="location.href=window.location.href;">Gỡ ảnh hiện tại</button>
+                </form>
+                <button class="item" onclick="$.modal.close();">Hủy</button>
+            </div>
         </div>
-        <div class="list-item">
-            <form id="upload-form" method="post" enctype="multipart/form-data" asp-action="UploadAvatar">
-                <button class="item" onclick="selectImage()" style="color: rgb(185 28 28);">
-                    Tải ảnh lên
-                </button>
-                <input name="image" id="input-file" accept="image/jpeg,image/png" class="item" type="file">
-            </form>
-            <form method="post" asp-action="RemoveAvatar">
-                <button class="item" onclick="location.href=window.location.href;">Gỡ ảnh hiện tại</button>
-            </form>
-            <button class="item" onclick="$.modal.close();">Hủy</button>
-        </div>
-    </div>
-
+    }
+    
     <div class="flex lg:flex-row flex-col items-center lg:py-8 lg:space-x-8">
 
         <div>

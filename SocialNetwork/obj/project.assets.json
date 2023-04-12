@@ -10602,19 +10602,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\MyPc\\.nuget\\packages\\": {}
+    "C:\\Users\\Admin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\SocialNetwork.csproj",
+      "projectUniqueName": "D:\\Working\\BTLWeb\\New\\fix\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\SocialNetwork.csproj",
       "projectName": "SocialNetwork",
-      "projectPath": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\SocialNetwork.csproj",
-      "packagesPath": "C:\\Users\\MyPc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\MyPc\\Desktop\\Ki2Nam3\\LTWeb\\BTL\\FINISH\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\obj\\",
+      "projectPath": "D:\\Working\\BTLWeb\\New\\fix\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\SocialNetwork.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "D:\\Working\\BTLWeb\\New\\fix\\SocialNetwork_ASPnet_Nhom1\\SocialNetwork\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\MyPc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -10686,7 +10686,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
       }
     }
   }
