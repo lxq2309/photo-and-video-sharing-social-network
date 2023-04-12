@@ -29,7 +29,6 @@
 
             public static List<ChatSession> getListChatSession()
             {
-                update();
                 return new SocialNetworkDbContext().Accounts
                     .Where(x => x.AccountId == account.AccountId)
                     .SelectMany(x => x.Chats)
@@ -38,7 +37,6 @@
 
             public static Message getNewestMessage(ChatSession chatSession)
             {
-                update();
                 return new SocialNetworkDbContext().Messages.Where(x => x.ChatId == chatSession.ChatId).OrderByDescending(x => x.MessageId).FirstOrDefault();
             }
         }
