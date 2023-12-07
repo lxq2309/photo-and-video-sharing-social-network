@@ -9,101 +9,101 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = SocialNetwork
 build_property.RootNamespace = SocialNetwork
-build_property.ProjectDir = C:\Users\MyPc\Desktop\Ki2Nam3\LTWeb\BTL\FINISH\SocialNetwork_ASPnet_Nhom1\SocialNetwork\
+build_property.ProjectDir = D:\Working\BTLWeb\New\fix\SocialNetwork_ASPnet_Nhom1\SocialNetwork\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\MyPc\Desktop\Ki2Nam3\LTWeb\BTL\FINISH\SocialNetwork_ASPnet_Nhom1\SocialNetwork
+build_property.MSBuildProjectDirectory = D:\Working\BTLWeb\New\fix\SocialNetwork_ASPnet_Nhom1\SocialNetwork
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/MyPc/Desktop/Ki2Nam3/LTWeb/BTL/FINISH/SocialNetwork_ASPnet_Nhom1/SocialNetwork/Views/Account/BlockedList.cshtml]
+[D:/Working/BTLWeb/New/fix/SocialNetwork_ASPnet_Nhom1/SocialNetwork/Views/Account/BlockedList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxCbG9ja2VkTGlzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MyPc/Desktop/Ki2Nam3/LTWeb/BTL/FINISH/SocialNetwork_ASPnet_Nhom1/SocialNetwork/Views/Account/FollowRequest.cshtml]
+[D:/Working/BTLWeb/New/fix/SocialNetwork_ASPnet_Nhom1/SocialNetwork/Views/Account/FollowRequest.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxGb2xsb3dSZXF1ZXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MyPc/Desktop/Ki2Nam3/LTWeb/BTL/FINISH/SocialNetwork_ASPnet_Nhom1/SocialNetwork/Views/Account/Login.cshtml]
+[D:/Working/BTLWeb/New/fix/SocialNetwork_ASPnet_Nhom1/SocialNetwork/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MyPc/Desktop/Ki2Nam3/LTWeb/BTL/FINISH/SocialNetwork_ASPnet_Nhom1/SocialNetwork/Views/Account/Profile.cshtml]
+[D:/Working/BTLWeb/New/fix/SocialNetwork_ASPnet_Nhom1/SocialNetwork/Views/Account/Profile.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxQcm9maWxlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MyPc/Desktop/Ki2Nam3/LTWeb/BTL/FINISH/SocialNetwork_ASPnet_Nhom1/SocialNetwork/Views/Account/Register.cshtml]
+[D:/Working/BTLWeb/New/fix/SocialNetwork_ASPnet_Nhom1/SocialNetwork/Views/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MyPc/Desktop/Ki2Nam3/LTWeb/BTL/FINISH/SocialNetwork_ASPnet_Nhom1/SocialNetwork/Views/Account/Setting.cshtml]
+[D:/Working/BTLWeb/New/fix/SocialNetwork_ASPnet_Nhom1/SocialNetwork/Views/Account/Setting.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxTZXR0aW5nLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MyPc/Desktop/Ki2Nam3/LTWeb/BTL/FINISH/SocialNetwork_ASPnet_Nhom1/SocialNetwork/Views/Action/Search.cshtml]
+[D:/Working/BTLWeb/New/fix/SocialNetwork_ASPnet_Nhom1/SocialNetwork/Views/Action/Search.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWN0aW9uXFNlYXJjaC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MyPc/Desktop/Ki2Nam3/LTWeb/BTL/FINISH/SocialNetwork_ASPnet_Nhom1/SocialNetwork/Views/Admin/Index.cshtml]
+[D:/Working/BTLWeb/New/fix/SocialNetwork_ASPnet_Nhom1/SocialNetwork/Views/Admin/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MyPc/Desktop/Ki2Nam3/LTWeb/BTL/FINISH/SocialNetwork_ASPnet_Nhom1/SocialNetwork/Views/Home/Index.cshtml]
+[D:/Working/BTLWeb/New/fix/SocialNetwork_ASPnet_Nhom1/SocialNetwork/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MyPc/Desktop/Ki2Nam3/LTWeb/BTL/FINISH/SocialNetwork_ASPnet_Nhom1/SocialNetwork/Views/Home/Privacy.cshtml]
+[D:/Working/BTLWeb/New/fix/SocialNetwork_ASPnet_Nhom1/SocialNetwork/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MyPc/Desktop/Ki2Nam3/LTWeb/BTL/FINISH/SocialNetwork_ASPnet_Nhom1/SocialNetwork/Views/Home/SinglePostDetail.cshtml]
+[D:/Working/BTLWeb/New/fix/SocialNetwork_ASPnet_Nhom1/SocialNetwork/Views/Home/SinglePostDetail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTaW5nbGVQb3N0RGV0YWlsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MyPc/Desktop/Ki2Nam3/LTWeb/BTL/FINISH/SocialNetwork_ASPnet_Nhom1/SocialNetwork/Views/Messages/ChatSession.cshtml]
+[D:/Working/BTLWeb/New/fix/SocialNetwork_ASPnet_Nhom1/SocialNetwork/Views/Messages/ChatSession.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVzc2FnZXNcQ2hhdFNlc3Npb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MyPc/Desktop/Ki2Nam3/LTWeb/BTL/FINISH/SocialNetwork_ASPnet_Nhom1/SocialNetwork/Views/Shared/Components/PostDetail/Default.cshtml]
+[D:/Working/BTLWeb/New/fix/SocialNetwork_ASPnet_Nhom1/SocialNetwork/Views/Shared/Components/PostDetail/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcUG9zdERldGFpbFxEZWZhdWx0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MyPc/Desktop/Ki2Nam3/LTWeb/BTL/FINISH/SocialNetwork_ASPnet_Nhom1/SocialNetwork/Views/Shared/Error.cshtml]
+[D:/Working/BTLWeb/New/fix/SocialNetwork_ASPnet_Nhom1/SocialNetwork/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MyPc/Desktop/Ki2Nam3/LTWeb/BTL/FINISH/SocialNetwork_ASPnet_Nhom1/SocialNetwork/Views/Shared/_LayoutHome.cshtml]
+[D:/Working/BTLWeb/New/fix/SocialNetwork_ASPnet_Nhom1/SocialNetwork/Views/Shared/_LayoutHome.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRIb21lLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MyPc/Desktop/Ki2Nam3/LTWeb/BTL/FINISH/SocialNetwork_ASPnet_Nhom1/SocialNetwork/Views/Shared/_PartialHeader.cshtml]
+[D:/Working/BTLWeb/New/fix/SocialNetwork_ASPnet_Nhom1/SocialNetwork/Views/Shared/_PartialHeader.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9QYXJ0aWFsSGVhZGVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MyPc/Desktop/Ki2Nam3/LTWeb/BTL/FINISH/SocialNetwork_ASPnet_Nhom1/SocialNetwork/Views/Shared/_PartialPostDetail.cshtml]
+[D:/Working/BTLWeb/New/fix/SocialNetwork_ASPnet_Nhom1/SocialNetwork/Views/Shared/_PartialPostDetail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9QYXJ0aWFsUG9zdERldGFpbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MyPc/Desktop/Ki2Nam3/LTWeb/BTL/FINISH/SocialNetwork_ASPnet_Nhom1/SocialNetwork/Views/Shared/_PartialSidebar.cshtml]
+[D:/Working/BTLWeb/New/fix/SocialNetwork_ASPnet_Nhom1/SocialNetwork/Views/Shared/_PartialSidebar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9QYXJ0aWFsU2lkZWJhci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MyPc/Desktop/Ki2Nam3/LTWeb/BTL/FINISH/SocialNetwork_ASPnet_Nhom1/SocialNetwork/Views/Shared/_PartialStoryModal.cshtml]
+[D:/Working/BTLWeb/New/fix/SocialNetwork_ASPnet_Nhom1/SocialNetwork/Views/Shared/_PartialStoryModal.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9QYXJ0aWFsU3RvcnlNb2RhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MyPc/Desktop/Ki2Nam3/LTWeb/BTL/FINISH/SocialNetwork_ASPnet_Nhom1/SocialNetwork/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/Working/BTLWeb/New/fix/SocialNetwork_ASPnet_Nhom1/SocialNetwork/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MyPc/Desktop/Ki2Nam3/LTWeb/BTL/FINISH/SocialNetwork_ASPnet_Nhom1/SocialNetwork/Views/_ViewImports.cshtml]
+[D:/Working/BTLWeb/New/fix/SocialNetwork_ASPnet_Nhom1/SocialNetwork/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MyPc/Desktop/Ki2Nam3/LTWeb/BTL/FINISH/SocialNetwork_ASPnet_Nhom1/SocialNetwork/Views/_ViewStart.cshtml]
+[D:/Working/BTLWeb/New/fix/SocialNetwork_ASPnet_Nhom1/SocialNetwork/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MyPc/Desktop/Ki2Nam3/LTWeb/BTL/FINISH/SocialNetwork_ASPnet_Nhom1/SocialNetwork/Views/Shared/_Layout.cshtml]
+[D:/Working/BTLWeb/New/fix/SocialNetwork_ASPnet_Nhom1/SocialNetwork/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-lh69jpwqls

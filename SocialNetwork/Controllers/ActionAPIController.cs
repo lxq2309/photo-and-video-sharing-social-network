@@ -315,7 +315,7 @@ namespace SocialNetwork.Controllers
             string query = $"UPDATE Relationship " +
                            $"SET TypeID = 2 " +
                            $"WHERE SourceAccountId = {source} AND TargetAccountId = {target}";
-            var sourceAccount = db.Accounts.SingleOrDefault(x => x.AccountId == target);
+            var sourceAccount = db.Accounts.SingleOrDefault(x => x.AccountId == source);
             CurrentAccount.account.Follower = CurrentAccount.account.Follower + 1;
             CurrentAccount.update();
             sourceAccount.Following = sourceAccount.Following + 1;

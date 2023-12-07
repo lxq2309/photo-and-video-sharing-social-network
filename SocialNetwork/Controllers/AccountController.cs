@@ -168,6 +168,8 @@ namespace SocialNetwork.Controllers
                 account.AccountType = "Private";
             }
             db.SaveChanges();
+            CurrentAccount.account.FullName = account.FullName;
+            CurrentAccount.update();
             return View(account);
         }
 
